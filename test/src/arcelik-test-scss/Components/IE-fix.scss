@@ -1,0 +1,23 @@
+//IE Fixes
+html.ms-ready {
+
+    //popüler ürünler
+    .popular-prd-slider,
+    .ems-page-home .main-slider .swiper-inner {
+        height: 568px;
+    }
+
+    //footer harita
+    .site-footer-inner .footer-map {
+        height: 667px;
+    }
+
+    [id$="divCaptcha"] {
+        #imgCaptcha {
+            left: 2px;
+            top: 25px;
+            height: 36px;
+        }
+    }
+
+}

@@ -1,0 +1,1528 @@
+//login sayfa
+.ems-page-login {
+    .ems-page-member-login {
+        background: url(#{$baseHref + "/images/frontend/bg-login.jpg"}) no-repeat center center fixed;
+        padding: 50px 0;
+        .ems-tab-inner {
+            background: #fff;
+            padding: 40px;
+            border: 1px solid #ebebeb;
+            max-width: 710px;
+            margin: 0 auto;
+        }
+        .content-inner {
+            margin-top: 20px;
+            .content-header {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            .content-body {
+                padding-top: 20px;
+                padding-right: 115px;
+                padding-left: 115px;
+            }
+            
+            .btn-set {
+                max-width: 220px;
+                margin: 40px auto 0;
+                table {
+                    margin: 0 auto;
+                }
+                a.btnDefault, table {
+                    @extend .btn-full;
+                }
+                a.btnDefault i {
+                    font-size: 24px;
+                    @include vAlign;
+                    position: absolute;
+                    left: 10px;
+                }
+                [id$="lbfEX1_TXT_AD"] {
+                    position: relative;
+                    display: block;
+                    &:before {
+                        content: "";
+                        border-top: 1px solid #ebebeb;
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+                .login-type {
+                    color: #999;
+                    background: #fff;
+                    padding: 5px 20px;
+                    position: relative;
+                }
+                &.social-w98{
+                    max-width: 100%;
+                    text-align: center;
+                    .ems-field.submit{
+                        max-width: 220px;
+                        margin: 0 auto 30px;
+                    }
+                    .social-login-wrapper{
+                        > .submit{
+                            width: 49%;
+                            margin-right: 2%;
+                            display: inline-block;
+                            vertical-align: top;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .social-login-wrapper {
+                a.btnDefault {
+                    font-family: $fontDefault;
+                    font-style: italic;
+                    font-weight: normal;
+                    b {
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+        .ems-login {
+            &-footer {
+                display: none;
+            }
+        }
+        .ems-signup {
+            &-footer {
+                display: none;
+            }
+        }
+        .btn-signup-page, .btn-login-page {
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 14px;
+            a {
+                text-decoration: underline;
+                font-weight: 700;
+            }
+        }
+        .for-guest{
+            .title{
+                font-family: $fontSite;
+                font-size: 42px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                    b{
+                        font-weight: 700;
+                    }
+            }
+            .desc{
+                font-size: 14px;
+                line-height: 1.2;
+            }
+        }
+        .for-members {
+            .title {
+                font-family: $fontSite;
+                font-size: 44px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .desc {
+                font-size: 14px;
+                line-height: 1.3;
+                font-weight: 300;
+            }
+        }
+        .member-tab {
+            .navigation-js {
+                max-width: 650px;
+                margin: 0 auto;
+                li[rel="tab3"] {
+                    display: none;
+                    .basket-full & {
+                        display: table-cell;
+                    }
+                }
+            }
+        }
+    }
+    .ems-message-wrapper {
+        &:empty {
+            display: none;
+        }
+        @extend .ems-container;
+        margin-bottom: 30px;
+    }
+    #guestCheckout .ems-signup-inner {
+        background: transparent;
+        border: none;
+        max-width: none;
+        .ems-signup-header {
+            text-align: center;
+            .for-guest{
+                margin-bottom: 50px;
+            }
+        }
+
+        .ems-signup-body {
+            #ValidateGuestEmail > span {
+                margin-bottom: 5px;
+                display: block;
+                font-family: $fontSite;
+                font-size: 13px;
+                color: #666;
+                line-height: 1.4;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+//üyeliksiz alışveriş
+.guestCheckout {
+    margin-bottom: 30px;
+    .pageHeaderGuestCheckout {
+        @extend .page-top-title;
+    }
+    .pageGuestCheckout_Desc,
+    .ems-page-order-cart{
+        display: none;
+    }
+    .GuestCheckoutContainer{
+        padding: 30px 20px 0 20px;
+        width: 100%;
+        border: 1px solid #ebebeb;
+        border-bottom:0;
+    }
+    ul.ulGuestCheckout_member {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        li {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 20px;
+            &.emos_invisible {
+                display: none;
+                &.phone {
+                    display: inline-block;
+                }
+            }
+            [type="radio"]{
+                & + span{
+                    margin-right: 10px;
+                }
+            }
+            > span {
+                display: inline-block;
+                vertical-align: top;
+                font-family: $fontSite;
+                font-size: 13px;
+                color: #666;
+                line-height: 1.4;
+                margin-bottom: 5px;
+            }
+            &.subTitle {
+                display: none;
+                &:first-child{
+                    display: block;
+                }
+                span{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+            &.address{
+                textarea{
+                    max-height: 120px;
+                }
+            }
+            &.tcNo {
+                > span:first-child {
+                    display: none;
+                }
+            }
+            &.city,
+            &.county,
+            &.surname,
+            &.name,
+            &.zipCode,
+            &.phone {
+                width:49%;
+            }
+            &.city,
+            &.name,
+            &.zipCode {
+                margin-right: 2%;
+            }
+        }
+    }
+    .emailError {
+        margin-top: 10px;
+    }
+    .pageGuestCheckoutError {
+        margin-bottom: 10px;
+    }
+    li.bultenFl, li.smsFl, li.country, [id$="lbf_KARGOBILGI"], .divTeslimatKargo, li.cellPhone {
+        display: none !important;
+    }
+    div[id$="pnlFaturaAdresBireysel"],
+    div[id$="pnlFaturaAdres"],
+    div[id$="FaturaAdresKurumsal"]{
+        > div{
+            padding: 0 20px;
+            width: 100%;
+            border: 1px solid #ebebeb;
+            border-top:0;
+            border-bottom: 0;
+            > ul{
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+                 li {
+                    width: 100%;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-bottom: 20px;
+                    [type="radio"]{
+                        & + span{
+                            margin-right: 10px;
+                        }
+                    }
+                    > span {
+                        display: inline-block;
+                        vertical-align: top;
+                        font-family: $fontSite;
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 1.4;
+                        margin-bottom: 5px;
+                    }
+                 }
+            }
+
+        }
+    }
+    [id$="pnlFaturaAdresKurumsal"]{
+        ul.ulGuestCheckout_member {
+            .name {
+                width: 100%;
+                margin-right: 0;
+            }
+            .surname, .vergiDaire {
+                width: 49%;
+            }
+            .surname {
+                margin-right: 2%;
+            }
+        }
+    }
+    .divGuestCheckout_btnGuestCheckoutSave{
+        padding: 0 20px 20px 20px;
+        border: 1px solid #ebebeb;
+        border-top: 0;
+        > table {
+            display: table !important;
+            width: 100%;
+            max-width: 295px;
+            margin-left: auto;
+            margin-right: auto;
+            a.btnGuestCheckoutSave {
+                display: block;
+            }
+        }
+    }
+}
+
+//bg menu
+.member-menu-holder {
+    position: relative;
+    background: url(#{$baseHref + "/images/frontend/bg-profile.jpg"}) center bottom;
+    background-size: cover;
+    color: #fff;
+    padding-top: 45px;
+    .member-menu-header {
+        .title {
+            font-family: $fontDefault;
+            font-size: 15px;
+        }
+        .desc {
+            font-family: $fontSite;
+            font-size: 44px;
+            font-weight: 300;
+            margin-top: 16px;
+        }
+        ~ .member-menu {
+            margin-top: 45px;
+        }
+    }
+    .member-menu-selecbox {
+        display:none;
+    }
+    .member-menu {
+        margin-top: 120px;
+        ul {
+            li {
+                a {
+                    display: block;
+                    padding: 10px 20px;
+                    font-family: $fontSite;
+                    font-size: 15px;
+                    border: none;
+                }
+                &.selected {
+                    background: #fff;
+                    a {
+                        color: #333;
+                    }
+                }
+            }
+        }
+        .lvl2 {
+            display: none;
+        }
+    }
+    &.bg2 {
+        background-image: url(#{$baseHref + "/images/frontend/bg-campaigns.jpg"});
+    }
+}
+
+.ems-page-member {
+    .ems-page-default {
+        @extend .ems-container;
+    }
+    
+    .bottom-step {
+        margin-top: 30px;
+    }
+
+    .inner-title {
+        font-family: $fontSite;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .page-top-desc {
+        margin-bottom: 20px;
+    }
+
+    .select-cfg {//grid-bottom
+        border: 1px solid #ebebeb;
+        padding: 20px;
+        margin-top: -1px;
+        > div {
+            margin-right: 20px;
+            a {
+                @extend .btn-text;
+                font-family: $fontDefault;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    //sifremi unuttum
+    &.ems-page-member-forgot-password {
+        background: url(#{$baseHref + "/images/frontend/bg-cart.jpg"}) no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 100%;
+    }
+    .pageSifremiUnuttum {
+        margin: 120px auto;
+        max-width: 570px;
+        padding: 40px 110px;
+        text-align: center;
+        border: 1px solid #ebebeb;
+        background: #fff;
+        &:before {
+            content: "";
+            background: red;
+        }
+        .pageHeaderDefault {
+            font-family: $fontSite;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .pageDescDefault {
+            font-family: $fontSite;
+            font-weight: 300;
+            margin-top: 35px;
+            line-height: 1.2;
+        }
+        .pageErrorSifremiUnuttum {
+            margin-top: 30px;
+        }
+        .pass-forgot {
+            p {
+                font-family: $fontSite;
+                font-weight: 300;
+                font-size: 13px;
+            }
+            .success-icon {
+                font-size: 27px;
+                color: #34ca3e;
+                font-weight: 700;
+                border: 2px solid;
+                border-radius: 100%;
+                display: inline-block;
+                padding: 11px;
+                margin-bottom: 20px;
+            }
+            .fm {
+                font-size: 20px;
+                line-height: 2;
+            }
+            .btn-login-back {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    //üyelik bilgilerim
+    .ems-page-member-info {
+        .ems-form {
+            margin-top: 20px;
+        }
+        .user-table {
+            > div {
+                padding: 20px;
+                border: 1px solid #ebebeb;
+                &.row-2 {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+        .bottom-step {
+            margin-bottom: 30px;
+            > * {
+                vertical-align: middle;
+            }
+            .remove {
+                margin-right: 60px;
+            }
+        }
+    }
+
+    .member-info-address {
+        .row-header {
+            font-family: $fontSite;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+        .grid {
+            max-height: 340px;
+            overflow: auto;
+            padding-right: 10px;
+            .row {
+                border-width: 0 1px 1px 1px;
+                border-style: solid;
+                border-color: #ebebeb;
+                padding: 15px;
+                &:first-child {
+                    border-top-width: 1px;
+                }
+                .r1 {
+                    font-family: $fontSite;
+                    font-size: 15px;
+                    font-weight: 700;
+                    font-style: italic;
+                    letter-spacing: -1px;
+                }
+                .r2 {
+                    > a {
+                        font-family: $fontDefault;
+                        color: #666;
+                    }
+                }
+                .r3 {
+                    font-family: $fontSite;
+                    font-size: 15px;
+                    font-style: italic;
+                    font-weight: 300;
+                    word-break: break-word;
+                    margin-top: 10px;
+                }
+            }
+            .btnAdresListeGuncelle {
+                margin-left: 20px;
+            }
+        }
+        .btnAdresEkle {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+
+    //siparislerim
+    .ems-page-member-order {
+        .order-filter {
+            position: relative;
+            top: -20px;
+            select {
+                width: 220px;
+            }
+        }
+    }
+
+    //sipariş detay
+    .ems-page-member-order-detail {
+        .order-info-holder {
+            border: 1px solid #ebebeb;
+            .inner-row-1 {
+                width: 180px;
+                border-right: 1px solid #ebebeb;
+                padding: 20px;
+            }
+            .inner-row-2 {
+                padding: 5px 20px;
+            }
+        }
+        .order-detail-info {
+            > div:not(.date) {
+                margin-top: 20px;
+            }
+            .text {
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .btnIptalTalep {
+                font-family: $fontDefault;
+            }
+        }
+        .order-detail-info-payment {
+            padding: 40px 0;
+            border-top: 1px solid #ebebeb;
+            .value {
+                font-family: $fontSite;
+                font-size: 15px;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+        }
+        .order-address-holder {
+            padding: 40px 0;
+            border-top: 1px solid #ebebeb;
+            .text {
+                font-family: $fontSite;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .value {
+                max-width: 250px;
+                line-height: 1.4;
+            }
+        }
+        @at-root {
+            //siparis iptal
+            .order-cancel-content {
+                position: relative;
+                display: none;
+                padding: 20px;
+                width: 100% !important;
+                max-width: $siteContainerWidth;
+                &.minPp {
+                    display: block;
+                }
+            }
+
+            //kargo takip
+            form[name="frmBorusanLojistik"] {
+                > br {
+                    display: none;
+                }
+            }
+            .kargo-popup {
+                padding: 30px;
+                .form-header {
+                    margin: 10px 0;
+                    > a {
+                        display: none;
+                    }
+                    h3 {
+                        margin: 0;
+                        font-size: 23px;
+                    }
+                }
+                table {
+                    width: 100%;
+                    table-layout: fixed;
+                    td {
+                        padding: 5px;
+                        vertical-align: top;
+                    }
+                    .first-tab {
+                        td {
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .receiverinfo {
+                    margin-top: 10px;
+                    padding-top: 10px;
+                }
+                .form-main-table {
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    border-top: 1px solid #ebebeb;
+                }
+                .form-footer {
+                    display: table;
+                    table-layout: fixed;
+                    width: 100%;
+                    margin-top: 30px;
+                    > div {
+                        display: table-cell;
+                    }
+                    .companytel {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    //favorilerim
+    .ems-page-member-favorites {
+        padding-bottom: 100px;
+        a.btnFavoriSil {
+            font-weight: 700;
+        }
+    }
+    a.btnTakipListeStokSil, a.btnFavoriListeSil {
+        font-size: 25px;
+        color: $colorRed;
+        padding: 0;
+    }
+
+    //takip listem
+    .ems-page-member-follow-list {
+        .page-top-desc {
+            display: none;
+            &.inner-title {
+                display: block;
+            }
+        }
+        .page-top-title {
+            margin-bottom: 20px;
+        }
+        .price-report {
+            display: none;
+            margin-bottom: 30px;
+        }
+    }
+
+    //mesajlarım
+    .ems-page-member-message {
+        .btn-write-message {
+            vertical-align: middle;
+            float: right;
+            margin-top: -9px;
+            min-width: 220px;
+        }
+    }
+    @at-root {
+        .popupMesajGonder {
+            text-align: left;
+            .ems-form-inner.ems-inline-table {
+                > * {
+                    @include clear-table-cell;
+                }
+            }
+            .ems-form {
+                padding: 0 50px;
+                textarea {
+                    height: 100px;
+                }
+            }
+            .page-top-title {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .page-top-desc, .msjtelefon {
+                display: none;
+            }
+            .ems-message {
+                margin-bottom: 20px;
+            }
+            .btnMesajGonder {
+                min-width: 220px;
+            }
+        }
+    }
+    .ems-page-member-message-detail {
+        .ems-message-type {
+            li {
+                span {
+                    display: inline-block;
+                    &:first-child {
+                        font-weight: 500;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .msgDtList {
+            padding: 0 10px;
+            border: 1px solid #ebebeb;
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 1.3;
+            .msgDtHeader {
+                display: none;
+            }
+            .msgDtContent {
+                .text {
+                    padding: 10px 0;
+                }
+                .date {
+                    border-top: 1px solid #ebebeb;
+                    padding: 10px 0;
+                    font-size: 11px;
+                }
+            }
+        }
+        a.btnMesajCozuldu {
+            margin-left: 20px;
+        }
+        .ems-form {
+            textarea {
+                height: 123px !important;
+            }
+            .inner-row-1 {
+                padding-right: 25px;
+            }
+        }
+        .ems-col.inner-row-1 {
+
+            .ems-field.text {
+                &.message-subject,
+                &.name,
+                &.email {
+                    display: none;
+                }
+            }
+        }
+    }
+    //activation sms
+    &.ems-activation-sms{
+        .pageUyeBasarili,
+        .pageUyeIslem {
+            p{
+                margin-bottom: 20px;
+                line-height: 1.3em;
+                font-size: 15px;
+            }
+        }
+        .tableTitleUyeIslem{
+            display: none;
+        }
+        #validateUyeSifreReset,
+        #validateUyeIslem{
+            table,
+            table tbody,
+            table tbody tr,
+            table tbody tr td,
+            table tbody tr th{
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+            .ems-form-err{
+                input{
+                    border-color:#f21;
+                }
+                .ems-form-err-msg{
+                    color:#f21;
+                    display: block;
+                    margin-top: 4px;
+                }
+            }
+            .tableDefault tbody tr th{
+                margin-bottom: 5px;
+            }
+            .tableDefault tbody tr td{
+                margin-bottom: 20px;
+                input ~ span{
+                    color: #666;
+                    display: block;
+                }
+            }
+            .btn,
+            .btnDefault{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-p) {
+    .ems-page-profile {
+        .row-holder-1 {
+            display: inline-block !important;
+            .row-1 {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .page-top-desc {
+            position: static !important;
+            padding-left: 20px;
+        }
+        .page-top-title {
+            padding-left: 20px;
+        }
+    }
+    
+    .ems-page-login .ems-page-member-login .content-inner .content-body {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+}
+
+@media screen and (max-width: $tablet) {
+    //login sayfa
+    .ems-page-login {
+        .ems-page-member-login {
+            .ems-login-header {
+                float: none;
+                max-width: 570px;
+                @include outer-mobile;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .ems-login-body {
+                max-width: 570px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0;
+            }
+            .btn-set {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 240px;
+            }
+
+            .ems-signup-inner {
+                background: transparent;
+                border: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    // Mobile Member menu
+    .member-menu-holder {
+        padding:0;
+        background-size: auto;
+        .member-menu {
+            width:100%;
+            margin-top: 0 !important;
+            background: #fff;
+            ul.ems-inline {
+                display:none;
+                padding: 0 20px;
+                li {
+                    width:100%;
+                    display:inline-block;
+                    background: #fff;
+                    border-bottom:1px solid #999;
+                    a {
+                        padding:20px 0;
+                        color: #333;
+                        font-size: 16px;
+                    }
+                    &.selected {
+                        a {
+                            color:$colorRed; 
+                        }
+                    }
+                }
+            }
+            > span {
+                color: #333;
+                padding:20px;
+                display:inline-block !important;
+                width: 100%;
+                font-size: 16px;
+                font-weight: bold;
+                background:#f7f7f7;
+                border-bottom:1px solid #999;
+                position:relative;
+                cursor: pointer;
+                &:before {
+                        content: "\e901";
+                        font-family: 'icomoon';
+                        font-size: 20px;
+                        display:inline-block;
+                        float:right;
+                }
+            }
+            &.opened {
+                ul.ems-inline {
+                    display:block;
+                }
+                span {
+                    &:before {
+                        content: "\e904";
+                    }
+                }
+            }
+        }
+        .member-menu-header {
+            padding: $singleOuterMobile;
+            .desc {
+                font-size: 25px;
+            }
+        }
+    }
+    
+    .ems-page-member {
+        .bottom-step {
+            padding-left: $singleOuterMobile;
+            padding-right: $singleOuterMobile;
+        }
+        //siparislerim
+        .ems-grid-default {
+            @include outer-block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }                
+        .ems-page-member-order .order-filter {
+            top: 0;
+            margin: 20px;
+        }
+
+        //siparis detay
+        .ems-page-member-order-detail .order-info-holder {
+            @include outer-block;
+            @include outer-mobile;
+        }
+
+        //üyelik bilgilerim
+        .member-info-address {
+            .grid {
+                padding-right: 0;
+                .row {
+                    position: relative;
+                    padding-bottom: 40px;
+                }
+            }
+            .r-holder-1 .r1 {
+                width: 100%;
+            }
+            .r-holder-1 .r2 {
+                position: absolute;
+                right: 20px;
+                bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-l) {
+    //login sayfa
+    .ems-page-login {
+        .ems-page-member-login {
+            padding-top: 0;
+            padding-bottom: 0;
+            .ems-tab-inner {
+                padding: 0;
+                .navigation-js {
+                    li[rel="tab3"] {
+                        a.title {
+                            text-align: right;
+                        }
+                    }
+                    a.title {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+            .content-inner {
+                margin-top: 0;
+                .content-header, .content-body {
+                    @include outer-mobile;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 0;
+                }
+                .btn-set.social-w98 .social-login-wrapper {
+                    @include outer-mobile;
+                    > .submit {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+                .content-header {
+                    display: none;
+                }
+            }
+            .btn-signup-page, .btn-login-page {
+                margin-top: 10px;
+            }
+
+            .for-members {
+                .title {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                .desc {
+                    font-size: 13px;
+                }
+            }
+        }
+        #guestCheckout .ems-signup-inner .ems-signup-body {
+            margin-left: $singleOuter;
+            margin-right: $singleOuter;
+        }
+    }
+
+    //üyeliksiz alışveriş mobile
+    .guestCheckout li {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+
+    // Profile
+    .ems-page-member {
+        .page-top-desc {
+            position:static !important;
+            padding: 0 $singleOuterMobile;
+            max-width:none !important;
+            text-align:center;
+            &.inner-title {
+                margin-top: 0;
+                font-size: 13px;
+            }
+        }
+        .page-top-title {
+            padding:0 20px;
+            text-align: center;
+        }
+        .colorbox-wrapper {
+            padding:0 10px;
+            .colorbox {
+                margin:5px 0;
+                max-width:none;
+                &:last-child {
+                    margin-bottom: $singleOuterMobile;
+                }
+                .last-order {
+                    width: 100%;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+        .row-holder-1 {
+            margin:0 !important;
+            .row-1 {
+                width:100% !important;
+            }
+        }
+        .ems-grid-default {
+            padding-left: 0;
+            padding-right: 0;
+            @include outer-block;
+            @include outer-mobile;
+        }
+        .ems-grid-order {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ems-grid-header {
+            width: 40%;
+        }
+        .ems-grid-row {
+            width: 60%;
+        }
+         .ems-grid-header, .ems-grid-row {
+            display:inline-block !important;
+            vertical-align: top;
+            padding: 15px $singleOuterMobile;
+            border-bottom: 1px solid #ebebeb;
+            border-top: none;
+            &:first-child {
+                border-top: none;
+            }
+            > div {
+                display:inline-block !important;
+                float: left;
+                clear: both;
+                padding: 10px 0 !important;
+                width: 100% !important;
+                text-align: left;
+                font-size: 13px;
+                &.ems-grid-order-no {
+                    a {
+                        color:$colorRed;
+                        font-weight: normal; 
+                    }
+                    span {
+                        color:$colorRed;
+                        font-weight: bold;
+                    }
+                }
+                &.ems-grid-name {
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                &.ems-grid-detail {
+                    height: 80px;
+                   > span {display:none;}
+                }
+                a {
+                    font-weight: normal; 
+                }
+                &.ems-none {
+                    display:none !important;
+                }
+                &.ems-grid-detail {
+                   a {
+                        width:100%;
+                        white-space: nowrap;
+                   }
+                }
+                &.ems-grid-status {
+                    height: 105px;
+                    overflow: hidden;
+                    line-height: 1.2;
+                }
+                &.ems-grid-total {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        // Siparislerim
+        .ems-page-member-order {
+             .order-filter {
+                 text-align: center;
+                 padding: 10px 0;
+                 select {
+                     height: 54px;
+                     line-height: 52px;
+                     width: 180px;
+                 }
+             }
+        }
+        .ems-page-member-order-detail {
+             .order-info-holder {
+                 border: 0;
+                 margin-left: 0;
+                 margin-right: 0;
+                  .inner-row-1 {
+                      display:inline-block;
+                      width: 100%;
+                      padding: 0 20px;
+                      .order-detail-info {
+                          div {
+                              display:inline-block;
+                              width:100%;
+                              div {
+                                  width: 50%;
+                                  float:left;
+                             }
+                          }
+                          .text, .value {
+                              font-size:15px;
+                              a {
+                                   font-size:15px;
+                              }
+                          }
+                      }
+                      .order-detail-info {
+                          border: 1px solid #ebebeb;
+                          padding: 0 20px;
+                          .text, .value {
+                              margin:0;
+                              padding: 20px 0;
+                          }
+                         > div {
+                              margin: 0 !important;
+                              border-bottom: 1px solid #ebebeb;
+                              &.order-cancel {
+                                  border: 0;
+                              }
+                              a {padding:0;}
+                          }
+                      }
+                  }
+                  .inner-row-2 { 
+                      display: block;
+                      width:100%;
+                      padding: 0;
+                      .order-detail-info-payment {
+                          padding: 20px;
+                          @include outer-block;
+                          @include outer-mobile;
+                          > * {
+                              @include outer-block;
+                          }
+                      }
+                      .ems-grid-order-products {
+                          border: 1px solid #ebebeb;
+                          padding: 0;
+                          margin-top: 10px;
+                          margin-bottom: 10px;
+                          .ems-grid-header, .ems-grid-row {
+                              border: none;
+                              > div {
+                                border-bottom: none;
+                                &:last-child {
+                                    border: 0;
+                                }
+                            }
+                          }
+                          .ems-grid-img {
+                              height:160px;
+                              overflow: hidden;
+                              a {
+                                  border: 0;
+                              }
+                          }
+                      }
+                  }
+             }
+             .order-address-holder {
+                 @include outer-block;
+                 @include outer-mobile;
+                 padding-top: 20px;
+                 padding-bottom: 20px;
+                 .order-address {
+                     display: inline-block;
+                     width:100%;
+                     padding:0 0 20px 0;
+                     border-bottom: 1px solid #ebebeb; 
+                     &:last-child {
+                         padding:20px 0 0 0;
+                         border: 0;
+                     }
+                 }
+            }
+
+            @at-root {
+                //kargo takip
+                .kargo-popup {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        
+        .bottom-step {
+            text-align:center;
+            padding: 0 20px;
+            margin-top: 10px;
+            a {
+                width: 100%;
+            }
+        }
+
+        //takip listem
+        .report-holder {
+            .ems-grid-default {
+                .ems-grid-img, .ems-grid-price, .ems-grid-name, .ems-grid-remove {
+                    border: 0;
+                    text-align: left;
+                    a, span {
+                        border: 0;
+                        text-align: left;
+                    }
+                }
+                .ems-grid-img {
+                    height:160px;
+                    overflow: hidden;
+                }
+                .ems-grid-price {
+                    border: 0;
+                    margin-bottom: -1px;
+                }
+                .ems-grid-header {
+                    .ems-grid-remove {
+                        display:none !important;
+                    }
+                }
+                .ems-grid-row {
+                    .ems-grid-remove {
+                    position:absolute;
+                    right: 10px;
+                    width: auto !important;
+                    border: 0;
+                    }
+                }
+                .ems-grid-select {
+                    display: none !important;
+                    position:absolute;
+                    z-index: 1;
+                    border:0 !important;
+                    width: auto !important;
+                }
+            }
+            .select-cfg {
+                display: inline-block;
+                width:100%;
+                margin-top:10px;
+                .remove-selected {
+                    display: none;
+                }
+            }
+        }
+
+        // Member Info
+        .ems-page-member-info {
+            .user-table {
+                > div {
+                    @include clear-table-cell;
+                }
+            }
+            .bottom-step {
+                display: flex;
+                flex-wrap: wrap;
+                > div {
+                    margin: $singleOuter 0 !important;
+                    width: 100%;
+                    &.next {
+                        order: 1;
+                    }
+                    &.remove {
+                        order: 2;
+                    }
+                }
+            }
+        }
+        .ems-page-new-address {
+            padding: 0 $singleOuterMobile;
+            .btnAdresIptal {
+                right: auto;
+                left: $singleOuterMobile;
+            }
+            //no css here
+        }
+
+        // Mesajlar
+        .ems-page-member-message {
+            .btn-write-message {
+                min-width:0 !important;
+                background: none !important;
+                padding: 0;
+                border: 0;
+                color: #333;
+                font-weight: normal;
+                margin: 10px 0px 0 0 !important
+            }
+            .page-top-title {
+                text-align:left;
+            }
+            .page-top-desc {
+                span {display:none;}
+            }
+            .ems-grid-message {
+                .ems-grid-header {
+                    display:none !important;
+                }
+                .ems-grid-row {
+                    width:100%;
+                    > div > div {
+                        font-size: 13px !important;
+                    }
+                    .ems-grid-status {
+                      .lnkMesajOku {
+                          font-weight: normal;
+                          color: #999;
+                      }
+                    }
+                    .ems-grid-title {
+                        line-height: 1.3;
+                        .lnkMesajOku {
+                            font-weight: normal;
+                            font-family: arial;
+                        }
+                    }  
+                    .ems-grid-date {
+                        .lnkMesajOku {
+                            font-size:15px;
+                            color: #999;
+                        }
+                    }
+                    .ems-grid-date {
+                        a {
+                            font-size: 13px !important;
+                        }
+                    }
+                }
+            }
+        }
+        @at-root {
+        .popupMesajGonder {
+            .ems-form {
+                padding:0 !important;
+            }
+        }
+        }
+        .ems-page-member-message-detail {
+            .ems-message-detail-form {
+                padding: 0 20px;
+                table {
+                    width: 100% !important;
+                    margin: 0 !important;
+                    table-layout: fixed;
+                    p + table {
+                        @include setTransform(scale(0.8));
+                    }
+                    td[align="center"] {
+                        text-align: center;
+                    }
+                }
+                .msgDtList {
+                    padding: 20px 20px 0 20px;
+                    margin-bottom: 20px;
+                }
+                .msgDtContent {
+                    .text {
+                        span {
+                            font-size: 15px; 
+                        }
+                    }
+                    .date {
+                        padding: 20px 0;
+                        span {
+                            font-size: 15px; 
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .inner-row-1, .inner-row-2 {
+                    width:100%;
+                    padding-right: 0;
+                    display: inline-block;
+                    a.btnMesajGonder {
+                        width:100%;
+                    }
+
+                }
+            }
+        }
+
+        //sifremi unuttum
+        .pageSifremiUnuttum {
+            padding: 30px $singleOuterMobile;
+            margin: 0;
+            .pageDescDefault {
+                text-align: left;
+            }
+            a.btnUyeSifreGonder {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+}

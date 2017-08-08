@@ -1,0 +1,212 @@
+$hover: #333;
+$facebook: #3d589a;
+$facebook-hover: #253b6f;
+$google: #4385f5;
+$google-hover: #3a75d6;
+$btn-color-1: #5c5c5c;
+$btn-color-2: #cecece;
+$disabled: #cecece;
+$disabled-hover: #858585;
+$text: #fff;
+$cursor-width: 5px;
+$radius2:50px;
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 3px solid $colorRed;
+    background: $colorRed;
+    padding: 11px 20px;
+    font-family: $fontSite;
+    font-size: $fontSizeDefault;
+    color: $text;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.32s ease;
+    &:hover {
+        background-color: $hover;
+        border-color: $hover;
+    }
+    &-transparent {
+        background: transparent;
+        border-color: $hover;
+        color: $hover;
+        &:hover {
+            color: $text;
+        }
+    }
+
+    &-gray {
+        background: $btn-color-1;
+        border-color: $btn-color-1;
+        &:hover {
+            background: $colorRed;
+            border-color: $colorRed;
+        }
+    }
+
+    &-color2 {
+        background: $btn-color-2;
+        border-color: $btn-color-2;
+        &:hover {
+            background: $colorRed;
+            border-color: $colorRed;
+        }
+    }
+
+    &-disabled {
+        background: $disabled;
+        border-color: $disabled;
+        &:hover {
+            background: $disabled-hover;
+            border-color: $disabled-hover;
+        }
+    }
+
+    &-sep {
+        &:before {
+            content: "—";
+            display: inline-block;
+            margin-right: 5px;
+        }
+        &-circle {
+            &:before {
+                content: "...";
+                display: inline-block;
+                vertical-align: middle;
+                width: 22px;
+                height: 22px;
+                font-size: 12px;
+                border: 1px solid;
+                border-radius: 100%;
+                line-height: 1.3;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &-full {
+        width: 100%;
+    }
+    
+    &-full-link {
+        @include setAbsolute;
+    }
+
+    &-round {
+        border-radius: $radius2;
+    }
+
+    &-text {
+        color: inherit;
+        background-color: inherit;
+        padding: inherit;
+        border: inherit;
+        &:hover {
+            color: inherit;
+            background-color: inherit;
+            padding: inherit;
+            border: inherit;
+        }
+    }
+
+    [class*="btn-cursor"] {
+        &:after {
+            content: "";
+            border-width: #{$cursor-width};
+            border-style: solid;
+            border-color: transparent;
+            position: absolute;
+        }
+    }
+    &-cursor {
+        &-top {
+            &:after {
+                border-bottom-color: inherit;
+                left: calc(50% - #{$cursor-width});
+                top: -13px;
+            }
+        }
+        &-right {
+            &:after {
+                border-left-color: inherit;
+                right: -13px;
+                bottom: calc(50% - #{#{$cursor-width}});
+            }
+        }
+        &-bottom {
+            &:after {
+                border-top-color: inherit;
+                left: calc(50% - #{$cursor-width});
+                bottom: -13px;
+            }
+        }
+        &-left {
+            &:after {
+                border-right-color: inherit;
+                left: -13px;
+                bottom: calc(50% - #{$cursor-width});
+            }
+        }
+    }
+}
+
+a.btnDefault, .lnkDefault {
+    @extend .btn;
+}
+
+a.btnStokHaberci {
+    @extend .btn-disabled;
+}
+
+a.btnFacebookLogin {
+    background: $facebook;
+    border-color: $facebook;
+    &:hover {
+        background: $facebook-hover;
+        border-color: $facebook-hover;
+    }
+}
+
+a.btnGoogleLogin {
+    background: $google;
+    border-color: $google;
+    &:hover {
+        background: $google-hover;
+        border-color: $google-hover;
+    }
+}
+
+//reset
+a.btnFavoriEkle, .lnkTaksitSecenek, a.btnClear, a.btnKiyaslamaRemove, a.btnAdresListeGuncelle, a.btnAdresListeSil, a.btnTesAdrSec, a.btnFatAdrSec, span.lnkSifremiUnuttum, span.lnkUyeOlmak, a.btnUyelikIptalEt, a.btnIptalTalep, a.btnFavoriListeSil, a.btnTakipListeStokSil, a.btnSepeteAtFavori, a.btnArama, a.btnKiyaslamaListemeDon, a.btnSepetGuncelle, a.btnSepetBosalt, a.changePhone {
+    @extend .btn-text;
+}
+
+//table fix
+.urunDetay_btnSepeteAt > table, .urunListe_favoriEkle > table, .urunDetay_btnStokHaberci > table, .ems-cart-coupon > table, .pageLogin_btnFacebookLogin > table, .pageLogin_btnGoogleLogin > table, .pageLogin_btnUyeSifreGonder > table {
+    display: table !important;
+}
+
+@media screen and (max-width: $mobile-l) {
+    .btn {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 18px 20px;
+        &-text {
+            color: inherit;
+            background-color: inherit;
+            padding: inherit;
+            border: inherit;
+            &:hover {
+                color: inherit;
+                background-color: inherit;
+                padding: inherit;
+                border: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,1777 @@
+$bg: #f6f6f6;
+$btnWidth: 230px;
+.ems-page-product-detail {
+    position: relative;
+}
+
+.ems-prd-detail {
+    background: $bg;
+    .ems-prd-detail-inner {
+        font-family: $fontSite;
+        padding: 20px 0 40px;
+        .inner-row-2 {
+            width: 260px;
+        }
+    }
+    .ems-prd-name {
+        font-size: 44px;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    .ems-prd-cat-name {
+        font-size: 15px;
+        color: #666;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    .ems-prd-rating {
+        margin-top: 20px;
+    }
+    .ems-prd-mini-description {
+        margin-top: 20px;
+    }
+    .ems-prd-price {
+        position: relative;
+        margin-top: 20px;
+        > div {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            &:empty {
+                display: none;
+            }
+            .d {
+                display: none;
+            }
+        }
+        &-first {
+            font-size: 23px;
+            color: #999;
+            font-weight: 300;
+            text-decoration: line-through;
+            padding-right: 20px;
+            letter-spacing: -1px;
+        }
+        &-selling {
+            font-size: 44px;
+            font-weight: 300;
+            letter-spacing: -3px;
+        }
+    }
+    #lnkTaksitSecenek {
+        display: table;
+        margin-top: 25px;
+    }
+    .ems-prd-add-to-cart {
+        margin-top: 20px;
+        .urunDetay_urunAdet {
+            display: none;
+        }
+        a.btnsepeteAt, a.btnStokHaberci {
+            min-width: $btnWidth;
+        }
+    }
+    .ems-prd-add-to-fav {
+        white-space: nowrap;
+        a.btnFavoriEkle {
+            &.selected {
+                .fav1 {
+                    display: none;
+                }
+                .fav0 {
+                    display: inline;
+                }
+            }
+        }
+    }
+    .ems-prd-social {
+        position: relative;
+    }
+    .ems-prd-zoom {
+        position: relative;
+    }
+    .ems-prd-icons {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .btn-set-1 {
+        margin-top: 10px;
+        max-width: $btnWidth;
+        a {
+            padding: 10px 0;
+        }
+    }
+}
+
+//zoom gallery
+.gallery-ready {
+    overflow: hidden;
+}
+.gallery-load-image {
+    @extend .full-loading;
+    .minus-gallery-body-inner {
+        @extend .full-loading;
+        &:after {
+            height: 50%;
+        }
+    }
+}
+.minus-gallery {
+    display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 9999; background: rgba(255,255,255,.7);
+    .minus-gallery-inner {
+        position: relative; width: 100%; height: 100%;
+        .minus-gallery-body {
+            width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+            .minus-gallery-body-inner {
+                text-align: center;
+                img {
+                    cursor: move;
+                }
+            }
+        }
+        .minus-gallery-footer {
+            display: none;
+        }
+    }
+    a.gallery-nav-btn {
+        position:absolute; top: 50%; z-index: 2; margin-top: -25px; font-size: 50px; cursor: pointer;
+        i {
+            display: none;
+        }
+        &.gallery-next-btn {right: 30px;}
+        &.gallery-prev-btn {left: 30px;}
+    }
+    &.no-navigation a.gallery-nav-btn {
+        display: none;
+    }
+
+    .gallery-ready & {
+        display: block;
+        opacity: 0;
+        @include setTransform(translateY(100%));
+        transition: all 0.33s ease;
+    }
+    .gallery-animate & {
+        opacity: 1;
+        @include setTransform(translateY(0));
+    }
+    .gallery-closed & {
+        opacity: 0;
+        @include setTransform(translateY(150%));
+    }
+}
+
+//lp redirect
+.lp-redirect {
+    display: table;
+    margin-bottom: 20px;
+    img {
+        display: block;
+    }
+}
+//kısa açıklama
+.prd-mini-desc {
+    .title {
+        font-family: $fontSite;
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .features-first {
+        margin-bottom: 20px;
+        ul.features li b {
+            font-weight: 700;
+        }
+    }
+    ul.features {
+        li {
+            line-height: 1.3;
+            color: #333;
+            b {
+                color: #999;
+                font-weight: 500;
+            }
+            .text {
+                display: none;
+            }
+        }
+    }
+}
+
+//ödüller
+.ems-prd-mini-description .prd-awards {display: none;}
+.prd-awards {
+    margin-top: 25px;
+    .title {
+        font-family: $fontSite;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    li {
+        position: relative;
+        margin-top: 10px;
+        i {
+            display: none;
+            position: absolute;
+            left: 15px;
+            top: -55px;
+            z-index: 2;
+            background: #fff;
+            padding: 20px;
+            box-shadow: -1px 3px 5px -3px #000;
+            white-space: nowrap;
+            font-weight: 700;
+            font-style: normal;
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                left: 15px;
+                border-width: 4px;
+                border-style: solid;
+                border-color: #fff transparent transparent #fff;
+            }
+            &:before {
+                border-color: #999 transparent transparent #999;
+                bottom: -10px;
+                left: 14px;
+                border-width: 5px;
+            }
+        }
+        img {
+            display: block;
+        }
+        &:hover {
+            i {
+                display: block;
+            }
+        }
+    }
+}
+
+//paylaş
+.share-it {
+    position: relative;
+    display: inline-block;
+    a.btn i {
+        margin-right: 5px;
+        vertical-align: -1px;
+    }
+    .share-buttons {
+        display: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 35px;
+        > ul {
+            position: relative;
+            background: #333;
+            padding: 10px 15px;
+            box-shadow: 0 3px 4px -2px #555;
+            white-space: nowrap;
+            li {
+                a {
+                    display: block;
+                    min-width: 50px;
+                    text-align: center;
+                    padding: 15px;
+                    font-size: 25px;
+                    color: #999;
+                    transition: color 0.32s cubic-bezier(0, -0.46, 0.99, -0.22);
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                right: 12px;
+                bottom: -12px;
+                border-width: 6px;
+                border-style: solid;
+                border-color: #333 transparent transparent transparent;
+            }
+        }
+    }
+    &:hover {
+        .share-buttons {
+            display: block;
+        }
+    }
+}
+
+//urun teknolojileri
+.prd-technology-info {
+    $outer: 23px;
+    $padding1: 13%;
+    $padding2: 4%;
+    .row {
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+        }
+        .col-img {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .col-text {
+            padding-left: $padding2;
+            padding-right: $padding1;
+            > p {
+                position: relative;
+                &:before {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 12px;
+                    font-weight: 700;
+                    background: #fff;
+                    border-radius: 100%;
+                    width: 15px;
+                    height: 15px;
+                    text-align: right;
+                    text-indent: 4px;
+                }
+            }
+        }
+        .title {
+            font-size: 44px;
+            font-weight: 300;
+            margin: 0 0 30px;
+            letter-spacing: -2px;
+        }
+        .btn-technology {
+            padding: 0;
+            text-decoration: underline;
+            margin-top: 15px;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+        &:nth-child(odd) {
+            direction: rtl;
+            > * {
+                direction: ltr;
+            }
+            .col-text {
+                padding-left: $padding1;
+                padding-right: $padding2;
+            }
+        }
+    }
+}
+a.btn-all-technology {
+    display: block;
+    padding: 42.5px !important;
+    text-decoration: underline;
+    background-image: url(#{$baseHref + "/images/frontend/bg-all-techology.png"});
+    background-size: cover;
+    font-size: 15px;
+}
+
+//urun teknik özellikler
+.prd-technical-info {
+    font-family: $fontSite;
+    color: #333;
+    a {text-decoration: none;}
+    .main-features {
+        > * {
+            width: 50%;
+            position: relative;
+            padding-top: 40px;
+        }
+        .inner-row-1 {
+            .image-ruler {
+                position: relative;
+                margin: 0 0 36px 14%;
+                width: 58%;
+                > img {
+                    display: block;
+                }
+                .ruler {
+                    position: absolute;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        border: 0px solid #ddd;
+                    }
+                    > b {
+                        position: relative;
+                        z-index: 4;
+                        background: #f6f6f6;
+                        display: inline-block;
+                        font-size: 15px;
+                        small {
+                            font-size: 100%;
+                            font-weight: 300;
+                        }
+                    }
+                    &.w-ruler {
+                        left: 0;
+                        bottom: -35px;
+                        width: 100%;
+                        text-align: center;
+                        &:before {
+                            border-top-width: 1px;
+                            top: 50%;
+                            right: 10%;
+                            left: 10%;
+                        }
+                        > b {
+                            padding: 10px 20px;
+                        }
+                    }
+                    &.h-ruler {
+                        left: -24%;
+                        top: 0;
+                        height: 100%;
+                        &:before {
+                            border-left-width: 1px;
+                            top: 10%;
+                            bottom: 10%;
+                            left: 50%;
+                        }
+                        b {
+                            padding: 20px 10px;
+                            top: 50%;
+                            margin-top: -28px;
+                            display: block;
+                            @include setTransform(rotate(-90deg));
+                        }
+                    }
+                }
+            }
+            .main-size {
+                width: 28%;
+                > ul {
+                    padding: 0 25px 40px;
+                    > li {
+                        margin-top: 25px;
+                        &:first-child {margin-top: 0;}
+                        small {
+                            display: block;
+                            font-size: 15px;
+                            color: #666;
+                            font-weight: 300;
+                            font-style: italic; 
+                        }
+                        b {
+                            display: block;
+                            margin-top: 5px;
+                            font-size: 23px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                .go-all-features {
+                    display: block;
+                    padding-left: 25px;
+                    > span {
+                        position: relative;
+                        font-size: $fontSizeDefault;
+                        font-weight: 700;
+                        line-height: 1.4;
+                        &:before {
+                            font-size: 9px;
+                            font-weight: 700;
+                            position: absolute;
+                            right: -15px;
+                            bottom: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .inner-row-2 {
+            padding-left: 85px;
+            .big-text {
+                font-size: 23px;
+                font-weight: 300;
+                margin-top: 0;
+            }
+            .small-text {
+                font-size: 15px;
+                color: #666;
+                font-weight: 300;
+                font-style: italic;
+            }
+            .prd-docs-tab {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .all-features {
+        padding: 30px 0;
+        > .title {
+            margin: 0 0 30px;
+            font-size: 44px;
+            font-weight: 200;
+        }
+        .all-features-list {
+            .features-block {
+                width: 50%;
+                padding-right: 15%;
+                color: #666;
+                padding-bottom: 40px;
+                > .title {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 23px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    max-width: 70%;
+                }
+                ul {
+                    li {
+                        font-family: $fontDefault;
+                        font-size: $fontSizeDefault;
+                        line-height: 1.5;
+                        > div {
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 50%;
+                            &.value {
+                                text-align: right;
+                            }
+                            .feature-info {
+                                position: relative;
+                                display: inline-block;
+                                margin-left: 5px;
+                                &:before {
+                                    vertical-align: -1px;
+                                    cursor: pointer;
+                                    position: relative;
+                                    z-index: 3;
+                                }
+                                .desc-wrapper {
+                                    display: none;
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    z-index: 10;
+                                    padding-bottom: 25px;
+                                    .desc {
+                                        position: relative;
+                                        width: 475px;
+                                        background: #fff;
+                                        padding: 20px 15px;
+                                        color: #333;
+                                        text-align: left;
+                                        box-shadow: -1px 3px 5px -3px #000;
+                                        &:before, &:after {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: -8px;
+                                            left: 15px;
+                                            border-width: 4px;
+                                            border-style: solid;
+                                            border-color: #fff transparent transparent #fff;
+                                        }
+                                        &:before {
+                                            border-color: #999 transparent transparent #999;
+                                            bottom: -10px;
+                                            left: 14px;
+                                            border-width: 5px;
+                                        }
+                                        img {
+                                            position: absolute;
+                                            left: 20px;
+                                            top: 20px;
+                                            max-width: 50px;
+                                            ~ .title, ~ p {
+                                                padding-left: 85px;
+                                            }
+                                        }
+                                        .title {
+                                            font-family: $fontSite;
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            margin: 0 0 10px 0;
+                                        }
+                                        p {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    .desc-wrapper {
+                                        display: block;
+                                    }
+                                }
+                                &.right-item {
+                                    .desc-wrapper {
+                                        left: auto;
+                                        right: 0;
+                                        .desc {
+                                            &:before, &:after {
+                                                border-color: #fff #fff transparent transparent;
+                                                left: auto;
+                                                right: 15px;
+                                            }
+                                            &:before {
+                                                border-color: #999 #999 transparent transparent;
+                                                left: auto;
+                                                right: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        @media screen and (max-width:$mobile-l){
+                            position: relative;
+                            div{
+                                position: static;
+                                .feature-info{
+                                    position: static;
+                                    .desc-wrapper{
+                                        .desc{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+//dokümanlar
+.mod-docs {
+    padding: 0 20px;
+    ul {
+        li {
+            margin-bottom: 20px;
+            .title {
+                font-size: 15px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            .ems-inline {
+                > div {
+                    position: relative;
+                    color: #666;
+                    font-weight: 300;
+                    margin-left: 30px;
+                    cursor: pointer;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    > a {
+                        &:before {
+                            content: "";
+                            display: inline-block;
+                            background-size: cover;
+                            width: 25px;
+                            height: 25px;
+                            margin-right: 7px;
+                            vertical-align: middle;                        
+                        }
+                    }
+                    &.download {
+                        a:before {
+                            background-image: url(#{$baseHref + "/images/frontend/icon-download.png"});
+                        }
+                    }
+                    &.send-mail {
+                        a:before {background-image: url(#{$baseHref + "/images/frontend/icon-mail.png"});}
+                    }
+                }
+            }
+        }
+    }
+}
+.send-mail {
+    .share-buttons {
+        display: none;
+        position: absolute;
+        width: 320px;
+        right: 30px;
+        top: -70px;
+        padding-bottom: 40px;
+        .ems-inline {
+            position: relative;
+            box-shadow: 0 3px 4px -2px #555;
+            input {
+                background: #333;
+                border-color: #333;
+                color: #999;
+                line-height: 54px;
+                padding-right: 118px;
+            }
+            a.btn-send {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                &:hover {
+                    background: $colorRed; border-color: $colorRed;
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                right: 12px;
+                bottom: -12px;
+                border-width: 6px;
+                border-style: solid;
+                border-color: #333 transparent transparent transparent;
+            }
+        }
+    }
+    &:hover {
+        .share-buttons {
+            display: block;
+        }
+    }
+    .share-buttons > div.ems-inline {
+        width: 100% !important;
+    }
+}
+
+//doküman paylaş
+.popupPaypas {
+    .ems-form {
+        padding: 20px 60px 0px;
+    }
+}
+
+//taksit seçenekleri
+.mod-payment-options {
+    margin: 20px 0 70px;
+}
+.popupTaksit {
+    .ems-page-product-detail & {
+        display: none;
+    }
+    .mod-payment-options & {
+        display: block;
+    }
+    .popupTitleTaksit, .popupTaksit_lbfAciklama {
+        display: none !important;
+    }
+    .gridTaksitBanka {
+        position: relative;
+        @extend .ems-container;
+        table {
+            border-spacing: 0;
+            padding: 0;
+        }
+        td {
+            padding: 0;
+        }
+        .gridRowTaksitBanka {
+            padding: 5px;
+        }
+        .taksit_banka {
+            font-size: 0;
+            img {
+                width: 100%;
+            }
+        }
+        .gridTaksitSecenek {
+            th, td {
+                padding: 15px 10px;
+                border: 1px solid #ebebeb;
+                font-family: $fontDefault;
+                color: #666;
+                text-align: center;
+            }
+            th {
+                background: #fff;
+                font-size: 12px;
+                color: #333;
+                font-weight: 700;
+            }
+            td {
+                &:nth-child(1) {
+                    width: 20% !important;
+                    background: #fff;
+                    text-align: center;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                &:nth-child(2) {
+                    width: 40% !important;
+                }
+                &:nth-child(3) {
+                    width: 40% !important;
+                }
+            }
+        }
+    }
+}
+//bayi fiyat
+.mod-seller-options {
+    margin: -30px auto 70px;
+    width: 100%;
+    max-width: $siteContainerWidth;
+    .ul1 {
+        li {
+            a.title {
+                display: table;
+                margin: 30px auto;
+                font-family: $fontDefault;
+                font-weight: 700;
+                position: relative;
+                padding-right: 24px;
+                &:before {
+                    position: absolute;
+                    right: 0;
+                    font-weight: 700;
+                }
+            }
+            .content {
+                display: none;
+            }
+            &.opened {
+                .content {
+                    display: block;
+                }
+            }
+        }
+    }
+    .KampanyaBaslik {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .KamTabloBaslik {
+        width: 50%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        margin: 0 auto;
+        th, td {
+            border: 1px solid #ebebeb;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background: #fff;
+        }
+    }
+}
+
+//detail sticky
+.prd-compact {
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background:#fff;
+    z-index:10;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 7px -2px #000;
+    .prd-compact-inner {
+        display: table;
+        width:100%;
+        table-layout: fixed;
+        max-width: $siteContainerWidthFull;
+        margin:0 auto;
+        font-family: $fontSite;
+        > div {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 11px 20px;
+            > div {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &.prd-compact-right {
+                text-align: right;
+            }
+        }
+        .ems-prd-name {
+            font-size: 23px;
+            color: #333;
+            font-weight: 700;
+            padding-right: 10px;
+            height: 23px;
+            overflow: hidden;
+        }
+        .ems-prd-cat-name {
+            font-size: 23px;
+            color: #999;
+            font-weight: 300;
+        }
+        .ems-prd-price {
+            > div {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 20px;
+            }
+            .ems-prd-price-first {
+                font-size: 16px;
+                font-weight: 300;
+                color: #999;
+                text-decoration: line-through;
+            }
+            .ems-prd-price-selling {
+                font-size: 30px;
+                font-weight: 500;
+                color: #333;
+            }
+        }
+        .urunDetay_urunAdet {
+            display: none;
+        }
+    }
+    .fixed-compact-menu-ready & {
+        display: block;
+    }
+}
+
+//rating
+.yorumRating,
+.yorumRating a:hover,
+.yorumRating a:active,
+.yorumRating a:focus,
+.yorumRating .puanSelected,
+.current-rating,
+.star-rating { background: url(#{$baseHref + "/images/frontend/icon-star.svg"}) no-repeat; background-size: 67px 34.5px; }
+.yorumRating, .star-rating {width: 67px; height: 15px; overflow: hidden; background-position: left top; position:relative;}
+.yorumRating a, .yorumRating .puanSelected, .current-rating {display:block; text-indent: -999em; height: 15px; line-height: 15px; outline: none; overflow: hidden; border: none; position: absolute;}
+.yorumRating .puanSelected, .current-rating {z-index: 1; background-position: left bottom; width:0%; height: 15px;}
+.yorumRating a:hover, .yorumRating a:active, .yorumRating a:focus {background-position: left bottom; }
+.yorumRating a.puan1 {width:20%; z-index:6;}
+.yorumRating a.puan2 {width:40%; z-index:5;}
+.yorumRating a.puan3 {width:60%; z-index:4;}
+.yorumRating a.puan4 {width:80%; z-index:3;}
+.yorumRating a.puan5 {width:100%; z-index:2;}
+.urunListe_yorum, .yorumOrtalamaPuan {
+    position: relative;
+    cursor: pointer;
+    > span[id$="lblURUNYORUM_ORTALAMAPUAN"] {
+        font-size: 11px;
+        color: #999;
+        position: absolute;
+        left: 73px;
+        top: 3px;
+        > b {
+            color: #ffb400;
+        }
+    }
+    .urunListe_yorumSayi {
+        display: none !important;
+    }
+}
+
+//urun liste yıldız gösterim
+.urunListe_ratingbar {
+    width: 72px;
+}
+.urunListe_ratingbar, .urunListe_ratingbar .current-rating {
+    background-size: 72px 36px;
+}
+.urunListe_yorum > span[id$="lblURUNYORUM_ORTALAMAPUAN"] {
+    left: 77px;
+}
+
+//yorum
+.mod-comments {
+    margin: 30px 0;
+}
+.yorumListe_main {
+    .ems-page-product-detail & {
+        display: none;
+    }
+    .mod-comments & {
+        display: block;
+    }
+    position: relative;
+    width: 90%;
+    max-width: 846px;
+    margin: 0 auto;
+    .tableTitleDefault {
+        display: block;
+        font-family: $fontSite;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .yorumOzet {
+        .tableTitleGenelDegerlendirme {
+            padding: 0 0 35px;
+            display: none;
+        }
+        .yorumOrtalamaPuan, .yorumOrtalamaPuanAyrintili {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+        .yorumOrtalamaPuan {
+            position: relative;
+            cursor: auto;
+            width: 30%;
+            [id$="lbfYORUMLAR_ORTALAMAPUAN"] {
+                position: relative;
+                display: block;
+                font-size: 12px;
+                color: #666;
+                text-align: center;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
+                    left: 0;
+                    border-top: 2px solid #ebebeb;
+                }
+                > i {
+                    position: relative;
+                    padding: 10px;
+                    background: #f6f6f6;
+                    color: #666;
+                }
+            }
+            [id$="lblYORUMLAR_ORTALAMAPUAN"] {
+                display: block;
+                font-family: $fontSite;
+                font-size: 44px;
+                font-weight: 500;
+                text-align: center;
+            }
+            .ratingOzet {
+                margin: 20px auto;
+            }
+        }
+        .yorumOrtalamaPuanAyrintili {
+            position: relative;
+            width: 70%;
+            > .ratingOzet {
+                margin-top: 17px;
+                &:first-child {
+                    margin-top: 0;  
+                }
+                > div {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 50%;
+                    &.ratingOzetAciklama {
+                        padding-right: 30px;
+                        text-align: right;
+                        font-weight: 700;
+                    }
+                    &.yorumPuanAyrintili {
+                        background: #fff;
+                        border: 1px solid #f4f4f4;
+                        padding: 3px;
+                        height: auto;
+                        .current-rating {
+                            background: #ffb400;
+                            height: 8px;
+                            position: static;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .yorumFiltre {
+        margin: 40px 0;
+        text-align: center;
+        ul.ulYorumFiltre {
+            display: inline-block;
+            > li {
+                display: inline-block;
+                vertical-align: top;
+                > span {
+                    display: block;
+                    a {
+                        position: relative;
+                        display: block;
+                        padding: 14px;
+                        min-width: 200px;
+                        border-width: 1px 0 1px 1px;
+                        border-style: solid;
+                        border-color: #ebebeb;
+                        font-family: $fontSite;
+                        font-size: 12px;
+                        color: #999;
+                        transition: all 0.32s ease;
+                     }
+                }
+                &:nth-child(3) {
+                    border: 1px solid #ebebeb;
+                    padding: 12px 15px 13px;
+                    [id$="lbfYORUMFILTRE_PUANAGORE"], .ratingFiltre {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    [id$="lbfYORUMFILTRE_PUANAGORE"] {
+                        margin-right: 10px;
+                        color: #999;
+                    }
+                }
+                &.filtreSelected {
+                    span {
+                        a {
+                            background: $colorRed;
+                            color: #fff;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                bottom: -10px;
+                                left: 50%;
+                                margin-left: -5px;
+                                border-width: 5px;
+                                border-style: solid;
+                                border-color: $colorRed transparent transparent transparent;
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+    .yorumListe {
+        .yorumListeTumu {}
+        .spnPaging {
+            display: block;
+            font-size: 15px;
+            color: #cecece;
+            margin-top: 10px;
+            > * {
+                display: inline-block;
+                padding: 9px 5px;
+                border: 1px solid transparent;
+            }
+            > span {
+                border-color: #e1e1e1;
+                background: #fff;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            &:empty {
+                display: none;
+            }
+        }
+        .yorum_main {
+            position: relative;
+            padding: 30px 0;
+            border-bottom: 1px solid #ebebeb;
+            .tableYorumListe_yorumAdSoyad {
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .tableYorumListe_yorumTarih {
+                font-weight: 700;
+                position: absolute;
+                right: 95px;
+                top: 32px;
+            }
+            .tableYorumListe_yorumBaslik {
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .tableYorumListe_yorumMesaj {
+                line-height: 1.5;
+            }
+            .tableYorumListe_uyeRating {
+                position: absolute;
+                right: 0;
+                top: 29px;
+            }
+            .tableYorumListe_yorumDogruBul, .tableYorumListe_yorumEvetHayir {
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: 30px;
+            }
+            .tableYorumListe_yorumDogruBul {
+                margin-right: 20px;
+            }
+            .tableYorumListe_yorumEvetHayir {
+                a.btnDefault {
+                    @extend .btn-color2;
+                }
+                a.btnYorumGonderEvet {
+                    margin-right: 4px;
+                }
+            }
+            .thx {
+                margin: 10px 0;
+                font-weight: 700;
+                font-style: italic;
+            }
+            .tableYorumListe_yorumOnay {
+                font-style: italic;
+                > span {
+                    &[id$="lbfYorumEvet"] {
+                        margin-left: 10px;
+                        margin-right: 3px;
+                        color: #107600;
+                    }
+                    &[id$="lblYorumEvet"] {
+                        color: #107600;
+                    }
+                    &[id$="lbfYorumHayir"] {
+                        margin-left: 10px;
+                        margin-right: 3px;
+                        color: $colorRed;
+                    }
+                    &[id$="lblYorumHayir"] {
+                        color: $colorRed;
+                    }
+                }
+            }
+            .tableYorumListe_uyeRating {
+                > span {
+                    display: none;
+                }
+            }
+        }
+    }
+    .yorumEkle {
+        border-top: 1px solid #ebebeb;
+        .tableTitleYorumYap {
+            padding: 35px 0;
+        }
+        [id$="pnlYorumEkle"] {
+            max-width: 570px;
+            margin: 0 auto;
+            > div {
+                margin-bottom: 25px;
+                > span {
+                    display: block;
+                    margin-bottom: 7px;
+                    font-weight: 700;
+                }
+            }
+            .dvKullaniciAdi {
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                .spnUYE_ADSOYAD {
+                    display: none;
+                }
+            }
+            .dvYorumBaslik {
+                input {
+                    width: 100% !important;
+                }
+            }
+            .dvYorumPuan {
+                > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-bottom: 0;
+                }
+                > span {
+                    margin-right: 10px;
+                }
+            }
+            div.btnYorumGonder {
+                text-align: center;
+                .yorumDurum {
+                    margin: 20px 0;
+                }
+                a.btnYorumGonder {
+                    text-align: center;
+                    min-width: 280px;
+                }
+            }
+        }
+    }
+
+    .tableYorumListe_yorumYas, .tableYorumListe_yorumUyelikTar, .tableYorumListe_yorumAdres, .tableYorumListe_yorumProfilFoto, .yorumYap, .yapilanYorum, .yorumListeTumuBaslik {
+        display: none !important;
+    }
+}
+
+.no-comment {
+    .yorumOzet, .yorumFiltre, .yorumListe {
+        display: none !important;
+    }
+    .yorumListe_main .yorumEkle {
+        border-top: none;
+        .tableTitleYorumYap {
+            padding-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-p) {
+    .ems-prd-detail {
+        .ems-prd-detail-inner {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    //ödüller
+    .prd-awards {
+        li {
+            margin-right: 10px;
+        }
+    }
+    //urun teknolojileri
+    .prd-technology-info {
+        $padding1: 30px;
+        $padding2: 30px;
+        .row {
+            > * {
+                @include outer-block;
+            }
+            .col-text {
+                padding: 15px $padding1 0 $padding2 !important;
+            }
+            .title {
+                font-size: 44px;
+                line-height: 1.1;
+                margin-bottom: 20px;
+                letter-spacing: -1px;
+            }
+            p {
+                font-size: 15px;
+            }
+            .btn-technology {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    a.btn-all-technology {
+        padding: 30px 20px !important;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    //urun teknik özellikler
+    .prd-technical-info {
+        .main-features {
+            @include outer;
+            > * {
+                @include outer-block;
+                padding-top: 20px;
+            }
+            .inner-row-2 {
+                padding-left: 0;
+                padding-top: 30px;
+                .big-text {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                .small-text {
+                    font-size: 13px;
+                    font-style: normal;
+                }
+            }
+        }
+        .all-features {
+            @include outer;
+            .all-features-list {
+                .features-block {
+                    padding-right: 6%;
+                }
+            }
+        }
+    }
+
+    //dokümanlar
+    .prd-docs-tab {
+        .navigation-js {
+            max-width: 320px;
+        }
+    }
+    .mod-docs {
+        padding-left: 0;
+        padding-right: 0;
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 40px;
+            }
+        }
+    }
+    //taksit seçenekleri
+    .mod-payment-options, .mod-seller-options {
+        @include outer-block;
+        @include outer-mobile;
+    }
+
+    //detail sticky
+    .prd-compact {
+        .prd-compact-inner {
+            > div {
+                &.prd-compact-left {
+                    width: 275px;
+                }
+            }
+            .ems-prd-name {
+                padding-right: 0;
+                font-size: 18px;
+            }
+            .ems-prd-cat-name {
+                font-size: 15px;
+            }
+            .ems-prd-price {
+                .ems-prd-price-first {
+                    font-size: 15px;
+                }
+                .ems-prd-price-selling {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    //detail sticky
+    .prd-compact {
+        .fixed-compact-menu-ready & {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-l){
+    .ems-page-product-detail{
+        .urunNavigasyon {
+            border-top: 1px solid #ebebeb;
+            padding: 0;
+            > span > a {
+                display: none;
+                &:last-child {
+                    display: block;
+                    margin-top: 0;
+                    margin-right: 0;
+                    padding: 17px 20px 17px 50px;
+                    font-size: 15px;
+                    color: #333;
+                    font-weight: 400;
+                    &:before {
+                        display: none;
+                    }
+                    &:after {
+                        content: "\e91a";
+                        font-family: 'icomoon' !important;
+                        speak: none;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        position: absolute;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .ems-prd-detail{
+        & > &-inner{
+            display: inline-block;
+            vertical-align: top;
+            padding-left: $singleOuterMobile;
+            padding-right: $singleOuterMobile;
+            padding-bottom: 20px;
+            width: 100%;
+                .inner-row-1{
+                    display: block;
+                    width: 100%;
+                    .thumb-gallery{
+                        float: none;
+                            .thumb-pager{
+                                display: none;
+                            }
+                    }
+                    .swiper-container .bx-default-pager{
+                        position: static;
+                        display: inline-block;
+                        width: 100%;
+                        vertical-align: top;
+                    }
+                     .bx-default-pager{
+                        margin: 0 auto;
+                        > .swiper-pagination-bullet {
+                            width: 12px;
+                            height: 12px;
+                            margin: 10px 5px;
+                            background-color: #cccccc;
+                            &-active {
+                                border-color: $colorRed;
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+                .inner-row-2{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                .ems-prd-name {
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                .ems-prd-cat-name {
+                    font-size: 16px;
+                    color:#999999;
+                    font-weight:700;
+                }
+                .prd-mini-desc{
+                    font-size: 14px;
+                }
+                .ems-prd-mini-description{
+                    .lp-redirect{
+                        display: inline-block;
+                    }
+                }
+                .ems-prd-rating{
+                    .star-rating{
+                        margin: 0 auto;
+                        float: none;
+                    }
+                }
+                .ems-prd-price {
+                    float: left;
+                    max-width: 40%;
+                }
+
+                #lnkTaksitSecenek {
+                    display: none !important;
+                }
+                .ems-prd-add-to-cart{
+                    float: right;
+                    max-width: 60%;
+                    &:after{
+                        content: ' ';
+                        display: inline-block;
+                        width: 100%;
+                    }
+                    a.btnsepeteAt,
+                    a.btnStokHaberci {
+                        min-width: 0;
+                    }
+                }
+                .ems-prd-price-first {
+                    font-size: 18px;
+                    letter-spacing: normal;
+                    padding-right: 0;
+                    text-align: left;
+                }
+
+                .ems-prd-price-selling {
+                    font-size: 25px;
+                    letter-spacing: -2px;
+                    font-weight: 500;
+                    text-align: left;
+                }
+                .btn-set-1 {
+                    max-width: none;
+                    margin-top: 20px;
+                    .ems-prd-add-to-fav > a,
+                    .share-it > a{
+                        color: #f21;
+                        font-size: 13px;
+                    }
+                    .ems-prd-add-to-fav {
+                        text-align: left;
+                    }
+                }
+        }
+
+        .prd-info-tab{
+            > .ems-tab-inner{
+                > ul.lvl1{
+                    > li {
+                        padding: 0;
+                        border-top: 1px solid #999;
+                        &:last-child {
+                            border-bottom: 1px solid #999;
+                        }
+                        > a.title {
+                            font-size: 17px;
+                            box-shadow: none;
+                            padding: 21px 20px;
+                            span {
+                                padding-left: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //urun teknolojileri
+        .prd-technology-info {
+            $padding1: 30px;
+            $padding2: 30px;
+            .row {
+                .title {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        a.btn-all-technology {
+            padding: 30px 20px !important;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .prd-docs-tab{
+            .navigation-js{
+                max-width: none;
+            }
+        }
+        .mod-docs{
+            margin-top: 20px;
+            ul li{
+                margin-left: 0;
+                margin-right: 0;
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+                .title{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                }
+                .ems-inline{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                }
+            }
+        }
+
+        .prd-technical-info{
+            .row {
+                .title {
+                    font-size: 25px;
+                }
+            }
+
+            .all-features{
+                > .title{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                }
+                &-list{
+                    .features-block {
+                        width: 100%;
+                        padding-right: 0;
+                        padding-bottom: 20px;
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                        > .title {
+                            font-size: 16px;
+                            letter-spacing: -1px;
+                        }
+                        > ul {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .popupTaksit{
+            .gridTaksitBanka{
+                .gridRowTaksitBanka {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .mod-seller-options {
+            margin-top: -70px;
+            margin-bottom: 30px;
+            .KampanyaBaslik {
+                font-size: 16px;
+            }
+            .KamTabloBaslik {
+                width: 100%;
+            }
+        }
+    }
+    
+    //doküman paylaş
+    .popupPaypas {
+        .ems-form {
+            padding-left: $singleOuterMobile;
+            padding-right: $singleOuterMobile;
+        }
+    }
+
+    //yorum
+    .yorumListe_main {
+        @include outer-block;
+        @include outer-mobile;
+        .yorumFiltre {
+            display: none;
+        }
+        .yorumOzet {
+            .yorumOrtalamaPuan, .yorumOrtalamaPuanAyrintili {
+                width: 100%;
+            }
+            .yorumOrtalamaPuanAyrintili {
+                margin-top: 30px;
+                > .ratingOzet {
+                    > div.ratingOzetAciklama {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .yorumListe {
+            margin-top: 30px;
+            border-top: 1px solid #ebebeb;
+            padding-top: 20px;
+            .tableTitleDefault {
+                font-size: 13px;
+            }
+            .yorum_main {
+                .tableYorumListe_yorumAdSoyad {
+                    padding-top: 25px;
+                }
+                .tableYorumListe_yorumBaslik {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                .tableYorumListe_yorumDogruBul, .tableYorumListe_yorumEvetHayir {
+                    @include outer-block;
+                    margin-top: 0;
+                }
+                .tableYorumListe_yorumDogruBul {
+                    margin-right: 0;
+                    margin-top: 20px;
+                }
+                .tableYorumListe_yorumEvetHayir {
+                    margin-top: 10px;
+                }
+                .tableYorumListe_yorumOnay {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .yorumOrtalamaPuan > span[id$="lblURUNYORUM_ORTALAMAPUAN"] {
+        position: static;
+        margin-top: 10px;
+        display: block;
+        font-size: 13px;
+    }
+}

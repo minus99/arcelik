@@ -1,0 +1,58 @@
+// General Definations
+//test 
+$baseHref: '//epm.test.arcelik.com';
+//canlı cdn $baseHref: '//img-arcelik.mncdn.com';
+//canlı $baseHref: '';
+
+// Typography
+$fontDefault: "arial";
+$fontSite: "Gotham Rounded";
+$fontSite2: "Gotham";
+$fontSizeDefault: 12px;
+
+// Colors
+$colorDefault: #333;
+$colorRed: #ED1C24;
+$colorRedDark: #D01219;
+
+// Layout
+$siteContainerWidth: 1006px;
+$siteContainerWidthFull: 1440px;
+$singleOuter: 15px;
+$singleOuterMobile: 20px;
+
+//breakpoints
+$laptop-l:  1440px + 1;
+$laptop-m:  1270px + 1;
+$tablet-p:  1024px + 1;
+$tablet:    768px + 1;
+$mobile-p:  765px + 1;
+$mobile-l:  425px + 1;
+$mobile-m:  375px + 1;
+$mobile-s:  320px + 1;
+
+//mixins
+    @mixin user-select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+    user-select: $value;
+    }
+    //outer
+    @mixin outer-block {
+        display: block;
+        width: auto;
+    }
+    @mixin outer {
+        margin-left: $singleOuter;
+        margin-right: $singleOuter;
+    }
+    @mixin outer-mobile {
+        margin-left: $singleOuterMobile;
+        margin-right: $singleOuterMobile;
+    }
+    //clear-table-cell
+    @mixin clear-table-cell {
+        display: inline-block;
+        width: 100% !important;
+    }

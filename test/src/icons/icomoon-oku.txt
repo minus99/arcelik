@@ -1,0 +1,4 @@
+- "zip > fonts" klasörü içindeki ikon fontlar "***/styles/fonts/icomoon" klasörüne atýlacak.
+
+- site üzerinde hangi ikonlarýn kullanýldýðýný guide olarak görebilmek için;
+test ortamýnda "zip > tüm dosyalar" "site-test-url/styles/fonts/icomoon/demo" klasörüne atýlacak. (".html" uzantýlarýný ".htm" yapýlýrsa tarayýcý üzerinde görüntülenebilir.)

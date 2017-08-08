@@ -1,0 +1,108 @@
+@mixin fontFace($family, $url, $fontWeight: normal, $fontStyle: normal) {
+	@font-face {
+		font-family: $family;
+		src: url(#{$baseHref + $url + '.eot'});
+		src: url(#{$baseHref + $url + '.eot?#iefix'}) format('embedded-opentype'), 
+			 url(#{$baseHref + $url + '.woff'}) format('woff'),
+			 url(#{$baseHref + $url + '.ttf'}) format('truetype');
+		font-weight: $fontWeight;
+		font-style: $fontStyle;
+	}
+}
+
+@mixin setAbsolute {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin setTransform($value) {
+	-webkit-transform: $value; 
+	-ms-transform: $value; 
+	transform: $value; 
+}
+
+@mixin vAlign {
+	position: relative;
+	top: 50%;
+	@include setTransform(translateY(-50%));
+}
+
+@mixin userSelectNone(){
+	-webkit-user-select: none;  
+	-moz-user-select: none;     
+	-ms-user-select: none;      
+	user-select: none;  
+}
+
+@mixin transition($transition: all 1s ease-out) {
+	transition: #{$transition};
+	-webkit-transition: #{$transition};
+	-o-transition: #{$transition};
+}
+
+@mixin animation($name) {
+  -webkit-animation: #{$name};
+  -moz-animation: #{$name};
+  -ms-animation: #{$name};
+  -o-animation: #{$name};
+  animation: #{$name};      
+}
+
+@mixin animationDuration ($duration: 1s){
+	-webkit-animation-duration:$duration;
+	animation-duration:$duration;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }  
+    @-ms-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }  
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin hide {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	max-height: 0;
+    min-height: 0;
+    max-width: 0;
+    min-width: 0;
+}
+
+@mixin flex{
+	box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flexDirection($direction: row){
+	-webkit-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin flexAuto{
+	-webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}

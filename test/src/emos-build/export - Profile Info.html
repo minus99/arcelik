@@ -1,0 +1,47 @@
+<div class="row-holder-1 ems-inline-table reverse">
+    <div class="row-1">
+        <div class="colorbox-wrapper">
+        <EMOSLOOP source="S_EXP_USERPROFIL" param="@UYE_KOD=$$session.UYE_KOD$$|@LNG_CULTURENAME=$$request.lang$$|@KAC_SIPGOSTERILSIN=1" tablenum="0">
+            <div class="colorbox color1 full">
+                <div class="title">SON SİPARİŞİNİZ</div>
+                <div class="badge-rt">$$SSM_DURUM$$</div>
+                <table class="last-order">
+                    <tbody>
+                        <!--<tr>
+                            <td class="order-no"><b>Sipariş Numarası</b><span>$$SSM_NO$$</span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>-->
+                        <tr>
+                            <td class="order-no"><b>Sipariş Numarası</b><span>$$SSM_NO$$</span></td>
+                            <td class="order-qty"><b>Adet</b><span>$$URN_TOPLAM$$</span></td>
+                            <td class="order-date"><b>Tarih</b><span>$$SSM_TARIH$$</span></td>
+                            <td class="order-total"><b>Tutar</b><span>$$SSM_SIPTOPLAMTUTAR$$</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="btn-full-link" href="/uyeIslem/siparisdetay.aspx?ID=$$SSM_NO$$&lang=tr-TR">Siparişlerim</a>
+            </div>
+            </EMOSLOOP>
+            <EMOSLOOP source="S_EXP_USERPROFIL" param="@UYE_KOD=$$session.UYE_KOD$$|@LNG_CULTURENAME=$$request.lang$$|@KAC_SIPGOSTERILSIN=1" tablenum="1">
+            <div class="colorbox color2">
+                <div class="title">FAVORİLERİM</div>
+                <div class="qty"><i>$$FAVORI_TOPLAM$$</i> <span>adet &uuml;r&uuml;n takip ediyorsunuz</span></div>
+                <a class="btn-full-link" href="/uyeIslem/favorilistem.aspx?lang=tr-TR">Favorilerim</a>
+            </div>
+            <div class="colorbox color4">
+                <div class="title">MESAJLARIM</div>
+                <div class="qty"><i>$$MESAJ_TOPLAM$$</i> <span>okunmamış mesajınız var</span></div>
+                <a class="btn-full-link" href="/mesaj/mesaj.aspx?lang=tr-TR">Mesajlarım</a>
+            </div>
+            </EMOSLOOP>
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="member-coupon ems-none">
+            <div class="title">KULLANILABİLİR HEDİYE &Ccedil;EKİ</div>
+            <div class="price">0.00 <span class="pb1">TL</span></div>
+            <div class="coupon-code">&Ccedil;EK NO: test</div>
+        </div>
+    </div>
+</div>

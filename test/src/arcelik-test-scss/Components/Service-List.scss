@@ -1,0 +1,384 @@
+.pageservis{display:none !important;}
+.service-list-holder{
+    font-family: $fontSite;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    .service-sidebar{
+        width: 100%;
+        max-width: 360px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: 2;
+        padding:20px;
+        .service-nav{
+            position: relative;
+        }
+        .service-list{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: calc(100% - 130px);
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            overflow: auto;
+            padding: 10px 20px;
+            .servis_bilgi {
+                font-size: 15px;
+                color: #666;
+                font-weight: 700;
+                margin-bottom: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            @at-root {
+            .servis_bilgi-dynamic {
+                display: none;
+            }
+            }
+            .servis_bilgi-dynamic {
+                display: block;
+                font-family: $fontDefault;
+                font-weight: 500;
+                line-height: 1.2;
+                .title {
+                    font-family: $fontSite;
+                    font-size: 16px;
+                    margin: 0;
+                }
+                .desc {
+                    margin-top: 20px;
+                }
+                .wtb {
+                    margin-top: 20px;
+                }
+            }
+            .pServisListe {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                border: 1px solid #ebebeb;
+                padding: 0 20px 20px;
+                font-family: $fontDefault;
+                color: #666;
+                position: relative;
+                margin: 30px 0;
+                > * {
+                    display: none;
+                    margin-top: 14px;
+                    &:empty {
+                        display: none !important;
+                    }
+                }
+                span.distance-service {
+                    background: #f21;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-top: -17px !important;
+                    text-align: center;
+                    line-height: 50px;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+                .divServisListe_FirmaAdi, .divServisListe_Email, .divServisListe_Adres, .divServisListe_Telefon, .divServisListe_Koordinat {
+                    display: block;
+                }
+                .divServisListe_FirmaAdi {
+                    font-family: $fontSite;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 1.3;
+                }
+                .divServisListe_Koordinat {
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+                .divServisListe_Adres {
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        .service-view{
+            display: none;
+        }
+        .service-type{
+            width: 100%;
+            height: auto;
+            padding: 0 40px 0 20px;
+            margin-bottom: 40px;
+            > li{
+                width: 100%;
+                display: none;
+                &.selected{
+                    display: block;
+                }
+                > a{
+                    display: block;
+                    font-size: 30px;
+                    line-height: 34px;
+                    font-weight: 200;
+                }
+            }
+        }
+        .service-location{
+            width: 100%;
+            height: auto;
+            padding: 0 20px 30px;
+            border-bottom:1px solid #ebebeb;
+            > li {
+                width: 100%;
+                margin-bottom: 10px;
+                display: none;
+                &.location-change-search{
+                    display: block;
+                    padding-top: 50px;
+                    a.change-search-btn{
+                        color: #333333;
+                        font-size: 12px;
+                        font-weight: 700;
+                        display: inline-block;
+                        vertical-align: top;
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+                &.location-share {
+                    display: block;
+                    a.location-share-btn {
+                        > span {
+                            display: inline-flex;
+                            align-items: center;
+                            i {
+                                margin-right: 5px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .obj-title{display: none;}
+            }
+            .dropdown > span, input {
+                background: #ebebeb;
+                font-size: 15px;
+                color: #333;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+    
+    .service-map{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 360px;
+                .ajx-service & {
+                @extend .full-loading;
+            }
+    }
+    .call-center {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.2;
+        > a {
+            display: block;
+            margin-bottom: 25px;
+            i {
+                display: block;
+                margin-top: 10px;
+                font-size: 46px;
+                color: $colorRed;
+                font-weight: 200;
+                font-style: normal;
+            }
+        }
+    }
+
+    //mağazalar
+    &.arcelik-magazalar {
+        .obj-service {
+            display: none;
+        }
+    }
+
+    //servisler
+    &.yetkili-servis {
+        .obj-dealer {
+            display: none;
+        }
+    }
+
+    //secerek
+    &.search-typ-1 {
+        .service-sidebar {
+            .service-location {
+                .city-list,
+                .county-list,
+                .location-search-btn,
+                .location-change-search a.change-search-btn span.type-2 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    //yazarak
+    &.search-typ-2 {
+        .service-sidebar {
+            .service-location {
+                .location-search-input,
+                .location-search-btn,
+                .location-change-search a.change-search-btn span.type-1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    //sonuc
+    &.service-view-list.service-found {
+        .service-sidebar {
+            .service-type {
+                margin-bottom: 10px;
+            }
+            .service-location {
+                display: block;
+                padding-top: 0;
+                padding-bottom: 0;
+                border: none;
+                > li {
+                    display: none;
+                    &.new-search {
+                        display: block;
+                        font-weight: 300;
+                        &:before {
+                            content: "« ";
+                        }
+                    }
+                }
+            }
+            .call-center {
+                display: none;
+            }
+            .service-list {
+                display: block;
+            }
+        }
+    }
+}
+.marker-customize {
+    position: relative;
+    font-family: $fontDefault;
+    font-size: 14px;
+    color: #fff;
+    word-break: break-word;
+    > * {
+        display: none;
+        margin: 10px 0;
+        &:empty {
+            display: none !important;
+        }
+    }
+    .distance-service, .divServisListe_FirmaAdi, .divServisListe_Email, .divServisListe_Adres, .divServisListe_Telefon, .divServisListe_Koordinat {
+        display: block;
+    }
+    .divServisListe_FirmaAdi {
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding-right: 40px;
+    }
+    .distance-service {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 100%;
+        text-align: center;
+        background: $colorRed;
+        color: #fff;
+        font-weight: 700;
+    }
+    .divServisListe_Telefon {
+        a span:before {
+            margin-right: 5px;
+            vertical-align: -3px;
+            font-size: 17px;
+        }
+    }
+    .divServisListe_Koordinat {
+        margin-top: 30px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.ems-infoBuble-close {
+    display: inline-block !important;
+    max-width: 32px !important;
+    top: 15px !important;
+    right: 15px !important;
+    width: 32px;
+    height: 32px;
+    max-height: 32px !important;
+}
+[class*="_ibani_"] {
+    > div {
+        height: auto !important;
+    }
+}
+
+
+@media screen and (max-width: $mobile-l) {
+    .service-list-holder {
+        height: auto;
+        .service-sidebar {
+            position: static;
+            padding: 0;
+            max-width: none;
+            .service-type {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .service-list {
+                position: static;
+                height: auto;
+            }
+            .service-location {
+                > li.location-change-search {
+                    padding-top: 30px;
+                    a.change-search-btn {
+                        font-size: 15px;
+                    }
+                }
+                > li.location-share {
+                    margin-top: 25px;
+                    a.location-share-btn {
+                        font-size: 15px;
+                        > span {
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .service-map {
+            display: none;
+        }
+    }
+}

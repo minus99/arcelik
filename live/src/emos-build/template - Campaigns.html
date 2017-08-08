@@ -1,0 +1,108 @@
+---liste Campaigns (MAIN)
+<div class="campaign-wrapper" data-kod="$prmIcrKod$" data-start="$prmIcerikBasTarih$" data-finish="$prmIcerikBitTarih$">
+    <div class="campaign-list-item">
+        <div class="colm-img">
+            <a href="$prmIcerikLink$">
+            <img src="$prmImg$"/>
+            </a>
+        </div>
+        <div class="colm-text">
+            <div class="text-wrapper">
+                <h6 class="title">$prmTitle$</h6>    
+                <p class="summary">$prmTiny$</p>
+                <div class="description">
+                    <p>$prmDesc$.. <a href="javascript:void(0);" class="more-info" data-id="$prmIcrKod$">Daha Fazla</a></p>
+                </div>
+                <div class="single" rel="$prmIcrKod$">
+                    <div class="ems-popup-title">$prmTitle$</div>    
+                    <div class="ems-popup-content">
+                        <p>$prmTiny$</p>
+                        $prmSingle$
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <!--
+                    <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'typeProduct%')">
+                        <a href="javascript:void(0);" class="btn btn-product-open">DETAYLI BİLGİ</a>
+                    </EMOSIF>
+                    -->
+                    <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'typeLink%')">
+                        <a href="$prmLink$" class="btn">DETAYLI BİLGİ</a>
+                    </EMOSIF>
+                    <a href="/arcelik-bayileri/" class="btn btn-text">— MAĞAZA BUL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'typeProduct%')">
+    <div class="campaign-products-wrapper opened">
+        <div class="campaign-product-slider swiper-container theme-light prev-next-vertical">
+            <div class="swiper-inner ems-prd-list ems-container">
+                <div class="page-top-title"><b>kampanyaya</b> dahil ürünler</div>
+                <ul class="emosInfinite ems-inline swiper-wrapper">getTemplate[604]</ul>
+            </div>
+            <div class="bx-controls-direction">
+                <a class="bx-prev" href="javascript:void(0);"><i class="icon-arrow-01-l">&nbsp;</i></a>
+                <a class="bx-next" href="javascript:void(0);"><i class="icon-arrow-01-r">&nbsp;</i></a>
+            </div>
+        </div>
+    </div>
+    </EMOSIF>
+</div>
+
+---detay Campaigns (MAIN)
+<div class="icerikTemplateListeItem">
+<div class="campaign-wrapper" data-kod="$prmIcrKod$" data-start="$prmIcerikBasTarih$" data-finish="$prmIcerikBitTarih$">
+    <div class="campaign-list-item">
+        <div class="colm-img">
+            <a href="$prmIcerikLink$">
+            <img src="$prmImg$"/>
+            </a>
+        </div>
+        <div class="colm-text">
+            <div class="text-wrapper">
+                <a href="/kampanyalar/" class="btn btn-text btn-back"><i class="icon-arrow-02-l"></i>TÜM KATEGORİLER</a>
+                <h6 class="title">$prmTitle$</h6>    
+                <p class="summary">$prmTiny$</p>
+                <div class="description">
+                    <p>$prmDesc$.. <a href="javascript:void(0);" class="more-info" data-id="$prmIcrKod$">Daha Fazla</a></p>
+                </div>
+                <div class="single" rel="$prmIcrKod$">
+                    <div class="ems-popup-title">$prmTitle$</div>    
+                    <div class="ems-popup-content">
+                        <p>$prmTiny$</p>
+                        $prmSingle$
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <!--
+                    <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'typeProduct%')">
+                        <a href="javascript:void(0);" class="btn btn-product-open">DETAYLI BİLGİ</a>
+                    </EMOSIF>
+                    -->
+                    <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'typeLink%')">
+                        <a href="$prmLink$" class="btn">DETAYLI BİLGİ</a>
+                    </EMOSIF>
+                    <a href="/arcelik-bayileri/" class="btn btn-text">— MAĞAZA BUL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'typeProduct%')">
+    <div class="campaign-products-wrapper opened">
+        <div class="campaign-product-slider swiper-container theme-light prev-next-vertical">
+            <div class="swiper-inner ems-prd-list ems-container">
+                <div class="page-top-title"><b>kampanyaya</b> dahil ürünler</div>
+                <ul class="emosInfinite ems-inline swiper-wrapper">getTemplate[604]</ul>
+            </div>
+            <div class="bx-controls-direction">
+                <a class="bx-prev" href="javascript:void(0);"><i class="icon-arrow-01-l"></i></a>
+                <a class="bx-next" href="javascript:void(0);"><i class="icon-arrow-01-r"></i></a>
+            </div>
+        </div>
+    </div>
+    </EMOSIF>
+</div>
+</div>
+
+<style>.ems-form.campaign-search{display:none;}</style>

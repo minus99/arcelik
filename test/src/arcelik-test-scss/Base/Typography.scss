@@ -1,0 +1,20 @@
+//icomoon
+@include fontFace('icomoon', '/styles/fonts/icomoon/icomoon', normal, normal);
+//gotham
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-Bold', 700, normal);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-BoldItalic', 700, italic);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-Medium', 400, normal);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-MediumItalic', 400, italic);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-Book', 300, normal);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-BookItalic', 300, italic);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-Light', 200, normal);
+@include fontFace('Gotham', '/styles/fonts/gotham/Gotham-LightItalic', 200, italic);
+//gotham-rounded
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-Bold', 700, normal);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-BoldItalic', 700, italic);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-Medium', 400, normal);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-MediumItalic', 400, italic);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-Book', 300, normal);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-BookItalic', 300, italic);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-Light', 200, normal);
+@include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-LightItalic', 200, italic);

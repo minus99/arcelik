@@ -1,0 +1,21 @@
+<div class="page-dropdown">
+    <b class="title">##convertLanguage(lbfExpKategori|$$request.lang$$|KATEGORİ)##</b>
+    <select onchange="window.location.href=$(this).val()">
+        <option value="javascript:void(0);">##convertLanguage(lbfExpSeciniz|$$request.lang$$|Seçiniz)##</option>
+    <EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L1" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD=$$request.icr$$">
+    <EMOSIF source="S_EXP_ICERIKPARAMETREROW#L1" condition="ICP_ICR_STYLE LIKE '%prd-home%'">
+    	<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L2" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD_REF=$$L1.ICP_ICR_KOD$$">
+        <option value="$$L2.ICP_ICR_SAYFAISMI$$">$$L2.prm1$$</option>
+    	</EMOSLOOP>
+    </EMOSIF>
+    <EMOSIF source="S_EXP_ICERIKPARAMETREROW#L1" condition="ICP_ICR_STYLE NOT LIKE '%prd-home%'">
+    	<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L3" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD=$$L1.ICP_ICR_KOD_REF$$">
+    	<option value="$$L3.ICP_ICR_SAYFAISMI$$">##convertLanguage(lbfExpHepsi|$$request.lang$$|HEPSİ)##</option>
+    	</EMOSLOOP>
+    	<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L2" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD_REF=$$L1.ICP_ICR_KOD_REF$$">
+        <option value="$$L2.ICP_ICR_SAYFAISMI$$"<EMOSIF source="S_EXP_ICERIKPARAMETREROW#L2" condition="ICP_ICR_KOD=$$L1.ICP_ICR_KOD$$"> selected</EMOSIF>>$$L2.prm1$$</option>
+    	</EMOSLOOP>
+    </EMOSIF>
+    </EMOSLOOP>
+    </select>
+</div>

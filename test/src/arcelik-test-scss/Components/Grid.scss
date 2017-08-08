@@ -1,0 +1,421 @@
+.ems-grid-default {
+    padding: 0 25px;
+    border: 1px solid #ebebeb;
+    > div {
+        position: relative;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        > div {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 15px 10px;
+            font-family: $fontSite;
+            font-size: 15px;
+            font-weight: 700;
+            word-break: break-word;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    .ems-grid-header {
+        display: none;
+        position: relative;
+        &:first-child {
+            display: table;
+            + .ems-grid-row {
+                border-top: none;
+            }
+        }
+        > div {
+            padding-top: 28px;
+        }
+    }
+    .ems-grid-row {
+        position: relative;
+        border-top: 1px solid #ebebeb;
+        //grid items
+        .ems-grid-img {
+            a {
+                border: 1px solid #ebebeb;
+            }
+            a, img {
+                display: block;
+                margin: 0 auto;
+            }
+            [id$="imageHref"] {
+                display: none !important;
+            }
+        }
+        [id$="lblProm"] ul {
+            display: table;
+            margin-top: 10px;
+            font-family: $fontSite; 
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.2;
+            &:empty {
+                display: none;
+            }
+            li > span {
+                display: inline-block;
+            }
+            .prom_ad {
+                margin-right: 5px;
+            }
+        }
+        .brFiyat, .satBrFiyat, .netFiyat, .topFiyat {display: none !important;}
+        .brFiyatVrg, .satBrFiyatVrg, .netFiyatVrg, .topFiyatVrg {display: block !important;}
+        .ems-grid-price {
+            > span {
+                display: block;
+                font-size: 23px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                &.pb1 {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    letter-spacing: inherit;
+                }
+            }
+            .topFiyatVrg, .gridSepetListe_gercekFiyat {
+                font-size: 15px;
+                color: #999;
+                font-weight: 300;
+                letter-spacing: 0;
+                text-decoration: line-through;
+                margin-bottom: 3px;
+            }
+            .d, [id$="lbfSEPET_KDV4"], [id$="lbfURN_KDVDAHIL"] {
+                display: none;
+            }
+        }
+        .piece-count {
+            position: relative;
+            display: inline-block;
+            line-height: 19px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            overflow: hidden;
+            > a {
+                display: inline-block;
+                font-size: 12px;
+                line-height: inherit;
+                padding: 0 6.4px;
+                transition: background .2s ease;
+                &:hover {
+                    background: #ebebeb;
+                }
+            }
+            input {
+                border: none;
+                padding: 0;
+                width: 26px !important;
+                height: 26px;
+                font-size: 12px;
+                line-height: inherit;
+                text-align: center;
+                background: #fff;
+                color: #333;
+            }
+        }
+    }
+}
+
+//stok
+.gridSepetStok {
+    margin: 5px 0 30px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    th, td {
+        border: 1px solid #eee;
+        text-align: center;
+        padding: 10px 5px;
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}
+//sifremi unuttum
+.tableSifremiUnuttum {
+    width: 100%;
+    table-layout: fixed;
+    font-family: $fontSite;
+    margin-top: 30px;
+    th, td {
+        display: block;
+        text-align: left;
+        padding: 5px;
+    }
+    .pageLogin_btnUyeSifreGonder {
+        th {
+            padding: 0;
+        }
+        table, a {
+            @extend .btn-full;
+        }
+    }
+}
+
+//custom grid
+.ems-grid-default {
+    //sepet
+    &.ems-grid-cart {
+        .ems-grid-img {
+            width: 140px;
+        }
+        .ems-grid-name {
+            width: 190px;
+        }
+        .ems-grid-prd-cfg {
+            font-family: $fontDefault;
+            font-size: 12px;
+            font-weight: 400;
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            a {
+                text-decoration: underline;
+            }
+            .ems-grid-delete {
+                margin-left: 20px;
+                &:empty {
+                    display: none;
+                }
+            }
+        }
+    }
+    //mesajlar
+    &.ems-grid-message {
+        *:empty {
+            display: none;
+        }
+        .ems-grid-row {
+            color: #999;
+            &.newMessage {
+                color: #333;
+            }
+        }
+        .col-holder-2 {
+            width: 125px;
+        }
+        > div > div > * {
+            display: block;
+        }
+        .ems-grid-status {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .ems-grid-title {
+            display: block;
+            margin-top: 5px;
+            font-weight: 300;
+        }
+        .ems-grid-order-id {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .ems-grid-date {
+            font-family: $fontDefault;
+            font-size: 12px;
+        }
+    }
+    //konsept-magaza
+    &.ems-grid-concept-store {
+        padding: 0;
+        > div > div {
+            text-align: center;
+        }
+        .ems-grid-row {
+            display: none;
+            border-top: none;
+            &.show{
+                display: table;
+            }
+            &:nth-child(even) {
+                background: #f7f8f9;
+            }
+            > div {
+                font-family: $fontDefault;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        .cr03 {
+            width: 35%;
+        }
+    }
+    //siparişlerim
+    &.ems-grid-order {
+        .ems-grid-date {
+            width: 12%;
+        }
+        .ems-grid-status {
+            width: 35%;
+        }
+        .ems-grid-detail {
+            > span {
+                display: none;
+            }
+        }
+        .ems-grid-row {
+            .ems-grid-status {
+                font-size: 12px;
+                > div {
+                    font-family: $fontDefault;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+
+    }
+    //sipariş detay
+    &.ems-grid-order-products {
+        padding: 0;
+        border: none;
+        .ems-grid-header:first-child {
+            display: none;
+        }
+        .ems-grid-img {
+            width: 65px;
+        }
+        .ems-grid-name {
+            width: 30%;
+        }
+    }
+    //favorilerim
+    &.ems-grid-favorites, &.ems-grid-follow-stock {
+        .ems-grid-header:first-child {
+            display: none;
+        }
+        .ems-grid-img {
+            width: 85px;
+            padding-right: 20px;
+        }
+        .ems-grid-price {
+            > span {
+                display: inline;
+            }
+        }
+        .ems-grid-img, .ems-grid-name, .ems-grid-price {
+            border-right: 1px solid #ebebeb;
+        }
+        .ems-grid-price, .ems-grid-remove {
+            text-align: center;
+        }
+    }
+    &.ems-grid-favorites {
+        .ems-grid-select {
+            width: 30px;
+        }
+    }
+    &.ems-grid-follow-stock {
+        .ems-grid-img {
+            width: 75px;
+        }
+    }
+    //&.asd
+}
+
+@media screen and(max-width: $tablet) {
+    //siparislerim
+    .ems-grid-default.ems-grid-order {
+        .ems-grid-status {
+            width: 25%;
+        }
+        .ems-grid-date {
+            width: 15%;
+        }
+        .ems-grid-total {
+            width: 15%;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-l) {
+    //custom grid
+    .ems-grid-default {
+        //sepet
+        &.ems-grid-cart {
+            padding: 0;
+            border: none;
+            padding-left: $singleOuterMobile;
+            padding-right: $singleOuterMobile;
+            border-bottom: 1px solid #ebebeb;
+            > div > div {
+                display: block;
+                text-align: left;
+                padding: 7px 5px;
+                font-size: 18px;
+            }
+            .ems-grid-header {
+                display: none;
+            }
+            .ems-grid-row {
+                padding-left: 100px;
+                padding-top: 0;
+                padding-bottom: 20px;
+            }
+            .ems-grid-img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100px;
+            }
+            .ems-grid-prd-cfg {
+                bottom: auto;
+                top: 7px;
+                right: -12px;
+                > * {
+                    @include outer-block;
+                    text-align: right;
+                }
+                .ems-grid-delete {
+                    margin-left: 0;
+                    margin-top: 25px;
+                    > a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        //konsept-magaza
+        &.ems-grid-concept-store {
+            @include outer-block;
+            @include outer-mobile;
+            > div {
+                display: inline-block !important;
+                vertical-align: top;
+                width: 50%;
+                border-bottom: 1px solid #ebebeb;
+                > div {
+                    display: block;
+                    padding: 0 10px;
+                    margin: 15px 0;
+                    font-size: 12px;
+                    line-height: 1.2;
+                }
+            }
+            .cr03 {
+                width: auto;
+                height: 43px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    //stok
+    .pageErrorStokKontrol, .gridSepetStok {
+        @include outer-block;
+        @include outer-mobile;
+    }
+}

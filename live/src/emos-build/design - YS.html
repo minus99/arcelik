@@ -1,0 +1,9 @@
+---export YS - Export
+<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L1" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_KOD_REF=48761" filter="prm1='$$request.shr$$'">
+  <EMOSIF source="S_EXP_ICERIKPARAMETREROW#L1" condition="'$$request.shr$$'<>''">
+  <EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L2" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_KOD_REF=48761|@TMP_KODLAR_RCV=631" filter="ICP_ICR_KOD=$$L1.ICP_ICR_KOD$$|prm1='$$request.ilc$$'">
+    <h1>Arçelik $$L1.ICP_ICR_BASLIK$$ $$L2.prm1$$ Yetkili Servisleri</h1>
+  $$L1.ICP_ICR_BASLIK$$ $$L2.prm1$$ Yetkili Servisleri adres ve telefon bilgilerine listemizden ulaşabilir, size en yakın $$L2.prm1$$ Yetkili Servisi için haritadan seçiminizi yapabilirsiniz. Ayrıca Arçelik Yetkili Servis Hattı 444 0 888 ile uzman servis ağımızdan her zaman destek alabilirsiniz. $$L1.ICP_ICR_BASLIK$$ $$L2.prm1$$ Yetkili Servisleri aşağıdaki bölgelerde hizmet vermektedir:<br/><br/> $$L2.prm2$$
+  </EMOSLOOP>
+  </EMOSIF>
+</EMOSLOOP>

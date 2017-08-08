@@ -1,0 +1,2233 @@
+//içerik ayarları
+.icerikTemplateListeContainer:empty, .icerikTemplateListeContainer > div:empty {display: none;}
+
+.icerikTemplateListeContainer{
+    .ems-page-list-container-expand & {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+}
+.icerikTemplateListeItem {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    //no-css here
+    .ems-page-listing-2 & {
+        width: (100% / 2);
+    }
+    .ems-page-listing-3 & {
+        width: (100% / 3);
+    }
+    .ems-page-listing-4 & {
+        width: (100% / 4);
+    }
+    .ems-page-listing-5 & {
+        width: (100% / 5);
+    }
+    .ems-page-listing-border &{
+        & > div{
+            border:1px solid #ebebeb;
+            width: 100%;
+        }
+    }
+}
+
+.w250 {
+    width: 250px;
+}
+
+//reverse
+.reverse {
+    direction: rtl;
+    > * {
+        direction: ltr;
+    }
+}
+.reverse-content {
+    &-odd {
+        > div:nth-child(odd) {
+            @extend .reverse;
+        }
+    }
+    &-even {
+        > div:nth-child(even) {
+            @extend .reverse;
+        }
+    }
+}
+
+//image & content
+.img-content {
+    background: #ebebeb;
+    > * {
+        vertical-align: middle;
+    }
+    .inner-row-2 {
+        padding: 40px;
+    }
+    .img {
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+}
+
+//content cfg
+.content-type1 {
+    font-family: $fontSite;
+    font-size: 14px;
+    font-weight: 300;
+    [class*="container-"] {
+        margin-left: auto;
+        margin-right: auto;
+        &.container-s {
+            max-width: 320px;
+        }
+        &.container-m {
+            max-width: 650px;
+        }
+        &.container-l {
+            max-width: 966px;
+        }
+    }
+    img {
+        vertical-align: middle;
+    }
+    a {
+        text-decoration: underline;
+    }
+    p, ul {
+        line-height: 1.5;
+    }
+    h5, h6 {
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font-size: 44px;
+        letter-spacing: -1.5px;
+    }
+    h6 {
+        font-size: 23px;
+        letter-spacing: -0.5px;
+    }
+}
+//tag cfg
+a.type1 {
+    text-decoration: underline;
+}
+
+//phone 7/24
+a.contact724 {
+    display: table;
+    margin-top: 60px;
+    font-family: gotham;
+    text-decoration: none;
+    span {
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    b {
+        display: block;
+        font-size: 40px;
+        font-weight: 200;
+        margin-top: 10px;
+    }
+}
+
+//colorbox
+.colorbox {
+    $colorboxOuter: 15px;
+    $width: 320px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: $width;
+    height: 188px;
+    margin: 5px;
+    color: #fff;
+    padding-bottom: 30px;
+    .title {
+        font-family: $fontSite;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 20px $colorboxOuter;
+    }
+    .last-order {
+        width: 94%;
+        table-layout: fixed;
+        padding: 0 $colorboxOuter;
+        margin-top: 38px;
+        td {
+            text-align: right;
+            white-space: nowrap;
+            b {
+                display: block;
+                padding: 3px 0;
+            }
+            span {
+                display: block;
+                padding: 3px 0;
+            }
+        }
+        .order-no {
+            text-align: left
+        }
+        .order-date {
+            span {
+                width: 65px;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-left: auto;
+            }
+        }
+    }
+    .qty {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 30px;
+        > i {
+            display: block;
+            text-align: center;
+            font-family: $fontSite;
+            font-size: 80px;
+            font-weight: 200;
+            font-style: normal;
+        }
+        > span {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+    .badge-rt {
+        background: rgba(255,255,255,.2);
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 90px;
+        font-family: $fontSite;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .btn-full-link {
+        font-size: 0;
+    }
+    &.full {
+        max-width: $width * 2 + 10;
+    }
+
+    &.color1 {
+        background: #fe5455;
+    }
+    &.color2 {
+        background: #5ac9ff;
+    }
+    &.color3 {
+        background: #32d36b;
+    }
+    &.color4 {
+        background: #fec824;
+    }
+}
+
+//kategori select
+.page-dropdown {
+    position: relative;
+    width: 320px;
+    .title {
+        display: block;
+        font-family: $fontSite;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+.has-page-dropdown {
+    padding-right: 500px;
+    min-height: 40px;
+}
+.page-dropdown {
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+
+//sol menü
+.kutuSolMenuTree {
+    position: relative;
+    margin-top: 32px;
+    margin-right: $singleOuter;
+    .kutuHeaderSolMenuTree, .kutuFooterSolMenuTree {
+        display: none;
+    }
+    .kutuBodySolMenuTree {
+        > ul {
+            li {
+                position: relative;
+                b {
+                    display: none;
+                }
+                a {
+                    display: inline-block;
+                    margin: 5px 0;
+                    font-family: $fontSite;
+                    font-size: 18px;
+                    font-weight: 300;
+                    letter-spacing: -1px;
+                }
+                &.sel {
+                    > a {
+                        font-weight: 700;
+                    }
+                }
+                &.act {
+                    > a {
+                        font-weight: 700;
+                    }
+                }
+                &.show-sub-pages {
+                    > ul {
+                        display: block;
+                    }
+                }
+            }
+            //başlık
+            > li {
+                &.sel {
+                    > a {
+                        font-family: $fontDefault;
+                        font-size: 12px;
+                        font-weight: 700;
+                        margin: 0;
+                        letter-spacing: 0;
+                    }
+                    > ul {
+                        margin-top: 15px;
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+//akordiyon
+.accordion-sub {
+    > ul {
+        > li {
+            &.sub-items {
+                > b {
+                    display: block !important;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    cursor: pointer;
+                    &:before {
+                        position: absolute;
+                        right: 15px;
+                        top: 9px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                    + a {
+                        padding-right: 35px;
+                    }
+                }
+            }
+            > ul {
+                display: none;
+            }
+            &.opened {
+                > ul {
+                    display: block;
+                }
+            }
+        }
+    }
+    ul li ul {
+        padding-left: 20px;
+    }
+}
+
+//kategoriler
+.blogTitleKategoriAd {
+    font-family: $fontSite;
+    font-size: 23px;
+    margin-bottom: 30px;
+    > span {
+        text-decoration: underline;
+    }
+}
+.icerikKategoriListe {
+    border-top: 1px solid #ebebeb;
+    margin-right: 20px;
+    .headerIcerikKategoriListe {
+        font-weight: 700;
+        padding: 20px 0;
+    }
+    .icerikKategoriListe_kategori {
+        li {
+            b {
+                display: none;
+            }
+            font-family: $fontSite;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.3;
+            .icerikCount {
+                margin-left: 5px;
+            }
+            &.active {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+//etiket
+.tags {
+    padding: 15px 0;
+    border-top: 1px solid #ebebeb;
+    margin-top: 25px;
+    font-family: $fontDefault;
+    color: #666;
+    .tag-title {
+        font-weight: 700;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .icerikTemplateListeEtiket {
+        display: inline-block !important;
+    }
+    .tCloud {
+        display: inline-block;
+        &:after {
+            content: ",";
+        }
+        &:last-child {
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+
+.tags-wrapper {
+    border-top: 1px solid #ebebeb;
+    margin-top: 25px;
+    padding: 15px 0;
+    .tags {
+        border-top: none;
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+//etiket liste - /tum-teknolojiler, /ilhamlar
+.etiketListe {
+    border-top: 1px solid #ebebeb;
+    margin-top: 20px;
+    margin-right: 20px;
+    .headerEtiketListe {
+        font-weight: 700;
+        padding: 20px 0;
+    }
+    .blogTag {
+        li {
+            font-size: 14px;
+            line-height: 1.3;
+        }
+    }
+    //yatay
+    .ems-mod-tagcloud-horizontal & {
+        border-top: none;
+        margin-top: 0;
+        margin-right: 28%;
+        margin-bottom: 10px;
+        .headerEtiketListe {
+            display: none;
+        }
+        .blogTag {
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                line-height: 1;
+                color: #999;
+                a {
+                    display: block;
+                    padding: 10px;
+                    border-radius: 30px;
+                    border: 1px solid #ebebeb;
+                }
+                &.selected {
+                    a {
+                        background: #666;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//icerik sayisi
+.content-count {
+    font-family: $fontSite;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    .qty {
+        font-size: 110px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+}
+
+//paylaş
+.share-it2 {
+    > a {
+        line-height: 26px;
+        margin-right: 15px;
+    }
+    ul {
+        li {
+            margin-right: 8px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                display: block;
+                width: 26px;
+                height: 26px;
+                background: darkblue;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                > i {
+                    line-height: 26px;
+                }
+            }
+            &.sfacebook a {
+                background: #3d589a;
+            }
+            &.stwitter a {
+                background: #1298ff;
+            }
+            &.swhatsapp a {
+                background: #25d366;
+            }
+            &.slink a {
+                background: $colorRedDark;
+            }
+        }
+    }
+}
+
+//özel sayfalama
+.ems-pagination {
+    text-align: center;
+    margin: 30px 0;
+    ul {
+        display: inline-block;
+        li {
+            display: inline-block;
+            > * {
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px 6px;
+                margin: 0 6px;
+                font-family: "Gotham Rounded";
+                font-size: 15px;
+                color: #cecece;
+                font-weight: 700;
+                transition: all 0.2s ease;
+            }
+            > span {
+                color: #333;
+            }
+            &.disabled {
+                > span {
+                    color: #eee;
+                }
+            }
+        }
+    }
+}
+
+//-/bize-ulasin/
+.ems-page-message {
+    .ems-form.ems-container { padding: 0px 15px; }
+    .row-holder-1 {
+        margin-top: 50px;
+    }
+    .row-3 {
+        width: 320px;
+    }
+    #mesajGonder {
+        .pageHeaderMesaj, .page-top-title, .page-top-desc {
+            display: none;
+        }
+        .ems-message {
+            margin-bottom: 20px;
+        }
+        .ems-form {
+            .inner-row-1 {
+                padding-right: 25px;
+            }
+            textarea {
+                height: 206px;
+            }
+        }
+    }
+}
+.contact-types {
+    margin-top: 30px;
+    .title {
+        font-family: $fontSite;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .desc {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.5;
+    }
+}
+.contact-form-text {
+    font-family: $fontSite;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+    padding-right: 72px;
+}
+
+//-/kilavuzlar-dokumanlar-yazilimlar/
+.ems-page-download {
+    .result {
+        margin-top: 50px;
+    }
+    .no-result {
+        display: none;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .result-qty {
+        display: none;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .grid-doc-result {
+        display: none;
+        margin: 20px 0;
+        .btn-download {
+            margin-left: 20px;
+        }
+        .ems-grid-img {
+            width: 55px;
+        }
+        .ems-grid-row {
+            &:first-child {
+                border-top: none;
+            }
+        }
+    }
+    .ems-tab {
+        border: 1px solid #ebebeb;
+        padding: 40px 70px;
+        margin-bottom: 50px;
+        .navigation-js {
+            max-width: 570px;
+            margin: 0 auto;
+        }
+        ul.lvl1.content-js {
+            margin-top: 40px;
+        }
+    }
+
+    .sugg-content {
+        display: none;
+        max-height: 232px;
+        overflow: auto;
+        .ems-grid-row {
+            border: 1px solid #ebebeb;
+            margin-top: -1px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            > * {
+                vertical-align: middle;
+                padding: 10px;
+                word-break: break-word;
+            }
+            .ems-grid-img {
+                width: 75px;
+                border-right: 1px solid #ebebeb;
+            }
+            &:hover {
+                background: #fafafa;
+            }
+        }
+    }
+
+    .ems-form {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    
+    .model-no-search {
+        .ems-form {
+            .ems-form-obj {
+                position: relative;
+                input {
+                    padding-right: 120px;
+                    line-height: 38px;
+                }
+            }
+            .ems-field.button {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+
+    .category-search {
+        .select {
+            option {
+                &[value="0"], &.showed {
+                    display: block;
+                }
+            }
+        }
+        .catlvl2 {
+            select option {
+                display: none;
+            }
+        }
+        .catlvl3 {
+            select option {
+                display: none;
+            }
+        }
+    }
+
+    &.ajx-loading {
+        @extend .full-loading;
+    }
+    
+
+    .model-no-search {
+        &.show-sugg {
+            .sugg-content {
+                display: block;
+            }
+        }
+        &.show-doc {
+            .result-qty {
+                display: block;
+            }
+            .grid-doc-result {
+                display: block;
+            }
+        }
+        &.no-result-sugg {
+            .no-result {
+                display: table;
+            }
+        }
+    }
+    .category-search {
+        &.show-doc {
+            .result-qty {
+                display: block;
+            }
+            .grid-doc-result {
+                display: block;
+            }
+        }
+        
+        &.no-result-doc {
+            .no-result {
+                display: table;
+            }
+        }
+    }
+}
+
+//-/reklam-filmleri/
+.ad-tab {
+    margin: 60px auto 40px;
+    .navigation-js {
+        max-width: 490px;
+        margin: 0 auto;
+    }
+}
+.ad-video {
+    border: 1px solid #ebebeb;
+    margin: 5px;
+    .img {
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+    .title {
+        display: none;
+    }
+    .desc {
+        height: 46px;
+        line-height: 1.3;
+        overflow: hidden;
+        margin: 20px 15px;
+    }
+    .social {
+        border-top: 1px solid #ebebeb;
+        padding: 20px 15px;
+    }
+}
+
+//-/reklam-melodileri/
+.ad-music {
+    border: 1px solid #ebebeb;
+    margin: 5px;
+    .img {
+        position: relative;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .title {
+        font-family: $fontSite;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin: 20px 15px 0;
+        height: 44px;
+        line-height: 1.2;
+        overflow: hidden;
+    }
+    .btn-set-1 {
+        a {
+            padding: 15px;
+        }
+    }
+    audio {
+        display: none;
+    }
+
+    &.is-play {
+        .k-play {
+            display: none;
+        }
+        .k-pause {
+            display: inline;
+        }
+    }
+}
+
+//-/hediye-onerileri/
+.special-day {
+    position: relative;
+    margin: 5px;
+    background: #333;
+    font-family: $fontSite;
+    color: #fff;
+    height: 188px;
+    overflow: hidden;
+    > a {
+        display: block;
+        height: 100%;
+    }
+    .title {
+        @include vAlign;
+        font-size: 48px;
+        font-weight: 200;
+        line-height: 1.15;
+        text-align: center;
+        padding: 12px 15px;
+    }
+    .date {
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        > b {
+            display: block;
+            font-size: 80px;
+            font-weight: 200;
+        }
+        > span {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    &.type-date {
+        .title {
+            @include setTransform(none);
+            top: 0;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: left;
+        }
+    }
+}
+//hediye-onerileri-detay
+.ems-page-gift-suggestions {
+    .ems-prd-list {
+        margin-bottom: 55px;
+        .page-top-title {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+//-/sik-sorular-sorular/
+.ems-page-faq {
+    .icerikTemplateListeContainer {
+        border-top: 1px solid #ebebeb;
+        margin-top: 40px;
+    }
+}
+.faq-item {
+    color: #666;
+    .question {
+        position: relative;
+        font-family: $fontSite;
+        font-size: 15px;
+        font-weight: 300;
+        border-bottom: 1px solid #ebebeb;
+        padding: 20px 30px 20px 0;
+        cursor: pointer;
+        &:before {
+            @include vAlign;
+            position: absolute;
+            right: 1px;
+            font-weight: 700;
+        }
+    }
+    .answer {
+        display: none;
+        position: relative;
+        font-size: 13px;
+        line-height: 1.3;
+        border-bottom: 1px solid #ebebeb;
+        p {
+            margin: 0 0 20px;
+        }
+        .mb0 {
+            margin-bottom: 0;
+        }
+    }
+    &.selected {
+        .question {
+            font-weight: 700;
+            border-bottom-color: transparent;
+        }
+        .answer {
+            display: block;
+        }
+    }
+}
+.faq-item-detail {
+    .question {
+        font-weight: 700;
+        border-bottom-color: transparent;
+        &:before {
+            display: none;
+        }
+    }
+    .answer {
+        display: block;
+    }
+}
+
+//-/kataloglar/
+.ems-page-catalogues {}
+.catalog {
+    border: 1px solid #ebebeb;
+    margin: 5px;
+    padding: 5px;
+    .img {
+        position: relative;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .title {
+        font-family: $fontSite;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        margin: 20px 15px 0;
+        height: 36px;
+        line-height: 1.2;
+        overflow: hidden;
+    }
+    .btn-set-1 {
+        margin-top: 15px;
+        a {
+            width: 48%;
+            margin: 1%;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+//-/urun-tanitim-videolari/
+.ems-page-product-videos {}
+.info-video {
+    position: relative;
+    border: 1px solid #ebebeb;
+    margin: 10px 0;
+    > * {vertical-align: middle;}
+    .img {
+        position: relative;
+        width: 330px;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        img {
+            display: block;
+            visibility: hidden;
+        }
+    }
+    .ems-prd {
+        position: relative;
+        > * {
+            vertical-align: middle;
+        }
+        .inner-row-1 {
+            width: 250px;
+        }
+        .inner-row-2 {
+            padding: 30px;
+        }
+        .ems-prd-image {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .ems-prd-name {
+            font-family: $fontSite;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        .ems-prd-cat {
+            font-family: $fontSite;
+            font-weight: 700;
+            margin-top: 10px;
+            > a {
+                margin-left: 5px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .ems-content-description, .ems-prd-description {
+            margin-top: 10px;
+            color: #999;
+            line-height: 1.3;
+            &:empty {
+                display: none;
+            }
+        }
+        .ems-prd-description {
+            margin-top: 10px;
+        }
+        .ems-prd-price {
+            margin-top: 15px;
+            font-family: $fontSite;
+            > div {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .ems-prd-price-first {
+                font-size: 15px;
+                font-weight: 300;
+                text-decoration: line-through;
+                margin-right: 10px;
+            }
+            .ems-prd-price-selling {
+                font-size: 23px;
+                font-weight: 700;
+            }
+        }
+        .ems-prd-btn-detail {
+            margin-top: 30px;
+            > a {
+                min-width: 220px;
+            }
+        }
+    }
+}
+
+//-/garanti-uygulamalari/
+.page-content-warranty {
+    .page-top-title {
+        margin-bottom: 30px;
+    }    
+}
+.warranty-year {
+    width: 250px;
+    font-family: $fontSite;
+    .title {
+        display: inline-block;
+        padding: 50px 40px;
+        background: #000;
+        font-size: 60px;
+        color: #fff;
+    }
+    .desc {
+        margin-top: 10px;
+        font-size: 23px;
+        color: #000;
+    }
+}
+.warranty-prds {
+    .title {
+        font-family: $fontSite;
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        padding: 0 3%;
+    }
+    .desc {
+        line-height: 1.3;
+        > ul {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            padding: 3%;
+        }
+    }
+}
+
+.warranty-note {
+    .desc {
+        line-height: 1.3;
+        p {
+            margin: 0;
+        }
+    }
+    .warranty-small-note {
+        margin-top: 10px;
+    }
+}
+
+.warranty-small-note {
+    .title {
+        font-family: $fontSite;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+
+.warranty-year-4-holder {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    .warranty-prds .title {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+//tek ul
+.warranty-year-3-holder, .warranty-year-4-holder {
+  .warranty-prds .desc ul {
+        width: 100%;
+    }
+}
+
+//-/uzman-tavsiyeleri/
+.ems-page-expert-advice {
+    .row-holder-1 {
+        border: 1px solid #ebebeb;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+}
+.expert-faq-holder {
+    .inner-row-1 {
+        width: 150px;
+        padding: 0 30px 30px;
+        text-align: center;
+    }
+    .expert-img {
+        background: #f8f8f8;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .expert-title {
+        margin-top: 20px;
+    }
+    .expert-name {
+        margin-top: 5px;
+        font-family: $fontSite;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+//-faq product alias expert advice
+.ems-page-faq-product {
+    .kutuSolMenuTree {
+        .sev5 > ul {display: none;}
+    }
+    .faq-item .answer .more {
+        display: none;
+    }
+}
+
+//-/destek
+.ems-page-support {}
+.page-top-img {
+    padding: 30px 30px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .page-top-desc {
+        text-align: center;
+        color: #fff;
+        font-size: 23px;
+        letter-spacing: -1px;
+    }
+}
+
+.number-menu {
+    margin-top: -50px;
+    ul {
+        background: #fff;
+        padding: 5px;
+        text-align: center;
+        li {
+            .inner {
+                border: 1px solid #ebebeb;
+                margin: 5px;
+                padding: 20px;
+                font-family: $fontSite;
+                color: #fff;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .qty {
+                    font-size: 80px;
+                    font-weight: 200;
+                    margin-top: 50px;
+                }
+                .title {
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 25px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .btn-link {
+                    display: inline-block;
+                    margin-top: 15px;
+                    font-weight: 700;
+                    padding: 20px;
+                    opacity: .7;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    &[href*="tel"] {
+                        visibility: hidden;
+                    }
+                }
+            }        
+        }
+    }
+}
+
+.support-menu {
+    ul {
+        padding: 5px;
+        li {
+            width: (100% / 4);
+            .inner {
+                border: 1px solid #ebebeb;
+                margin: 10px 5px;
+                padding: 0 10px;
+                font-family: $fontSite;
+                text-align: center;
+                > img {
+                    margin-top: 50px;
+                }
+                .title {
+                    font-size: 15px;
+                    margin-top: 40px;
+                    height: 30px;
+                    overflow: hidden;
+                }
+                .desc {
+                    font-family: $fontDefault;
+                    color: #666;
+                    margin-top: 10px;
+                    line-height: 1.1;
+                    height: 42px;
+                    overflow: hidden;
+                }
+                .btn-link {
+                    display: inline-block;
+                    margin-top: 15px;
+                    color: #666;
+                    font-weight: 700;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+//kurumsal arcelik-demek
+.ems-page-corporate1 {
+    .icerikTemplateListeItem {
+        background: #f7f8f9;
+        &.icerikTemplateListeAlternateItem {
+            background: #fff;
+        }
+    }
+}
+
+.single-tech-info {
+    padding: 20px 0;
+    .inner > * {
+        vertical-align: middle;
+    }
+    .inner-row-1 {
+        width: 570px;
+    }
+    .inner-row-2 {
+        padding-right: 120px;
+        .title {
+            font-family: $fontSite;
+            font-size: 15px;
+        }
+        .desc {
+            color: #999;
+            margin-top: 20px;
+            line-height: 1.3;
+        }
+        .btn-prds {
+            margin-top: 50px;
+        }
+    }
+}
+
+//teknolojiler
+.ems-page-technologies {}
+.single-techology {
+    margin-bottom: 20px;
+    .inner-row-2 {
+        padding: 25px;
+    }
+    .content {
+        font-family: $fontSite;
+    }
+    .cat {
+        color: #666;
+        font-weight: 700;
+    }
+    .title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    .desc {
+        color: #666;
+        line-height: 1.3;
+        margin-top: 15px;
+        font-weight: 300;
+    }
+}
+//teknoloji detay
+.ems-page-technologie-detail {
+        .ems-prd-list {
+        margin-bottom: 45px;
+        .page-top-title {
+            margin-bottom: 25px;
+        }
+    }
+}
+.single-techology-detail {
+    .page-top-title {
+        margin-bottom: 20px;
+    }
+    .img {
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+}
+
+//konsept mağaza
+.ems-page-concept-stores {}
+.store-list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .page-top-title {
+        margin-bottom: 20px;
+    }
+}
+
+//ilham
+.ems-page-inspiration {}
+.single-inspiration {
+    .img {
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+    .title {
+        font-family: $fontSite;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    .desc {
+        color: #666;
+        line-height: 1.2;
+        margin-top: 15px;
+        height: 71px;
+        overflow: hidden;
+    }
+    .more {
+        white-space: nowrap;
+    }
+    .tags {
+        width: 56%;
+    }
+    .social {
+        margin-top: 25px;
+    }
+}
+//ilham detay
+.ems-page-inspiration-detail {
+    .page-top-title, .page-top-desc {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .inspiration-slider {
+        margin-top: 40px;
+    }
+    .social {
+        padding: 20px 0;
+    }
+}
+//Kurumsal Çözümler
+.single-corporate-solutions {
+    .img {
+        position: relative;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .title {
+        font-family: $fontSite;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+    .desc {
+        color: #666;
+        line-height: 1.2;
+        margin-top: 15px;
+        max-height: 110px;
+        overflow: hidden;
+        padding: 0 15px;
+    }
+    .more {
+        white-space: nowrap;
+    }
+    .tags{
+        width: calc(100% - 30px);
+        margin: 20px 15px 0 15px;
+    }
+}
+//Kurumsal Çözümler Detay
+.corporate-solutions-detail {
+    .page-top-title, .page-top-desc {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .corporate-solutions-slider {
+        margin-top: 40px;
+    }
+    .detail-text{
+        padding: 45px 25px;
+            img {
+                margin: 10px 20px;
+            }
+            p{
+                font-size: 15px;
+                color: #333;
+                line-height: 20px;
+                font-family: $fontSite;
+                font-weight: 300;
+                margin: 0 0 25px 0;
+            }
+    }
+}
+
+//profil
+.ems-page-profile {
+    .page-top-desc {
+        max-width: 330px;
+        position: absolute;
+    }
+    .row-holder-1 {
+        margin-bottom: 50px;
+        margin-top: -30px;
+        .row-1 {
+            width: 660px;
+        }
+        .row-2 {
+            vertical-align: bottom;
+        }
+    }
+    .colorbox-wrapper {
+        position: relative;
+        .color1 {
+            height: auto;
+        }
+    }
+    .member-coupon {
+        padding-bottom: 5px;
+        .title {
+            font-family: $fontSite;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .price {
+            font-family: $fontSite;
+            font-size: 44px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        .coupon-code {
+            margin-top: 10px;
+        }
+    }
+}
+
+//tv-yazilim-indirme
+.tv-yazilim-indirme {
+    .k1 {
+        padding-right: 20px;
+        > p {
+            margin: 0;
+        }
+    }
+    .k3 {
+        margin-bottom: 30px;
+    } 
+    .hdnText {
+        display: none;
+    }
+    .inner-title {
+        font-size: 18px;
+    }
+    .softwareHolder {
+        margin-top: 30px;
+        table {
+            margin-top: 10px;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse; 
+            th,td {
+                border: 1px solid #eee;
+                padding: 7px;
+                text-align: center;
+                word-break: break-word;
+                line-height: 1.2;
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+//canlı destek
+.chatForm {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: $tablet-p) {
+    //profil
+    .ems-page-profile {
+        .page-top-desc {
+            max-width: none;
+        }
+        .row-holder-1 {
+            margin-top: 0;
+        }
+    }
+
+    //margin cfg tablet-p
+    .page-content-warranty, .ems-page-download, .ems-page-message > .ems-container, .tv-yazilim-indirme, .single-techology-detail .content-type1 {
+        @include outer-block;
+        @include outer-mobile;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .page-top-title,
+    .page-top-desc,
+    .row-3 .html-content {
+        padding: 0 $singleOuterMobile;
+    }
+    .page-top-title, .page-top-desc {
+        margin-bottom: 20px;
+    }
+    .page-dropdown {
+        right: $singleOuterMobile;
+        .title {
+            text-align: left;
+        }
+    }
+
+    //icerik ayarları tablet
+    .icerikTemplateListeItem {
+        .ems-page-listing-4 & {
+            width: (100% / 3);
+        }
+    }
+    
+    .ems-page-listing-4 {
+        .icerikTemplateListeContainer {
+            @include outer-mobile;
+        }
+    }
+
+    //margin cfg tablet
+    .tv-yazilim-indirme {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .number-menu > ul {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .number-menu > ul > li {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    //arcelik-demek
+    .single-tech-info {
+        .inner-row-2 {
+            padding: 20px;
+        }
+    }
+
+    //-/uzman-tavsiyeleri/ tablet
+    .ems-page-expert-advice {
+        @include outer-block;
+        @include outer-mobile;
+        .row-3 {
+            .page-top-title, .page-top-desc {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    //-/garanti-uygulamalari/
+    .page-content-warranty {
+        margin-left: 0;
+        margin-right: 0;
+        .warranty-year-4-holder .warranty-prds .title {
+            margin-bottom: 0;
+        }
+        .warranty-note .warranty-small-note {
+            margin-top: 30px;
+            .title {
+                @include outer-mobile;    
+            }
+        }
+        .warranty-note .desc {
+            @include outer-mobile;
+        }
+    }
+
+    //tablet .html-content padding reset
+    #lblBanner8959, #lblBanner8960, .ems-page-message .row-3 {
+        .html-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    //iletisim
+    .ems-page-message {
+        .page-top-title, .page-top-desc {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .row-3 {
+            width: 230px;
+            .contact-form-text {
+                padding-right: 0;
+            }
+        }
+    }
+
+    //teknolojiler
+    .single-techology-detail {
+        
+    }
+
+}
+@media screen and (max-width: $mobile-l){
+    .page-top-title,
+    .page-top-desc {
+        text-align: center;
+    }
+    .page-top-img .page-top-desc {
+        line-height: 1.2;
+    }
+    //kategori select
+    .page-dropdown {
+        width: 100%;
+        .title {
+        }
+    }
+    .has-page-dropdown {
+        padding-right: 0;
+        min-height: 40px;
+    }
+    .page-dropdown {
+        position: static;
+        right: initial;
+        top: initial;
+        margin-top: 20px;
+    }
+
+    //icerik ayarları mobile
+    .ems-page-listing-2, .ems-page-listing-3  {
+        .html-content {
+            padding:0 15px;
+            color: #666;
+        }
+        .icerikTemplateListeItem {
+            width:100%;
+        }
+    }
+    .ems-page-listing-4 {
+        .icerikTemplateListeItem {
+            width: 100%;
+        }
+        .icerikTemplateListeContainer {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    //margin cfg mobile
+    .ems-page-expert-advice, .ems-page-download {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ems-page-expert-advice, .ems-page-faq {
+        .row-holder-1 {
+            padding: 0;
+            display: block;
+            border: none;
+            .row-2 {
+                width: 100%;
+                display: block;
+            }
+            .row-3{
+                margin-top: 20px;
+                display: block;
+                .icerikTemplateListeContainer {
+                    width: 100%;
+                    margin-left: 0;
+                    .icerikTemplateListeItem {
+                        margin-bottom: 0;
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    //sol menü
+    .kutuSolMenuTree{
+        margin: 0;
+        .kutuBodySolMenuTree{
+            > ul{
+                > li{
+                    a{
+                        padding: 10px 20px;
+                        display: inline-block;
+                        width: 100%;
+                        vertical-align: top;
+                        margin: 0;
+                    }
+                }
+                > li.sel{
+                    > a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .accordion-sub {
+        > ul > li.sub-items > b:before {
+            top: 14px;
+        }
+    }
+
+    .page-top-img {
+        padding: 1px;
+    }
+    .number-menu{
+        margin-top: 0;
+        > ul{
+            > li {
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+                .inner{
+                    text-align: left;
+                    position: relative;
+                    .qty{
+                        margin-top: 0;
+                        font-size: 18px;
+                        display: inline-block;
+                        vertical-align: top;
+                        width: initial;
+                        font-weight: 500;
+                    }
+                    .title{
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-top: 0;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-left: 5px;
+                    }
+                    .btn-link {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 0;
+                        font-weight: 500;
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &:before {
+                            position: absolute;
+                            content: "\e91b";
+                            right: 10px;
+                            top: 35px;
+                            font-size:20px;
+                            display: block;
+                            font-family: 'icomoon' !important;
+                            speak: none;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-variant: normal;
+                            text-transform: none;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        }
+                        &[href*="tel"] {
+                            visibility: visible;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .inner{
+                        .btn-link {
+                            &:before {
+                                content: "\e910";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .support-menu{
+        ul{
+            li {
+                width: 50%;
+                .inner {
+                    margin: 5px;
+                    padding-bottom: 10px;
+                    > img {
+                        margin-top: 30px;
+                    }
+                    .title {
+                        font-size: 16px;
+                        height: 26px;
+                        overflow: visible;
+                    }
+                    .desc {
+                        display: none;
+                    }
+                    .btn-link {
+                        padding: 10px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .faq-item{
+        .question{
+            padding: 20px 45px 20px 0;
+            &:before{
+                right: 20px;
+            }
+        }
+        .answer{
+            padding: 0;
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .info-video{
+        .ems-prd {
+            display: table;
+            .inner-row-1 {
+                vertical-align: top;
+                padding-top: 30px;
+                padding-left: $singleOuterMobile;
+                width: 40%;
+            }
+            .inner-row-2 {
+                padding-left: 0;
+                padding-right: $singleOuterMobile;
+            }
+            .ems-prd-image img {
+                max-height: 170px;
+            }
+            .ems-prd-btn-detail > a { min-width: 100%; }
+        }
+        .img {
+            width: 100%;
+            display: block;
+            height: auto;
+            position: relative;
+        }
+    }
+    .contact-types .ems-col {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .ems-page-message .row-3 {
+        display: none;
+    }
+    #mesajGonder .ems-form .ems-col {
+        display: block;
+        width: 100%;
+        padding-right: 0px !important;
+        .btnMesajGonder {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .ems-page-technologies {
+        .row-2 {
+            &.w250 {
+                width:100%; 
+                display: inline-block;
+                .content-count {
+                    padding-left:15px;
+                    text-align: left;
+                    .qty {
+                        font-size: 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .row-3 {
+            width:100%; 
+            display: inline-block;
+        }
+        .teknologies-filter {
+            display: inline-block;
+            width:100%;
+            padding: 15px 15px 30px 15px;
+            a {
+                border:3px solid #333;
+                border-radius: 50px;
+                display:inline-block;
+                span {
+                    color: #333;
+                    font-size: 16px;
+                    padding: 11px 20px;
+                    font-weight: bold;
+                    display: block;
+                }
+                &.labelPopup {
+                    float:left;
+                }
+                &.filterPopup {
+                    float:right;
+                }
+                &:hover {
+                    background:#333;
+                    span {
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .blogTitleKategoriAd {
+            text-align: center;
+        }
+        .icerikKategoriListe, .etiketListe {
+                    opacity: 0;
+                    display:none;
+                    margin:0;
+                    border: 0;
+                    transition: all 0.2s ease-in-out;
+                    -webkit-transform: scale(1.3);
+                    -ms-transform: scale(1.3);
+                    transform: scale(1.3);
+                    padding: 15px;
+                }
+    }        
+    .icerikKategoriListe, .etiketListe {
+            display: block;
+            opacity: 1;
+        }
+    .technologies-filter-ready{
+        overflow: hidden;
+        position: fixed;
+        .icerikKategoriListe { 
+            display:block;
+        }
+        &.technologies-filter-animate, .technologies-label-animate {
+            .icerikKategoriListe, .etiketListe {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 9999;
+                background: #fff;
+                overflow-y: auto;
+                .headerIcerikKategoriListe {
+                    font-size:25px;
+                    .btn-filter-close {
+                        width: 42px;
+                        height: 42px;
+                        background: #cecece;
+                        border-radius: 100%;
+                        text-align: center;
+                        color: #fff;
+                        position: absolute;
+                        top: 30px;
+                        right: 20px;
+                        z-index: 100;
+                        transition: background .32s ease;
+                        display: inline-block !important;
+                        &:before {
+                            content: "\e90d";
+                            font-family: 'icomoon';
+                            font-size:13px;
+                            color: #fff;
+                            display:inline-block;
+                            line-height: 42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .technologies-label-ready {
+        overflow: hidden;
+        position: fixed;
+            .etiketListe {
+                display:block;
+            }
+            &.technologies-label-animate {
+                .etiketListe {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 9999;
+                    background: #fff;
+                    overflow-y: auto;
+                    .headerEtiketListe {
+                        font-size:25px;
+                        .btn-label-close {
+                            width: 42px;
+                            height: 42px;
+                            background: #cecece;
+                            border-radius: 100%;
+                            text-align: center;
+                            color: #fff;
+                            position: absolute;
+                            top: 30px;
+                            right: 20px;
+                            z-index: 100;
+                            transition: background .32s ease;
+                            display: inline-block !important;
+                            &:before {
+                                content: "\e90d";
+                                font-family: 'icomoon';
+                                font-size:13px;
+                                color: #fff;
+                                display:inline-block;
+                                line-height: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .single-techology {
+            margin-bottom:0;
+            .inner-row-1, .inner-row-2 {
+                display: inline-block;
+                width:100%;
+            }
+        }
+
+        //arcelik-demek
+        .single-tech-info {
+            .ems-inline-table > * {
+                @include clear-table-cell;
+            }
+            .inner-row-1 {
+                width: auto;
+                .main-slider {
+                    padding-bottom: 0;
+                }
+            }
+            .inner-row-2 {
+                
+            }
+        }
+
+        //-/garanti-uygulamalari/
+        .page-content-warranty {
+            .html-content {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        //-/hediye-onerileri/
+        .special-day {
+            .title {
+                font-size: 23px;
+                letter-spacing: -1px;
+            }
+            .date {
+                > span {
+                    font-size: 17px;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+
+        //-/kilavuzlar-dokumanlar-yazilimlar/        
+        .ems-page-download {
+            position: relative;
+        }
+
+        //kataloglar
+        .ems-page-catalogues {
+            .catalog .title {
+                font-size: 23px;
+                font-weight: 500;
+                height: auto;
+            }
+        }
+
+        //sss
+        .ems-page-faq {
+            .icerikTemplateListeContainer {
+                margin-top: 0;
+            }
+        }
+
+        //tv-yazilim-indirme
+        .tv-yazilim-indirme {
+            .row-holder-1 {
+                > div {
+                    @include clear-table-cell;
+                    &.k1 {
+                        padding-right: 0;
+                    }
+                    &.k2 {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .softwareHolder {
+                table {
+                    th,td {
+                        text-align: left;
+                    }
+                }
+            }            
+        }
+}

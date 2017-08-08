@@ -1,0 +1,341 @@
+//icomoon
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+  content: "\e935";
+}
+.icon-back:before {
+  content: "\e934";
+}
+.icon-no-result:before {
+  content: "\e932";
+}
+.icon-arrow-07-b:before {
+  content: "\e933";
+}
+.icon-mail0:before {
+  content: "\e930";
+}
+.icon-mail1:before {
+  content: "\e931";
+}
+.icon-eye:before {
+  content: "\e92f";
+}
+.icon-radio0:before {
+  content: "\e92d";
+}
+.icon-radio1:before {
+  content: "\e92e";
+}
+.icon-360:before {
+  content: "\e92c";
+}
+.icon-heart:before {
+  content: "\e92a";
+}
+.icon-heart-o:before {
+  content: "\e92b";
+}
+.icon-info:before {
+  content: "\e928";
+}
+.icon-arrow-03-t:before {
+  content: "\e90b";
+}
+.icon-arrow-03-b:before {
+  content: "\e90c";
+}
+.icon-arrow-03-l:before {
+  content: "\e914";
+}
+.icon-arrow-03-r:before {
+  content: "\e91c";
+}
+.icon-share:before {
+  content: "\e91d";
+}
+.icon-googleplus:before {
+  content: "\e929";
+}
+.icon-facebook:before {
+  content: "\e91e";
+}
+.icon-twitter:before {
+  content: "\e91f";
+}
+.icon-youtube:before {
+  content: "\e922";
+}
+.icon-instagram:before {
+  content: "\e923";
+}
+.icon-whatsapp:before {
+  content: "\e924";
+}
+.icon-link:before {
+  content: "\e927";
+}
+.icon-outer-link:before {
+  content: "\e925";
+}
+.icon-menu:before {
+  content: "\e926";
+}
+.icon-pause:before {
+  content: "\e920";
+}
+.icon-play:before {
+  content: "\e921";
+}
+.icon-arrow-02-t:before {
+  content: "\e904";
+}
+.icon-arrow-02-b:before {
+  content: "\e901";
+}
+.icon-arrow-02-l:before {
+  content: "\e902";
+}
+.icon-arrow-02-r:before {
+  content: "\e903";
+}
+.icon-calendar:before {
+  content: "\e905";
+}
+.icon-cart:before {
+  content: "\e906";
+}
+.icon-cart2:before {
+  content: "\e907";
+}
+.icon-check:before {
+  content: "\e908";
+}
+.icon-checkbox0:before {
+  content: "\e909";
+}
+.icon-checkbox1:before {
+  content: "\e90a";
+}
+.icon-close:before {
+  content: "\e90d";
+}
+.icon-minus:before {
+  content: "\e90e";
+}
+.icon-minus2:before {
+  content: "\e90f";
+}
+.icon-phone:before {
+  content: "\e910";
+}
+.icon-plus:before {
+  content: "\e911";
+}
+.icon-plus2:before {
+  content: "\e912";
+}
+.icon-radiobox1:before {
+  content: "\e913";
+}
+.icon-search:before {
+  content: "\e915";
+}
+.icon-user:before {
+  content: "\e916";
+}
+.icon-user2:before {
+  content: "\e917";
+}
+.icon-alert:before {
+  content: "\e918";
+}
+.icon-arrow-01-t:before {
+  content: "\e900";
+}
+.icon-arrow-01-b:before {
+  content: "\e919";
+}
+.icon-arrow-01-l:before {
+  content: "\e91a";
+}
+.icon-arrow-01-r:before {
+  content: "\e91b";
+}
+
+
+//others
+.isPlay .icon-play:before, .is-play .icon-play:before {
+  @extend .icon-pause;
+}
+.dropdown > span:before {
+  @extend [class*=" icon-"];
+  @extend .icon-arrow-01-b;
+}
+.opened .icon-menu:before {
+  @extend .icon-close;
+}
+.info-menu ul li {
+  a:before {
+    @extend [class*=" icon-"];
+    @extend .icon-arrow-02-r;
+  }
+  &.call-center a:before {
+    @extend .icon-phone;
+  }
+}
+.dropdown-value:before {
+  @extend [class*=" icon-"];
+  @extend .icon-arrow-02-b;
+}
+.ems-tab ul.lvl1 > li.more > a.title > span:before, .go-all-features > span:before {
+  @extend [class*=" icon-"];
+  @extend .icon-arrow-02-b;
+}
+
+.ems-tab-vertical > .ems-tab-inner > ul.lvl1 > li {
+  > a.title > span:before {
+    @extend [class*=" icon-"];
+    @extend .icon-plus2;
+  }
+  &.selected {
+    > a.title > span:before {
+      @extend .icon-minus2;
+    }
+  }
+}
+.urunKiyaslamaOzellik_ozellikAd:before {
+  @extend [class*=" icon-"];
+  @extend .icon-minus;
+  &.kapali {
+    @extend .icon-plus;
+  }
+}
+a.urunKiyaslamaOzellik:before {
+  @extend [class*=" icon-"];
+  @extend .icon-checkbox0;
+  &.link_selected {
+      @extend .icon-checkbox1;
+  }
+}
+.prd-technology-info .col-text > p:before {
+  @extend [class*=" icon-"];
+  @extend .icon-check;
+}
+.feature-info:before {
+  @extend [class*=" icon-"];
+  @extend .icon-info;
+}
+.compareHolder .ems-prd-compare span:before {
+  @extend [class*=" icon-"];
+  @extend .icon-close;
+}
+.comSpecs .specItem {
+  .specTitle i:before {
+    @extend [class*=" icon-"];
+    @extend .icon-plus;
+  }
+  &.selected {
+    .specTitle i:before {
+      @extend .icon-minus;
+    }
+  }
+}
+.comSpecfilter > ul > li {
+  > a:before {
+    @extend [class*=" icon-"];
+    @extend .icon-checkbox0;
+  }
+  &.selected {
+    > a:before {
+      @extend .icon-radiobox1;
+    }
+  }
+}
+.marker-customize .divServisListe_Telefon a span:before {
+  @extend [class*=" icon-"];
+  @extend .icon-phone;
+}
+.kutuKategori .kutuHeaderKategori:before {
+  @extend [class*=" icon-"];
+  @extend .icon-minus;
+  &.kapali {
+    @extend .icon-plus;
+  }
+}
+.faq-item {
+    .question:before {
+      @extend [class*=" icon-"];
+      @extend .icon-plus;
+    }
+    &.selected {
+      .question:before {
+        @extend .icon-minus;
+      }
+    }
+}
+.pin:before {
+    @extend [class*=" icon-"];
+    @extend .icon-plus2;
+}
+[id$="plhAdresTipi1"] a {
+  &:before {
+    @extend [class*=" icon-"];
+    @extend .icon-checkbox0;
+    &.emos_selected {
+      @extend .icon-radiobox1;
+    }
+  }
+}
+a.btnMinPpCl:before {
+  @extend [class*=" icon-"];
+  @extend .icon-close;
+}
+.prd-video > a:before {
+  @extend [class*=" icon-"];
+  @extend .icon-play;
+}
+.accordion-sub > ul > li.sub-items {
+  > b:before {
+    @extend [class*=" icon-"];
+    @extend .icon-arrow-02-r;
+  }
+  &.opened {
+    > b:before {
+      @extend .icon-arrow-02-b;
+    }
+  }
+}
+.ems-field-calendar {
+  .ems-form-obj:before {
+    @extend [class*=" icon-"];
+    @extend .icon-calendar;
+  }
+}
+.mod-seller-options .ul1 li {
+  a.title:before {
+    @extend [class*=" icon-"];
+    @extend .icon-plus;
+  }
+  &.opened {
+    a.title:before {
+      @extend .icon-minus;
+    }
+  }
+}
+.navigasyon > span a:before {
+  @extend [class*=" icon-"];
+  @extend .icon-arrow-01-r;
+}

@@ -1,0 +1,109 @@
+* {
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+html, body {
+	font-family: $fontDefault;
+	font-size: $fontSizeDefault;
+	color: $colorDefault;
+}
+
+.clearfix {
+	&:before, &:after {
+		display: table;
+		content: " ";
+		font-size: 0;
+		height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#ui-datepicker-div {
+	display: none;
+}
+
+.ems {
+	&-fixer {
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+		font-size:0;
+		margin:0;
+		padding:0;
+		line-height:0;
+	}
+	&-none {
+		display: none !important;
+	}
+	&-hidden, &-sub {
+		display: none;
+	}
+	&-container {
+		width: 100%;
+		max-width: $siteContainerWidth;
+		margin: 0 auto;
+		&-full {
+			max-width: $siteContainerWidthFull;
+		}
+	}
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-center {
+		text-align: center;
+	}
+	&-inline {
+		> * {
+			display: inline-block;
+			vertical-align: top;
+		}
+		&-center {
+			text-align: center;
+			> * {
+				text-align: left;
+			}
+		}
+	}
+	&-inline-table {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		> * {
+			display: table-cell;
+			vertical-align: top;
+		}
+		&-center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&-col {
+		position: relative;
+		&-left {
+			float: left;
+		}
+		&-right {
+			float: right;
+		}
+	}
+}

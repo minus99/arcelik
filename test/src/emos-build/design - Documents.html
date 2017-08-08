@@ -1,0 +1,79 @@
+---export Document Download (Docs)
+<EMOSLOOP source="S_EXP_URUNDOKUMAN#L1" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNID=$$request.id$$" tablenum="1">
+<div class="ems-grid-row">
+    <EMOSLOOP source="S_EXP_URUNDOKUMAN#L2" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNID=$$L1.URNID$$" tablenum="0">
+    <div class="ems-grid-img"><img src="$$L2.URNRESIM$$"></div>
+    <div class="ems-grid-name">$$L2.URNKOD$$ <br> $$L1.UDKAD$$</div>
+    </EMOSLOOP>
+    <div class="ems-grid-view ems-right"><a target="_blank" href="$$L1.UDKDOSYAYER$$" class="btn btn-color2 btn-view">İNDİR</a></div>
+</div>
+</EMOSLOOP>
+
+---export Document Download (Old Docs)
+<EMOSLOOP source="S_EXP_URUNDOKUMAN#L2" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNKOD LIKE '$$request.id$$%'" tablenum="0">
+<EMOSLOOP source="S_EXP_URUNDOKUMAN#L1" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNKOD='$$L2.URNKOD$$'" tablenum="1">
+<div class="ems-grid-row">  
+  <div class="ems-grid-img"><img src="$$L2.URNRESIM$$"></div>
+  <div class="ems-grid-name">$$L2.URNKOD$$ <br> $$L1.UDKAD$$</div>
+  <div class="ems-grid-view ems-right"><a target="_blank" href="$$L1.UDKDOSYAYER$$" class="btn btn-color2 btn-view">İNDİR</a></div>
+</div>
+</EMOSLOOP>
+</EMOSLOOP>
+
+---export Document Download (Cats)
+<div class="ems-field select catlvl1">
+    <div class="ems-form-label">KATEGORİ SEÇİN</div>
+    <div class="ems-form-obj"><select>
+        <option value="0">Seçiniz</option>
+        <EMOSLOOP source="S_EXP_URUNKATEGORI" param="@LNG_CULTURENAME=$$request.lang$$" filter="KATKSV=1">
+        <option value="$$KATID$$">$$KATAD$$</option>
+        </EMOSLOOP>
+    </select></div>
+</div>
+<div class="ems-field select catlvl2">
+    <div class="ems-form-label">ALT KATEGORİ SEÇİN</div>
+    <div class="ems-form-obj"><select>
+        <option value="0">Seçiniz</option>
+        <EMOSLOOP source="S_EXP_URUNKATEGORI" param="@LNG_CULTURENAME=$$request.lang$$" filter="KATKSV=2">
+        <option rel="$$KATUST$$" value="$$KATID$$">$$KATAD$$</option>
+        </EMOSLOOP>
+    </select></div>
+</div>
+<div class="ems-field select catlvl3">
+    <div class="ems-form-label">DAHA ALT KATEGORİ SEÇİN</div>
+    <div class="ems-form-obj"><select>
+        <option value="0">Seçiniz</option>
+        <EMOSLOOP source="S_EXP_URUNKATEGORI" param="@LNG_CULTURENAME=$$request.lang$$" filter="KATKSV=3">
+        <option rel="$$KATUST$$" value="$$KATID$$">$$KATAD$$</option>
+        </EMOSLOOP>
+        </select></div>
+</div>
+
+---export Document Download (Docs by Cat)
+<EMOSLOOP source="http://www.arcelik.com.tr/webservices/exportservice.asmx/getProduct#L0" param="@fld=intURN_KOD;strKAT_KATEGORILER_LINKLI|@kat=$$request.kat$$">
+<EMOSLOOP source="S_EXP_URUNDOKUMAN#L1" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNID=$$L0.intURN_KOD$$" tablenum="1">
+<div class="ems-grid-row">
+    <EMOSLOOP source="S_EXP_URUNDOKUMAN#L2" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNID=$$L1.URNID$$" tablenum="0">
+    <div class="ems-grid-img"><img src="$$L2.URNRESIM$$"></div>
+    <div class="ems-grid-name">$$L2.URNKOD$$ <br> $$L1.UDKAD$$</div>
+    </EMOSLOOP>
+    <div class="ems-grid-view ems-right"><a target="_blank" href="$$L1.UDKDOSYAYER$$" class="btn btn-color2 btn-view">İNDİR</a></div>
+</div>
+</EMOSLOOP>
+</EMOSLOOP>
+
+---export Document Download (Docs Suggest)
+<EMOSLOOP source="S_EXP_URUNDOKUMAN#L0" param="@LNG_CULTURENAME=$$request.lng$$" filter="URNKOD LIKE '%$$request.kyw$$%'" tablenum="0">
+<div rel="<EMOSIF source="S_EXP_URUNDOKUMAN#L0" condition="URNID IS NOT NULL">$$L0.URNID$$</EMOSIF>" title="<EMOSIF source="S_EXP_URUNDOKUMAN#L0" condition="URNID IS NULL">$$L0.URNKOD$$</EMOSIF>" class="ems-grid-row ems-inline-table animated fadeIn">
+    <div class="ems-grid-img"><img src="$$L0.URNRESIM$$"></div>
+    <div class="ems-grid-name">$$L0.URNKOD$$</div>
+</div>
+</EMOSLOOP>
+
+---export Document Download (Docs Suggest) >> test silinen
+<EMOSLOOP source="http://epm.test.arcelik.com/webservices/exportservice.asmx/getProduct#L0" param="@fld=strURN_URUNKODU;intURN_KOD;strURN_RESIM" filter="strURN_URUNKODU LIKE '%$$request.kyw$$%'">
+<div rel="$$L0.intURN_KOD$$" class="ems-grid-row ems-inline-table animated fadeIn">
+    <div class="ems-grid-img"><img src="$$L0.strURN_RESIM$$"></div>
+    <div class="ems-grid-name">$$L0.strURN_URUNKODU$$</div>
+</div>
+</EMOSLOOP>

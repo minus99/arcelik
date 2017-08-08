@@ -1,0 +1,59 @@
+sayfa class > tv-yazilim-indirme
+
+<div class="row-holder-1 ems-inline-table">
+    <div class="k1">
+        <p><b>Arka kapak etiketi üzerinde yazılı, 14 haneli seri no'yu giriniz.</b></p>
+        <img src="/images/frontend/TV_SN.png">
+    </div>
+    <div class="k2">
+        <div class="ems-form">
+            <div class="ems-form-inner">
+                <div class="ems-field text">
+                    <div class="ems-form-label zorunluFont">SERİ NO</div>
+                    <div class="ems-form-obj"><input name="SN" type="text"></div>
+                </div>
+                <div class="ems-field text">
+                    <div class="ems-form-label zorunluFont">DİL</div>
+                    <div class="ems-form-obj"><select name="LN"><option value="0">Seçiniz</option><option value="TR">Türkçe</option><option value="EN">English</option></select></div>
+                </div>
+                <div class="ems-field submit margin0"><a class="btn btnQuery" href="javascript:void(0);"><span>SORGULA</span></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="k3 formResults">
+    <div class="softwareHolder">
+        <div class="inner-title">Sorgu Sonu&ccedil;ları</div>
+        <table cellspacing="0" cellpadding="0"></table>
+    </div>
+    <p><b>&Ouml;nemli Not: </b>Yazılım Y&uuml;kleme sonrasında, &uuml;r&uuml;nde problem olması halinde, versiyonlardan altta g&ouml;r&uuml;neni indirerek eski versiyonunuza d&ouml;nebilirsiniz.</p>
+    <div class="hdnText"><span>Aradığınız &uuml;r&uuml;ne ait yazılım bulunmamaktadır.</span></div>
+</div>
+<script type="text/javascript">
+var query, SN, LN;
+$('a.btnQuery').click(function(){	
+    SN = $('input[name="SN"]').val(),
+    LN = $('select[name="LN"] option:selected').val();	
+    if(SN != '' && LN != 0){
+        query= '/tv-drv.html?ln='+LN+'&sn='+SN;
+        $('.formResults .softwareHolder').show();
+        $.get(query, function(e){ 
+                $('.formResults table').html('<tr><th>Tarih</th><th>Kullanım Kılavuzu</th><th>Dosya</th></tr>'+e);
+                $('.importantNot span').hide();
+                $('.importantNot span').show();
+            if(e.indexOf('<tr>') == -1){$('.softwareHolder table').append('<tr><td colspan="3">'+$('.hdnText span').text()+'</td></tr>');}
+        });
+    }else{
+        alert("Lütfen bütün alanları eksiksiz doldurunuz.");	
+    }
+});</script>
+
+
+---export TV Software
+éééhttp://10.234.0.98/arwstemp/tvsoftwares.asmx/GetTvSoftwares->@serialNumber=#$rqsn#$|@language=#$rqln#$|#RELEASE_DATE=DESCéé
+??http://10.234.0.98/arwstemp/tvsoftwares.asmx/GetTvSoftwares|SW_FILE_NAME IS NOT NULL??<tr class="gridRowDefault gridRowQuery">
+<td class="releaseDate">$$RELEASE_DATE$$</td>
+<td class="upgradeManual"><a href="http://download.arcelik.com/tvsoftwares/$$UPGRADE_MANUAL$$">$$UPGRADE_MANUAL$$</a></td>
+<td class="swFileName"><a href="http://download.arcelik.com/tvsoftwares/$$SW_FILE_NAME$$">$$SW_FILE_NAME$$</a></td>
+</tr>??http://10.234.0.98/arwstemp/tvsoftwares.asmx/GetTvSoftwares|SW_FILE_NAME IS NOT NULL??
+éééhttp://10.234.0.98/arwstemp/tvsoftwares.asmx/GetTvSoftwareséé

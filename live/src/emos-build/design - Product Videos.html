@@ -1,0 +1,68 @@
+---syg Product Videos
+<div class="ems-page-default ems-page-product-videos">
+    <div class="sortable row-1"><div id="emos_ascNavigasyon" class="sortableItem" navigationtype="1">Navigasyon<br/></div></div>
+    <div class="sortable row-3 ems-container"><div id="emos_ascIcerik" class="sortableItem" repeatcolumns="1" pagesize="100" styletype="template" sayfalamatipi="paging">İçerik<br/></div></div>
+    <div class="sortable row-4"><div id="emos_ascBanner-6264" class="sortableItem">Help &amp; Support<br/>Banner Yeri<br/>  <a href="JavaScript:openGuncellePopup(6264)"><img src="/admin/images/btn_ara.gif" title="Düzenle" border="0"/></a><a style="padding-left:20px;" href="javascript:bannerSil(6264);"><img src="/admin/images/btn_iptal.gif" title="Sil" border="0"/></a><br/></div></div>
+</div>
+
+
+---liste Product Videos
+<div class="info-video ems-inline-table reverse">
+    <div style="background-image: url(https://img.youtube.com/vi/$prmID$/maxresdefault.jpg);" class="img">
+        <img data-original="https://img.youtube.com/vi/$prmID$/maxresdefault.jpg" alt="$prmUrunAd$" class="lazyload" src="/images/frontend/placeholder/320x205.gif"/>
+        <a data-video="$prmID$" class="btn-video-play icon-play" href="javascript:void(0);"></a>
+    </div>
+    <div class="ems-prd ems-inline-table">
+        <div class="inner-row-1">
+            <div class="ems-prd-code ems-none">$prmUrunKodu$</div>
+            <div class="ems-prd-image"><img src="/images/frontend/placeholder/210x305.gif" data-original="$prmUrunResimSmall$" class="lazyload" alt="$prmUrunAd$"/></div>
+        </div>
+        <div class="inner-row-2">
+            <div class="ems-prd-name">$prmUrunAd$</div>
+            <div class="ems-prd-cat">$prmUrunKategori$</div>
+            <div class="ems-content-description">$prmDesc$</div>
+            <div class="ems-prd-description ems-none">$prmUrunKisaAciklama$</div>
+            <div class="ems-prd-price clearfix ems-none">
+                <div class="ems-prd-price-first">$prmUrunIlkFiyat$</div>
+                <div class="ems-prd-price-selling">$prmUrunFiyat$</div>
+            </div>
+            <div class="ems-prd-btn-detail"><a class="btn btn-color2" href="$prmUrunLink$"><span>DETAYLI BİLGİ</span></a></div>
+        </div>
+    </div>
+</div>
+
+
+---export Product Video Homepage
+<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L1" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD_REF=$$request.icr$$">
+<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L2" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD_REF=$$L1.ICP_ICR_KOD$$">
+<EMOSIF source="S_EXP_ICERIKPARAMETREROW#L2" condition="prm1<>''">
+<EMOSLOOP source="http://yeni.arcelik.com.tr/webservices/exportservice.asmx/getProduct#L3" param="@fld=strURN_YENISAYFAISMI;strURN_AD;strURN_KISAACIKLAMA;strURN_RESIM;salesPrice;strURN_URUNKODU;intURN_KOD;normalPrice" filter="intURN_KOD=$$L2.prm1$$">
+<div class="info-video ems-inline-table reverse">
+    <div style="background-image: url(https://img.youtube.com/vi/$$L2.prm3$$/maxresdefault.jpg);" class="img">
+        <img data-original="https://img.youtube.com/vi/$$L2.prm3$$/maxresdefault.jpg" alt="$$L3.strURN_AD$$" class="lazyload" src="/images/frontend/placeholder/320x205.gif"/>
+        <a data-video="$$L2.prm3$$" class="btn-video-play icon-play" href="javascript:void(0);"></a>
+    </div>
+    <div class="ems-prd ems-inline-table">
+        <div class="inner-row-1">
+            <div class="ems-prd-code ems-none">$$L3.strURN_AD$$</div>
+            <div class="ems-prd-image"><img src="/images/frontend/placeholder/210x305.gif" data-original="$$L3.strURN_RESIM$$" class="lazyload" alt="$$L3.strURN_AD$$"/></div>
+        </div>
+        <div class="inner-row-2">
+            <div class="ems-prd-name">$$L3.strURN_AD$$</div>
+            <!-- <div class="ems-prd-cat">$prmUrunKategori$</div> -->
+            <EMOSIF source="S_EXP_ICERIKPARAMETREROW#L2" condition="prm2<>''">
+            <div class="ems-content-description">$$L2.prm2$$</div>
+            </EMOSIF>
+            <div class="ems-prd-description ems-none">$$L3.strURN_KISAACIKLAMA$$</div>
+            <div class="ems-prd-price clearfix ems-none">
+                <div class="ems-prd-price-first">##formatPrice($$L3.salesPrice$$|$$session.PB_SPR_ID$$)##</div>
+                <div class="ems-prd-price-selling">##formatPrice($$L3.normalPrice$$|$$session.PB_SPR_ID$$)##</div>
+            </div>
+            <div class="ems-prd-btn-detail"><a class="btn btn-color2" href="$$L3.strURN_YENISAYFAISMI$$"><span>DETAYLI BİLGİ</span></a></div>
+        </div>
+    </div>
+</div>
+</EMOSLOOP>
+</EMOSIF>
+</EMOSLOOP>
+</EMOSLOOP>

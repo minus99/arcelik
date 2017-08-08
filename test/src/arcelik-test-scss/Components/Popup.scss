@@ -1,0 +1,448 @@
+%popup {
+    position: relative;
+    display: none;
+}
+%popup-ready-body {
+    overflow: hidden;
+}
+%popup-ready {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.2s ease-in-out;
+    @include setTransform(scale(1.3));
+    background: #fff;
+    font-family: $fontDefault;
+    font-size: 16px;
+}
+%popup-animate {
+    opacity: 1;
+    @include setTransform(scale(1));  
+}
+.popupTitleDefault,
+.ems-popup-title {
+    font-size: 18px;
+    padding: 32px 15px;
+    text-align: center;
+    border-bottom: 1px solid #c6c6c6;
+    background: #fff;
+}
+.ems-popup-title-mini {
+    font-size: 17px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 22px 15px;
+}
+.ems-popup-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    background: #fff;
+    .ems-popup-title + & {
+        top: 83px;
+    }
+    .ems-popup-title-mini + & {
+        top: 62px;
+    }
+    .ems-popup-title + .ems-popup-title-mini + & {
+        top: 145px;
+    }
+}
+
+.btn-close, a.btnMinPpCl {
+    font-size: 0;
+    width: 42px;
+    height: 42px;
+    background: #cecece;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    transition: background .32s ease;
+    &:before {
+        font-size: 14px;
+        line-height: 42px;
+    }
+    &:hover {
+        background: #333;
+    }
+}
+
+//System Default Popup
+.minPp {
+    max-width: 100%;
+}
+.minPpBdy {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+.popupDefault{
+    .popupTitleDefault{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    [class$="urunKod"],
+    [class$="urunAd"],
+    [class$="mesaj"],
+    [class$="aciklama"]{
+        margin-bottom: 5px;
+        font-size: 23px;
+        line-height: 1.2;
+        font-family: $fontSite;
+        font-weight: 300;
+    } 
+    [class$="aciklama"]{
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    [class$="urunAd"]{
+        font-weight: 700;
+    }
+    .popupOtomasyon_btnSozlesmeYazdir {
+        display: none;
+    }
+    .tableDefault{
+        padding: 20px;
+        *{
+            text-align: left;
+            padding: 2px 5px;
+        }
+    }
+    //Üye Girişi Popup 
+    @at-root{
+        .popup_favori,
+        .popup_stokHaberci{
+            width: 100%;
+            max-width: 760px !important;
+            padding: 40px;
+            .minPpBdy{
+                height: 330px !important;
+                overflow: hidden;
+            }
+        }
+        .popupStokHaberci,
+        .popupFavori,
+        .popupUyeGiris{
+            text-align: left;
+            .popupTitleDefault {
+                font-family: $fontSite;
+                padding: 0;
+                border: none;
+                text-align: left;
+                font-size: 23px;
+                color: #333333;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .tableUyeGiris {
+        padding: 0;
+        vertical-align: top;
+        width: 100%;
+        margin: 0 auto;
+        *{
+            padding: 0;
+        }
+        tbody {
+            display: block;
+            width: 100%;
+            padding: 0;
+            tr {
+                display: block;
+                width: 100%;
+                td,
+                th {
+                    display: block;
+                    width:100%;
+                }
+                th{
+                        margin-bottom: 5px;
+                    }
+                    td{
+                        margin-bottom: 20px;
+                        a {
+                            padding: 11px 20px;
+                            width: 100%;
+                            text-align: center;
+                                &#lnkUyeOlmak,
+                                &#lnkSifremiUnuttum{
+                                    padding: 0;
+                                }
+                        }
+                        input{
+                            padding: 2px 5px;
+                        }
+                    }
+                    &.socialConnect {
+                        display: block !important;
+                        .popupUyeGiris_facebookConnect {
+                            display: block !important;
+                        }
+                        a.btnDefault {
+                            font-family: arial;
+                            font-style: italic;
+                            font-weight: normal;
+                            > span {
+                                position: relative;
+                            }
+                            i {
+                                font-size: 24px;
+                                position: relative;
+                                top: 50%;
+                                @include vAlign;
+                                position: absolute;
+                                left: -30px;
+                            }
+                            b {
+                                font-style: normal;
+                            }
+                        }
+                    }
+            }
+        }
+        .popupTitleDefault,
+        .ems-popup-title {
+            border-bottom: 0;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.popupDefault .ems-message { padding: 15px !important; }
+.popupDefault .ems-message-error { padding-left: 100px !important; }
+
+.ems-logoff {
+    .popup_favori, .popup_stokHaberci {
+        max-width: 430px !important;
+        .minPpBdy {
+            height: 410px !important;
+        }
+    }
+}
+
+//doküman paylaş
+.popup-doc-send {
+    .minPpBdy {
+        overflow: hidden;
+    }
+}
+
+//default
+.ems-popup {
+    @extend %popup;
+    &-ready {
+        @extend %popup-ready-body;
+        .ems-popup {
+            @extend %popup-ready;
+        }
+    }
+    &-animate {
+        .ems-popup {
+            @extend %popup-animate;
+        }
+    }
+}
+
+//sort
+.sort-popup {
+    @extend %popup;
+    &-ready {
+        @extend %popup-ready-body;
+        .sort-popup.ems-prd-list-sort.ems-tab {
+            @extend %popup-ready;
+            .ems-tab-inner {
+                @extend .ems-popup-content;
+            }
+        }
+    }
+    &-animate {
+        .sort-popup.ems-prd-list-sort.ems-tab {
+            @extend %popup-animate;
+        }
+    }
+}
+
+//filter
+.filter-popup {
+    overflow: auto;
+    @extend %popup;
+    &-ready {
+        @extend %popup-ready-body;
+        .filter-popup {
+            @extend %popup-ready;
+        }
+    }
+    &-animate {
+        .filter-popup {
+            @extend %popup-animate;
+        }
+    }
+}
+
+//gallery 360
+.popup-360 {
+    @extend %popup;
+    &-ready {
+        @extend %popup-ready-body;
+        .popup-360 {
+            @extend %popup-ready;
+        }
+    }
+    &-animate {
+        .popup-360 {
+            @extend %popup-animate;
+        }
+    }
+}
+
+//kampanya
+.campaign-popup {
+    @extend %popup;
+    max-height: 500px;
+    &-ready {
+        @extend %popup-ready-body;
+        .campaign-popup {
+            @extend %popup-ready;
+        }
+    }
+    &-animate {
+        .campaign-popup {
+            @extend %popup-animate;
+        }
+    }
+}
+
+//yeni mesaj
+.popup-new-message {
+    padding: 40px 40px 0;
+}
+
+//video
+.video-detail-popup {
+    width: 720px !important;
+    max-width: 100%;
+    .minPpBdy {
+        overflow: hidden;
+    }
+}
+
+//alert
+.emos-confirm {
+    border: none;
+    background: #fff;
+    color: #333;
+    border-radius: 0;
+    max-width: 100%;
+    * {
+        font-family: $fontSite;
+    }
+    .ui-dialog-titlebar {
+        margin: 0;
+        .ui-dialog-title {
+            font-size: 23px !important;
+        }
+    }
+    .ui-dialog-content {
+        padding: 20px 10px;
+        text-align: left;
+        font-size: 13px !important;
+        line-height: 1.2;
+    }
+    .ui-dialog-buttonpane {
+        position: static;
+        .ui-dialog-buttonset {
+            padding: 5px 0 0;
+        }
+    }
+}
+
+//satis sozlemesi
+.popup_satissozlesmesi {
+    .minPpBdy { overflow-y: hidden; }
+}
+
+//kargo takip
+.kargo_pencere {
+    .minPpBdy {
+        height: 500px !important;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: $mobile-l) { 
+    //mesaj
+    .popup-new-message {
+        width:100% !important;
+        padding-left: $singleOuterMobile;
+        padding-right: $singleOuterMobile;
+    }
+
+    //detay
+    .popup_favori, .popup_stokHaberci {
+        padding: $singleOuterMobile;
+    }
+
+    //video
+    .video-detail-popup {
+        .minPpBdy {
+            height: 75vw !important;
+        }
+    }
+
+    //minPp
+    .minPpWrp {
+        position: fixed;
+        top: 0px !important;
+    }
+    .popup-mobile-ready {
+        overflow: hidden;
+        height: 100vh;
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        .popup-new-message .minPpBdy {
+            height: 300px !important;
+        }
+    }
+
+    //facebook login
+    .popup_uye_facebookonay {
+        .minPpBdy { height: 100vh; }
+
+        .popupFacebookOnay {
+            padding: 20px;
+            line-height: 1.5;
+            font-size: 14px;
+            font-family: $fontSite;
+
+            .btnSozlesmeOnay {
+                * { display: block; }
+                a { margin-top: 10px; }
+            }
+        }
+    }
+}
+
+.popupOtomasyon_icerik {
+    padding: 20px;
+    > span {
+        width: 100% !important;
+    }
+}
+
+.popup_bilgilendirme .minPpBdy {
+    overflow: hidden;
+}

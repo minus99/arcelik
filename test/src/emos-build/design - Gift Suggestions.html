@@ -1,0 +1,67 @@
+---syg Gift Suggestions
+<div class="ems-page-default ems-page-gift-suggestions ems-page-listing-3">
+    <div class="sortable row-1"><div id="emos_ascNavigasyon" class="sortableItem" navigationtype="1">Navigasyon<br/></div><div id="emos_ascBanner-6295" class="sortableItem">Background-Image Menu<br/>Banner Yeri<br/>  <a href="JavaScript:openGuncellePopup(6295)"><img src="/admin/images/btn_ara.gif" title="Düzenle" border="0"/></a><a style="padding-left:20px;" href="javascript:bannerSil(6295);"><img src="/admin/images/btn_iptal.gif" title="Sil" border="0"/></a><br/></div></div>
+    <div class="sortable row-2 ems-container"><div id="emos_ascIcerik" class="sortableItem" repeatcolumns="1" pagesize="6" styletype="template" sayfalamatipi="paging">İçerik<br/></div></div>
+    <div class="sortable row-3"><div id="emos_ascBanner-6264" class="sortableItem">Help &amp; Support<br/>Banner Yeri<br/>  <a href="JavaScript:openGuncellePopup(6264)"><img src="/admin/images/btn_ara.gif" title="Düzenle" border="0"/></a><a style="padding-left:20px;" href="javascript:bannerSil(6264);"><img src="/admin/images/btn_iptal.gif" title="Sil" border="0"/></a><br/></div></div>
+</div>
+
+---syg Gift Suggestions Detail
+<div class="ems-page-default ems-page-gift-suggestions ems-page-gift-suggestions-detail">
+    <div class="sortable row-1"><div id="emos_ascNavigasyon" class="sortableItem" navigationtype="1">Navigasyon<br/></div></div>
+    <div class="sortable row-2"><div id="emos_ascIcerik" class="sortableItem" repeatcolumns="1" pagesize="6" styletype="template" sayfalamatipi="paging">İçerik<br/></div></div>
+    <div class="sortable row-3"><div id="emos_ascBanner-6264" class="sortableItem">Help &amp; Support<br/>Banner Yeri<br/>  <a href="JavaScript:openGuncellePopup(6264)"><img src="/admin/images/btn_ara.gif" title="Düzenle" border="0"/></a><a style="padding-left:20px;" href="javascript:bannerSil(6264);"><img src="/admin/images/btn_iptal.gif" title="Sil" border="0"/></a><br/></div></div>
+</div>
+
+
+---liste Gift Suggestions
+<div class="special-day<EMOSIF condition="TPR_PARAMETRE='prmDay' AND (TPD_DEGER<>'')"> type-date</EMOSIF>"<EMOSIF condition="TPR_PARAMETRE='prmColor' AND (TPD_DEGER<>'')"> style="background-color: $prmColor_Value$;"</EMOSIF>>
+    <a href="$prmIcerikLink$">
+        <EMOSIF condition="TPR_PARAMETRE='prmTitle' AND (TPD_DEGER<>'')"><div class="title">$prmTitle$</div></EMOSIF>
+        <EMOSIF condition="TPR_PARAMETRE='prmDay' AND (TPD_DEGER<>'')"><div class="date"><b>$prmDay$</b><span>$prmMonth_Text$, $prmYear_Text$</span></div></EMOSIF>
+    </a>
+</div>
+
+---detay Gift Suggestions
+getExportData[giftSuggest;]
+<div style="background-image: url($prmBg$);" class="special-day-slider expert-helper swiper-container swiper-container-horizontal swiper-alpha theme-light swiper-header-top">
+    <div class="swiper-inner">
+        <div class="swiper-header">
+            <p><b>$prmTitle$</b></p>
+        </div>
+        <ul class="swiper-wrapper">getTemplate[605]</ul>
+    </div>
+</div>
+<div class="ems-container">
+    <div class="ems-prd-list">
+        <div class="page-top-title">HEDİYE ÖNERİLERİ</div>
+        <ul class="ems-inline">getTemplate[604]</ul>
+    </div>
+</div>
+
+
+---export giftSuggest
+<div class="gift-suggestions-slider swiper-container swiper-container-horizontal theme-light prev-next-vertical ems-container">
+    <div class="swiper-inner">
+        <ul class="swiper-wrapper">
+<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L1" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD=$$request.icr$$">
+<EMOSLOOP source="S_EXP_ICERIKPARAMETREROW#L2" param="@LNG_CULTURENAME=$$request.lang$$|@ICR_DURUM=1" filter="ICP_ICR_KOD_REF=$$L1.ICP_ICR_KOD_REF$$">
+            <li class="swiper-slide">
+                <div class="special-day<EMOSIF source="S_EXP_ICERIKPARAMETREROW#L2" condition="prm8<>''"> type-date</EMOSIF>" style="background-color: $$L2.prm1_value$$;">
+                    <a href="$$L2.ICP_ICR_SAYFAISMI$$">
+                        <div class="title">$$L2.prm3$$</div>
+                        <EMOSIF source="S_EXP_ICERIKPARAMETREROW#L2" condition="prm8<>''"><div class="date"><b>$$L2.prm8$$</b><span>$$L2.prm9_text$$, $$L2.prm10_text$$</span></div></EMOSIF>
+                    </a>
+                </div>
+            </li>
+</EMOSLOOP>
+</EMOSLOOP>
+        </ul>
+    </div>
+    <!-- slider elements -->
+    <!-- pager -->
+    <div class="sld-pager ems-none"><strong></strong><span></span></div>
+    <!-- nav -->
+    <div class="bx-controls-direction"><a class="bx-prev" href="javascript:void(0);"><i class="icon-arrow-01-l"></i></a><a class="bx-next" href="javascript:void(0);"><i class="icon-arrow-01-r"></i></a></div>
+    <!-- paging -->
+    <div class="bx-pager bx-default-pager ems-none"></div>
+</div>

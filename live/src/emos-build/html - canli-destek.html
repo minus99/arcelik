@@ -1,0 +1,77 @@
+---/chat-popup.html
+<div class="chatForm ems-form">
+    <div class="ems-form-inner">
+        <div class="ems-field text">
+            <div class="ems-form-label zorunluFont">İSİM SOYİSİM</div>
+            <div class="ems-form-obj"><input value="getExportParam[ssUYE_ADSOYAD]" class="textbox" name="name" /></div>
+        </div>
+        <div class="ems-field text">
+            <div class="ems-form-label zorunluFont">TELEFON</div>
+            <div class="ems-form-obj"><input value="getExportParam[ssUYE_CEPTELEFON]" class="textbox" name="phone" /></div>
+        </div>
+        <div class="ems-field text">
+            <div class="ems-form-label zorunluFont">E-POSTA</div>
+            <div class="ems-form-obj"><input value="getExportParam[ssUYE_EMAIL]" class="textbox" name="email" /></div>
+        </div>
+        <div class="ems-field text">
+            <div class="ems-form-label zorunluFont">KATEGORİ</div>
+            <div class="ems-form-obj"><select name="category"> <option selected="selected" value="0">Se&ccedil;iniz</option> <option value="INTERNET">Online Satış</option> <option value="BEYAZESYA">Beyaz Eşya</option> <option value="ANKASTRE">Ankastre</option> <option value="ELEKTRONIK">Elektronik</option> <option value="ISITMASOGUTMA">Isıtma-Soğutma</option> <option value="KUCUKEVALETLERI">Küçük Ev Aletleri</option> <option value="FEEDBACK">&Ouml;neri, Talep, Şikayet</option> <option value="DIGER">Diğer</option></select></div>
+        </div>
+        <div class="ems-field submit">
+            <div class="ems-form-label"></div>
+            <div class="ems-form-obj"><a class="btn btn-full btnLiveSupport" href="javascript:void(0);">GÖNDER</a></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">// <![CDATA[
+if($('[id$="lblUYE_ADSOYAD"]', window.parent.document).length > 0){
+	$('.chatForm input[name="name"]').val($('[id$="lblUYE_ADSOYAD"]', window.parent.document).html());
+}
+
+var chatUrl, name, phone, email, kategori, message, now, windowSize = "width=350,height=450", windowName = "popUp";
+
+$('.chatForm .btnLiveSupport').click(function(){
+	name = $('.chatForm input[name="name"]').val();
+	name = generate(name);
+	phone = $('.chatForm input[name="phone"]').val();
+	phone = phone.replace(" ", "");
+	email = $('.chatForm input[name="email"]').val();
+	kategori = $('.chatForm select').val();
+	//kategori = generate(kategori);
+	message = $('.chatForm select :selected').text();
+	message = generate(message);
+	
+	now = new Date();
+	now = now.getFullYear()+''+pad(now.getDate())+''+pad(now.getMonth()+1)+'-'+pad(now.getHours())+''+pad(now.getMinutes())+''+pad(now.getSeconds());
+	
+	if(email != 0){
+		chatUrl = now+'-'+encodeURI(name)+'-'+phone+'-'+kategori+'-ARCELIK-'+email+'-'+encodeURI(message);
+	}else{
+		chatUrl = now+'-'+encodeURI(name)+'-'+phone+'-'+kategori+'-ARCELIK--'+encodeURI(message);
+	}
+	
+	if(name != 0 && phone != 0 && kategori != 0){
+			window.open('/encrypt.html?id='+chatUrl, windowName, windowSize);
+			window.parent.closeChatPopup();
+			
+	}else{
+		alert('Lütfen zorunlu alanları doldurunuz.');	
+	}
+});
+
+function pad(number){
+    	return (number < 10 ? '0' : '') + number;
+}
+
+function generate(e){
+	e = e.replace(/ /g, "+");
+	
+	//.replaceAll("ç", "c").replaceAll("ğ", "g").replaceAll("ı", "i").replaceAll("ö", "o").replaceAll("ş", "s").replaceAll("ü", "u").replaceAll("Ç", "C").replaceAll("Ğ", "G").replaceAll("İ", "I").replaceAll("Ö", "O").replaceAll("Ş", "S").replaceAll("Ü", "U");
+	return e;
+}
+// ]]></script>
+
+---/encrypt.html
+<script type="text/javascript">// <![CDATA[
+window.location = 'http://canlidestek.arcelik.com/website/public/htmlclient/index.jsp?sessionid=getExportEncrypt(getExportParam[rqid])';
+// ]]></script>

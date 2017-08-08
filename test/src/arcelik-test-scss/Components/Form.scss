@@ -1,0 +1,497 @@
+input:not([type='checkbox, radio']), select, textarea, .dropdown > span {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #e3e3e3;
+    background: #ebebeb;
+    padding: 0 9px;
+    font-family: $fontSite;
+    font-size: 15px;
+    color: #333;
+    font-weight: 300;
+    font-style: italic;
+
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {box-shadow: 0 0 0 1000px #ebebeb inset;}
+input:disabled, input:read-only {background: #bababa;}
+
+input[type="checkbox"], input[type="radio"] {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px;
+    @at-root {
+        & + span, span.checkbox + span {
+            vertical-align: middle;
+            line-height: 1.3;
+            font-weight: 300;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    & ~ input{
+        margin-left:20px;
+    }
+}
+
+input[type=number],
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(#{$baseHref + "/images/frontend/arrow-02-b.svg"});
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.dropdown{
+    width: 100%;
+    position: relative;
+    > span {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        &:before {
+            @include vAlign;
+            position: absolute;
+            right: 15px;
+            font-size: 12px;
+            font-weight: 700;
+            z-index: 2;
+        }
+    }
+    > ul {
+        display: none;
+        width: 100%;
+        background: #ebebeb;
+        padding: 5px;
+        max-height: 300px;
+        overflow: auto;
+        position: absolute;
+        top: 39px;
+        z-index: 5;
+        > li {
+            > a {
+                display: block;
+                border-bottom: 1px solid #ccc;
+                padding: .7rem 1rem;
+                span {
+                    display: block;
+                }
+                &:hover{
+                    background: #ccc;
+                }
+            }
+        }
+    }
+    &.opened {
+        > ul {
+            display: block;
+        }
+    }
+}
+
+.geneltelefon, textarea {width: 100% !important;}
+textarea {
+    resize: none;
+    height: 200px;
+    line-height: 1.5;
+}
+
+//captcha
+[id$="divCaptcha"] {
+    position: relative;
+    margin-top: 20px;
+    br {
+        display: none;
+    }
+    [id$="lbfUYE_KONTROLKODU"] {
+        display: block;
+        font-family: "Gotham Rounded";
+        font-size: 13px;
+        color: #666;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+    #imgCaptcha {
+        position: absolute;
+        left: 1px;
+        top: 24px;
+        height: 37px;
+        border-right: 1px solid #e3e3e3;
+    }
+    input {
+        padding-left: 160px;
+    }
+}
+
+#divUlkeBilgi, .ilceListeGizli {
+    display: none;
+}
+
+//form
+.ems-form {
+    display: block;
+    .ems-form-inner {
+        position: relative;
+        .ems-field {
+            margin-bottom: 20px;
+            &-calendar{
+                & > .ems-form-obj{
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        right: 6%;
+                        top: 9px;
+                        z-index: 3;
+                        font-size: 18px;
+                        pointer-events: none;
+                    }
+                }
+            }
+            &.password{
+                position: relative;
+                .ems-form-obj {
+                    padding-bottom: 3px;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 3px;
+                        background: #333333;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index:2;
+                    }
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 0%;
+                        height: 3px;
+                        background: #FFC107;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index:3;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                &.short .ems-form-obj:before {
+                    width:20%;
+                }
+                &.weak .ems-form-obj:before {
+                    width:60%;
+                }
+                &.good .ems-form-obj:before {
+                    width:60%;
+                }
+                &.strong .ems-form-obj:before {
+                    width:100%;
+                    background:#8dde5e;
+                }
+                .showPassBtn {
+                    display: none;
+                    position: absolute;
+                    right: 5px;
+                    top: 30px;
+                    z-index: 5;
+                    padding: 5px;
+                    font-size: 16px;
+                    opacity: 0.5;
+                    transition: opacity .2s ease;
+                    cursor: pointer;
+                }
+                &.short,
+                &.good,
+                &.weak,
+                &.strong{
+                    .showPassBtn{
+                        display: block;
+                    }
+                }
+                &.show-pass{
+                    .showPassBtn{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .ems-form-label {
+                font-family: $fontSite;
+                font-size: 13px;
+                color: #666;
+                line-height: 1.4;
+                margin-bottom: 5px;
+                &:empty {
+                    display: none;
+                }
+                .ems-form-obj {
+                    &:empty {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .margin0 {
+            margin-bottom: 0;
+        }
+        .margin2 {
+            margin-bottom: (10px / 2);
+        }
+        .vam {
+            > * {
+                vertical-align: middle;
+            }
+        }
+        .w98 {
+            > * {
+                width: 49%;
+                &:first-child {
+                    margin-right: 2%;
+                }
+            }
+        }
+        input[id$="CEPTELEFONALAN"], .cep-tel-alan {
+            width: 20% !important;
+            text-align: center;
+        }
+        input[id$="CEPTELEFON"], .cep-tel {
+            width: 78% !important;
+            float: right;
+        }
+        .cep-tel-alan, .cep-tel {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            margin-bottom: 0;
+            input {
+                float: none;
+                width: 100% !important;
+            }
+        }
+    }
+    &.ems-form-horizontal {
+        .ems-form-inner {
+            .ems-field {
+                width: 100%;
+                margin-bottom: 16px;
+                > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .ems-form-label {
+                    margin-bottom: 0;
+                    width: 23%;
+                }
+                .ems-form-obj {
+                    width: 77%;
+                }
+            }
+        }
+    }
+}
+//required
+.ems-form-err{
+    [required="true"], [required="required"]{
+        border-color: $colorRed;
+    }
+    .ems-form-err-msg{
+        font-family: $fontDefault;
+        color: $colorRed;
+        margin-top: 5px;
+    }
+}
+
+//datepicker
+.hasDatepicker {
+    cursor: pointer;
+}
+body .ui-datepicker {
+	font-family: $fontSite;
+    width: 224px;
+	background: #666;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	box-shadow: 0 1px 3px #252525;
+	padding: 0;
+    z-index: 999 !important;
+}
+
+body .ui-datepicker-header {
+	border: none;
+    border-bottom: 1px solid #999e9e;
+    background: transparent;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+body .ui-datepicker-header .ui-state-hover {
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+body .ui-datepicker .ui-datepicker-title {
+	margin: 0 !important;
+}
+
+body .ui-datepicker .ui-datepicker-title select {
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 0;
+    height: 30px;
+    border: none;
+    line-height: 30px;
+    color: #fff;
+    option{
+        color: #252525;
+    }
+}
+
+body .ui-datepicker .ui-datepicker-prev-hover,
+body .ui-datepicker .ui-datepicker-next-hover,
+body .ui-datepicker .ui-datepicker-next,
+body .ui-datepicker .ui-datepicker-prev {
+	top: 10px;
+    border: none;
+    background: #666;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0 !important;
+}
+
+body .ui-datepicker .ui-datepicker-prev {
+	left: -30px;
+    background: #333;
+}
+
+body .ui-datepicker .ui-datepicker-next {
+	right: -30px;
+    background: #333;
+}
+
+body .ui-datepicker .ui-datepicker-next span,
+body .ui-datepicker .ui-datepicker-prev span {
+	display: none;
+}
+body .ui-datepicker .ui-datepicker-next:before,
+body .ui-datepicker .ui-datepicker-prev:before{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    @extend [class*=" icon-"];
+}
+body .ui-datepicker .ui-datepicker-next:before{
+    @extend .icon-arrow-03-r; 
+}
+body .ui-datepicker .ui-datepicker-prev:before{
+    @extend .icon-arrow-03-l; 
+}
+
+body .ui-datepicker table {
+    table-layout: fixed;
+    color: #fff;
+    width: 94%;
+    margin: 3%;
+    th {
+        text-transform: uppercase;
+        padding: 10px 5px;
+    }
+    td {
+        .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+            background: transparent;
+            border: none;
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+            font-weight: normal;
+            color: #efefef;
+            font-size: 12px;
+            border-radius: 0;
+            &:hover {
+                background: #95a5a6;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $tablet) {
+    .ems-form {
+        &.ems-form-horizontal {
+            .ems-form-inner {
+                .ems-field {
+                    .ems-form-label {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                    .ems-form-obj {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-l) {
+    .ems-form {
+        .ems-form-inner {
+            .ems-field {
+                .ems-form-label {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+                .ems-form-obj {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .w98 {
+                > * {
+                    width: 100%;
+                    &:first-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

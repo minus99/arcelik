@@ -1,0 +1,32 @@
+<div class="member-info-address">
+    <div class="row-header">##convertLanguage(lbfExpAdresler|$$request.lang$$|Adresler)##</div>
+    <div class="grid">
+        <EMOSLOOP source="S_EXP_UYEADRES" param="@UYE_KOD=$$session.UYE_KOD$$|@LNG_CULTURENAME=$$request.LNG_CULTURENAME$$">
+        <div class="row">
+            <div class="r-holder-1 ems-inline-table">
+                <div class="r1"><b>$$UYA_AD$$ <span>$$TIP_SPR_AD$$</span></b></div>
+                <div class="r2 ems-right">
+                    <a href="javascript:emosConfirm(strGNL_SILONAY, function(){ formAction('sil','',$$UYAID$$) });" class="btn btn-text btnAdresListeSil"><span>##convertLanguage(lbfExpAdresSil|$$request.lang$$|Sil)##</span></a>
+                    <a href="javascript:formRedirectGuncelle($$UYAID$$)" class="btn btn-text btnAdresListeGuncelle">##convertLanguage(lbfExpAdresGuncelle|$$request.lang$$|Güncelle)##</a>
+                </div>
+            </div>
+            <div class="r3">
+                $$UYA_ADRES$$
+            </div>
+        </div>
+        </EMOSLOOP>
+    </div>
+    <a onclick="formRedirectGuncelle(0);return false;" id="ctl00_frmMain_ascTeslimatBilgi_btnAdresEkle" class="btn btn-color2 btnAdresEkle" href="javascript:__doPostBack('ctl00$frmMain$ascTeslimatBilgi$btnAdresEkle','')">##convertLanguage(lbfExpAdresEkle|$$request.lang$$|YENİ ADRES EKLE)##</a>
+</div>
+
+
+----
+
+<EMOSLOOP source="S_EXP_UYEADRES" param="@UYE_KOD=$$session.UYE_KOD$$|@LNG_CULTURENAME=$$request.LNG_CULTURENAME$$">
+$$UYA_AD$$ - $$TIP_SPR_AD$$ - $$UYA_ADRES$$
+<div class="ems-address-buttons">
+<a href="javascript:formRedirectGuncelle($$UYAID$$)" class="btnDefault btnAdresListeGuncelle">Güncelle</a>
+<a href="javascript:emosConfirm(strGNL_SILONAY, function(){ formAction('sil','',$$UYAID$$) });" class="btnDefault btnAdresListeSil"><span>Sil</span></a>
+</div>
+</EMOSLOOP>
+<a onclick="formRedirectGuncelle(0);return false;" id="ctl00_frmMain_ascTeslimatBilgi_btnAdresEkle" class="btnDefault btnAdresEkle" href="javascript:__doPostBack('ctl00$frmMain$ascTeslimatBilgi$btnAdresEkle','')"><span id="ctl00_frmMain_ascTeslimatBilgi_lbfbtnAdresEkle">YENİ ADRES EKLE</span></a>
