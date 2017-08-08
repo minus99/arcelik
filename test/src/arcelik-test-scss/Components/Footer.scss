@@ -101,6 +101,29 @@
                 }
             }
         }
+        .koc-holding-company {
+            margin-top: 15px;
+            border-top: 1px solid #3b3b3b;
+            padding-top: 15px;
+            margin-right: $mini-menu-width + 20px;
+            > * {
+                vertical-align: middle;
+            }
+            > b {
+                color: #fff;
+                font-weight: 700;
+                margin-right: 30px;
+            }
+            > ul {
+                > li {
+                    > a {
+                        display: block;
+                        padding: 5px 10px;
+                        color: #999;
+                    }
+                }
+            }
+        }
         .footer-map {
             display: block;
             background: url(#{$baseHref + "/images/frontend/footer-map.jpg"}) no-repeat;
@@ -297,7 +320,7 @@
                 }
             }
             .footer-social{
-                margin: 0 0 35px 0;
+                margin: 0 0 0 0;
                 padding: 0;
                 .social-media-title{
                     color: #adadad;
@@ -324,7 +347,27 @@
                             }
                         }
                 }
-            }   
+            }
+            .koc-holding-company {
+                margin: 25px 20px 25px 0;
+                > b {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+                > ul {
+                    > li {
+                        > a {
+                            padding-left: 25px;
+                            padding-right: 0;
+                        }
+                        &:first-child {
+                            > a {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
             .footer-menu-mini{
                 > ul {
                     padding: 0;

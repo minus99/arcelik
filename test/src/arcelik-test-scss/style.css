@@ -5456,6 +5456,21 @@ body .ui-datepicker table {
           transition: color 0.32s cubic-bezier(0, -0.46, 0.99, -0.22); }
           .site-footer-inner .footer-social > ul > li > a:hover {
             color: #fff; }
+  .site-footer-inner .koc-holding-company {
+    margin-top: 15px;
+    border-top: 1px solid #3b3b3b;
+    padding-top: 15px;
+    margin-right: 270px; }
+    .site-footer-inner .koc-holding-company > * {
+      vertical-align: middle; }
+    .site-footer-inner .koc-holding-company > b {
+      color: #fff;
+      font-weight: 700;
+      margin-right: 30px; }
+    .site-footer-inner .koc-holding-company > ul > li > a {
+      display: block;
+      padding: 5px 10px;
+      color: #999; }
   .site-footer-inner .footer-map {
     display: block;
     background: url(//epm.test.arcelik.com/images/frontend/footer-map.jpg) no-repeat;
@@ -5592,7 +5607,7 @@ body .ui-datepicker table {
         font-weight: 500;
         font-family: "Gotham Rounded"; }
     .site-footer-inner .row-1 .footer-social {
-      margin: 0 0 35px 0;
+      margin: 0 0 0 0;
       padding: 0; }
       .site-footer-inner .row-1 .footer-social .social-media-title {
         color: #adadad;
@@ -5614,6 +5629,16 @@ body .ui-datepicker table {
             color: #fff; }
           .site-footer-inner .row-1 .footer-social > ul li:last-child {
             margin-right: 0; }
+    .site-footer-inner .row-1 .koc-holding-company {
+      margin: 25px 20px 25px 0; }
+      .site-footer-inner .row-1 .koc-holding-company > b {
+        margin-right: 0;
+        margin-bottom: 15px; }
+      .site-footer-inner .row-1 .koc-holding-company > ul > li > a {
+        padding-left: 25px;
+        padding-right: 0; }
+      .site-footer-inner .row-1 .koc-holding-company > ul > li:first-child > a {
+        padding-left: 0; }
     .site-footer-inner .row-1 .footer-menu-mini > ul {
       padding: 0; }
   .site-footer-inner .logo-koc {
