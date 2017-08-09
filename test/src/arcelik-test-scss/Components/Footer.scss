@@ -109,7 +109,7 @@
             > * {
                 vertical-align: middle;
             }
-            > b {
+            > a {
                 color: #fff;
                 font-weight: 700;
                 margin-right: 30px;
@@ -272,7 +272,6 @@
             display: inline-block;
             vertical-align: top;
             width: 100%;
-            margin-top: 30px;
         }
 
         .footer-menu{
@@ -350,7 +349,15 @@
                 }
             }
             .koc-holding-company {
-                display: none;
+                margin-right: 20px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                > a {
+                    margin-right: 0;
+                }
+                > ul {
+                    display: none;
+                }
             }
             .footer-menu-mini{
                 > ul {

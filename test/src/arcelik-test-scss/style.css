@@ -5548,7 +5548,7 @@ body .ui-datepicker table {
     margin-right: 270px; }
     .site-footer-inner .koc-holding-company > * {
       vertical-align: middle; }
-    .site-footer-inner .koc-holding-company > b {
+    .site-footer-inner .koc-holding-company > a {
       color: #fff;
       font-weight: 700;
       margin-right: 30px; }
@@ -5659,8 +5659,7 @@ body .ui-datepicker table {
     bottom: initial;
     display: inline-block;
     vertical-align: top;
-    width: 100%;
-    margin-top: 30px; }
+    width: 100%; }
   .site-footer-inner .footer-menu ul li a {
     font-size: 14px;
     line-height: 32px;
@@ -5716,7 +5715,13 @@ body .ui-datepicker table {
           .site-footer-inner .row-1 .footer-social > ul li:last-child {
             margin-right: 0; }
     .site-footer-inner .row-1 .koc-holding-company {
-      display: none; }
+      margin-right: 20px;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+      .site-footer-inner .row-1 .koc-holding-company > a {
+        margin-right: 0; }
+      .site-footer-inner .row-1 .koc-holding-company > ul {
+        display: none; }
     .site-footer-inner .row-1 .footer-menu-mini > ul {
       padding: 0; }
   .site-footer-inner .logo-koc {
@@ -16009,3 +16014,5 @@ html.ms-ready [id$="divCaptcha"] #imgCaptcha {
   left: 2px;
   top: 25px;
   height: 36px; }
+
+/*# sourceMappingURL=style.css.map */
