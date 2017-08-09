@@ -272,6 +272,7 @@
             display: inline-block;
             vertical-align: top;
             width: 100%;
+            margin-top: 30px;
         }
 
         .footer-menu{
@@ -349,24 +350,7 @@
                 }
             }
             .koc-holding-company {
-                margin: 25px 20px 25px 0;
-                > b {
-                    margin-right: 0;
-                    margin-bottom: 15px;
-                }
-                > ul {
-                    > li {
-                        > a {
-                            padding-left: 25px;
-                            padding-right: 0;
-                        }
-                        &:first-child {
-                            > a {
-                                padding-left: 0;
-                            }
-                        }
-                    }
-                }
+                display: none;
             }
             .footer-menu-mini{
                 > ul {

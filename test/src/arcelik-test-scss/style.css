@@ -5574,7 +5574,8 @@ body .ui-datepicker table {
     bottom: initial;
     display: inline-block;
     vertical-align: top;
-    width: 100%; }
+    width: 100%;
+    margin-top: 30px; }
   .site-footer-inner .footer-menu ul li a {
     font-size: 14px;
     line-height: 32px;
@@ -5630,15 +5631,7 @@ body .ui-datepicker table {
           .site-footer-inner .row-1 .footer-social > ul li:last-child {
             margin-right: 0; }
     .site-footer-inner .row-1 .koc-holding-company {
-      margin: 25px 20px 25px 0; }
-      .site-footer-inner .row-1 .koc-holding-company > b {
-        margin-right: 0;
-        margin-bottom: 15px; }
-      .site-footer-inner .row-1 .koc-holding-company > ul > li > a {
-        padding-left: 25px;
-        padding-right: 0; }
-      .site-footer-inner .row-1 .koc-holding-company > ul > li:first-child > a {
-        padding-left: 0; }
+      display: none; }
     .site-footer-inner .row-1 .footer-menu-mini > ul {
       padding: 0; }
   .site-footer-inner .logo-koc {
