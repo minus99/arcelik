@@ -4901,14 +4901,21 @@ body .ui-datepicker table {
                 content: ""; }
     .site-header-inner .header-mobile-menu .type-1 {
       display: none; }
+    .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.selected .op-menu {
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li ul {
       padding-bottom: 0 !important; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu {
-      padding-top: 20px;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
       padding-bottom: 115px; }
       .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu > ul {
-        width: calc(100% - 355px);
-        margin-left: 15px;
+        width: calc(100% - 340px);
+        margin-top: 20px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -4939,7 +4946,7 @@ body .ui-datepicker table {
           .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu > ul > li ul {
             padding-bottom: 0 !important; }
           .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu > ul > li.cat-link {
-            bottom: -90px !important;
+            bottom: -80px !important;
             width: 100%;
             display: inline-block; }
             .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu > ul > li.cat-link a {
@@ -4969,6 +4976,12 @@ body .ui-datepicker table {
           background: #ebebeb; }
         .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu > ul .cat-link {
           display: none; }
+      .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu .cat-obj-holder {
+        width: 320px;
+        margin-left: 20px;
+        position: initial; }
+        .site-header-inner .header-mobile-menu .type-2 .lvl1 > li .op-menu .cat-obj-holder:empty {
+          display: none; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.cat-1 .op-menu {
       height: 440px !important; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.cat-2 .op-menu {
@@ -4976,7 +4989,7 @@ body .ui-datepicker table {
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.cat-3 .op-menu {
       height: 460px !important; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.cat-4 .op-menu {
-      height: 320px !important; }
+      height: 350px !important; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.cat-5 .op-menu {
       height: 625px !important; }
   .site-header-inner #validateLogin {
@@ -8159,6 +8172,8 @@ body .ui-datepicker table {
       transition: all 0.32s ease; }
     .ems-prd-list > .ems-inline .ems-prd a {
       text-decoration: none; }
+    .ems-prd-list > .ems-inline .ems-prd a > .features {
+      line-height: 1.5; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner {
       position: relative;
       border: 1px solid #ebebeb;
@@ -8179,9 +8194,10 @@ body .ui-datepicker table {
           max-height: 180px;
           margin: 0 auto; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .prd-fields-1 {
-        height: 108px; }
+        max-height: 108px;
+        min-height: 87px; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-name {
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 13px;
         font-weight: 700;
         line-height: 1.2;
@@ -8196,7 +8212,7 @@ body .ui-datepicker table {
         font-size: 12px;
         color: #333;
         line-height: 1.3;
-        height: 60px;
+        height: 75px;
         overflow: hidden; }
         .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description ul.features li .text {
           color: #999; }
@@ -8210,7 +8226,8 @@ body .ui-datepicker table {
           letter-spacing: 1px;
           padding: 3px 5px; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .urunListe_ParoAciklama {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        margin-top: 10px;
         height: 22px; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-price {
         position: relative;
@@ -8232,7 +8249,7 @@ body .ui-datepicker table {
         .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-price-selling {
           margin-top: 15px;
           font-size: 23px;
-          font-weight: 500; }
+          font-weight: 700; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-compare {
         float: right;
         margin-top: -15px; }
@@ -8246,7 +8263,7 @@ body .ui-datepicker table {
           font-size: 12px;
           font-weight: 700; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-btn-detail {
-        margin-top: 7px; }
+        margin-top: 9px; }
         .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-btn-detail a {
           display: block;
           text-align: center;
@@ -8318,9 +8335,11 @@ body .ui-datepicker table {
   .ems-prd-list .paroKampanyaAd .desc > b {
     font-family: arial;
     font-size: 9px;
-    color: #9d6948;
+    /*color: #9d6948;*/
+    color: #333333;
     font-weight: 700;
-    letter-spacing: 2px; }
+    /*letter-spacing: 2px;*/
+    letter-spacing: 1.1px; }
   .ems-prd-list .paroKampanyaAd .paro-icon1 {
     max-width: 50px;
     position: absolute;
@@ -9057,6 +9076,9 @@ body .ui-datepicker table {
     font-size: 10px; }
   .ems-prd-list-count {
     margin: 5px 20px 20px; }
+  .ems-prd-list .paroKampanyaAd .paro-icon1 {
+    max-width: 70px;
+    top: 141px; }
   .ems-prd-list > .ems-inline .ems-prd {
     max-width: 100%; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .prd-fields-1 {
@@ -9068,7 +9090,7 @@ body .ui-datepicker table {
       display: none; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description {
       font-size: 13px;
-      height: 64px; }
+      height: 72px; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-price-selling {
       font-size: 25px;
       margin-top: 20px;
@@ -9976,20 +9998,24 @@ a.btn-all-technology {
     color: #999;
     position: absolute;
     left: 73px;
-    top: 3px; }
+    top: 3px;
+    font-weight: 300; }
     .urunListe_yorum > span[id$="lblURUNYORUM_ORTALAMAPUAN"] > b, .yorumOrtalamaPuan > span[id$="lblURUNYORUM_ORTALAMAPUAN"] > b {
       color: #ffb400; }
   .urunListe_yorum .urunListe_yorumSayi, .yorumOrtalamaPuan .urunListe_yorumSayi {
     display: none !important; }
 
 .urunListe_ratingbar {
-  width: 72px; }
+  /*width: 72px;*/
+  width: 55px; }
 
 .urunListe_ratingbar, .urunListe_ratingbar .current-rating {
-  background-size: 72px 36px; }
+  /*background-size: 72px 36px;*/
+  background-size: 55px 31px; }
 
 .urunListe_yorum > span[id$="lblURUNYORUM_ORTALAMAPUAN"] {
-  left: 77px; }
+  /*left: 77px;*/
+  left: 60px; }
 
 .mod-comments {
   margin: 30px 0; }

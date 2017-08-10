@@ -462,7 +462,7 @@ a.btn-all-technology {
                             font-size: 15px;
                             color: #666;
                             font-weight: 300;
-                            font-style: italic; 
+                            font-style: italic;
                         }
                         b {
                             display: block;
@@ -646,7 +646,7 @@ a.btn-all-technology {
                     }
                 }
             }
-        } 
+        }
     }
 }
 
@@ -679,7 +679,7 @@ a.btn-all-technology {
                             width: 25px;
                             height: 25px;
                             margin-right: 7px;
-                            vertical-align: middle;                        
+                            vertical-align: middle;
                         }
                     }
                     &.download {
@@ -962,6 +962,7 @@ a.btn-all-technology {
         position: absolute;
         left: 73px;
         top: 3px;
+        font-weight: 300;
         > b {
             color: #ffb400;
         }
@@ -973,13 +974,16 @@ a.btn-all-technology {
 
 //urun liste yıldız gösterim
 .urunListe_ratingbar {
-    width: 72px;
+    /*width: 72px;*/
+    width: 55px;
 }
 .urunListe_ratingbar, .urunListe_ratingbar .current-rating {
-    background-size: 72px 36px;
+    /*background-size: 72px 36px;*/
+    background-size: 55px 31px;
 }
 .urunListe_yorum > span[id$="lblURUNYORUM_ORTALAMAPUAN"] {
-    left: 77px;
+    /*left: 77px;*/
+    left: 60px;
 }
 
 //yorum
@@ -1055,7 +1059,7 @@ a.btn-all-technology {
             > .ratingOzet {
                 margin-top: 17px;
                 &:first-child {
-                    margin-top: 0;  
+                    margin-top: 0;
                 }
                 > div {
                     display: inline-block;
@@ -1132,7 +1136,7 @@ a.btn-all-technology {
                                 border-style: solid;
                                 border-color: $colorRed transparent transparent transparent;
                             }
-                        }                        
+                        }
                     }
                 }
             }
@@ -1473,7 +1477,7 @@ a.btn-all-technology {
             }
         }
     }
-    
+
     .ems-prd-detail{
         & > &-inner{
             display: inline-block;
@@ -1707,7 +1711,7 @@ a.btn-all-technology {
             }
         }
     }
-    
+
     //doküman paylaş
     .popupPaypas {
         .ems-form {

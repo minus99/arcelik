@@ -129,7 +129,7 @@
                                             width: 30px;
                                             height: 1px;
                                             //http://www.colorzilla.com/gradient-editor/#fafafa+0,fafafa+62,d1d1d1+62
-                                            background: rgb(250,250,250); 
+                                            background: rgb(250,250,250);
                                             background: -moz-linear-gradient(left,  rgba(250,250,250,1) 0%, rgba(250,250,250,1) 62%, rgba(209,209,209,1) 62%);
                                             background: -webkit-linear-gradient(left,  rgba(250,250,250,1) 0%,rgba(250,250,250,1) 62%,rgba(209,209,209,1) 62%);
                                             background: linear-gradient(to right,  rgba(250,250,250,1) 0%,rgba(250,250,250,1) 62%,rgba(209,209,209,1) 62%);
@@ -142,7 +142,7 @@
                                 }
                                 &.cat-link {
                                     > a {
-                                        color: #333;                                    
+                                        color: #333;
                                     }
                                 }
                             }
@@ -256,13 +256,18 @@
             .type-2{
                 .lvl1{
                     >li{
+                        &.selected{
+                            .op-menu{
+                                display: flex !important;
+                            }
+                        }
                         ul{ padding-bottom: 0 !important; }
                         .op-menu{
-                            padding-top: 20px;
+                            justify-content: space-around;
                             padding-bottom: 115px;
                             > ul{
-                                width: calc(100% - 355px);
-                                margin-left: 15px;
+                                width: calc(100% - 340px);
+                                margin-top: 20px;
                                 display: flex;
                                 flex-direction: column;
                                 align-content: flex-start;
@@ -281,7 +286,7 @@
                                         padding-bottom: 0 !important;
                                     }
                                     &.cat-link{
-                                        bottom:-90px !important;
+                                        bottom:-80px !important;
                                         width: 100%;
                                         display: inline-block;
                                         a{
@@ -317,7 +322,15 @@
                                 .cat-link{
                                     display: none;
                                 }
-                                
+
+                            }
+                            .cat-obj-holder{
+                                width: 320px;
+                                margin-left: 20px;
+                                position: initial;
+                                &:empty{
+                                    display: none;
+                                }
                             }
                         }
                         &.cat-1{
@@ -337,7 +350,7 @@
                         }
                         &.cat-4{
                             .op-menu{
-                                height: 320px !important;
+                                height: 350px !important;
                             }
                         }
                         &.cat-5{
@@ -409,7 +422,7 @@
                         border-radius: 100%;
                         @media screen and (max-width: $mobile-l){
                             left: initial;
-                            right: 12px;   
+                            right: 12px;
                         }
                     }
                 }
@@ -424,7 +437,7 @@
             padding: 26px 0 22px 27px;
             position: relative;
             i {
-                font-size: 19px; 
+                font-size: 19px;
                 color: #999;
                 position: absolute;
                 left: 0;
@@ -512,7 +525,7 @@
 
 @media screen and (max-width: $tablet-p) {
     .visibility-control{display:block;}
-	
+
     .site-header {
         &-inner {
             .header-menu{
@@ -822,7 +835,7 @@
     }
 }
 
-@media screen and (max-width: $mobile-l) {    
+@media screen and (max-width: $mobile-l) {
     .site-header {
         height: 52px;
         &-inner {
