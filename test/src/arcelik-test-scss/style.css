@@ -8341,7 +8341,7 @@ body .ui-datepicker table {
     /*letter-spacing: 2px;*/
     letter-spacing: .6px; }
     .ems-prd-list .paroKampanyaAd .desc > b > .paroFiyat {
-      color: #ed1c24;
+      /*color: #ed1c24;*/
       font-family: "Gotham";
       font-weight: 500; }
   .ems-prd-list .paroKampanyaAd .paro-icon1 {
