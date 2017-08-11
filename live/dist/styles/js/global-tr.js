@@ -12,7 +12,9 @@ var utlty = {
 	arr: [				
 		{ 'el': '[id$="txtHCK_KEY"]', 'placeHolder': $('[id$="lbfHCK_KEY"]').text() || 'Kupon No' },
 		{ 'el': '[id$="txtUYA_CEPTELEFON"]', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
-		{ 'el': '[id$="txtUYM_TELEFON"]', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
+		{ 'el': '[id$="lbfUYM_TELEFON"]', 'class': 'zorunluFont' },
+		{ 'el': '[id$="txtUYM_TELEFON"]', 'mask': '09999999999', 'prop': { 'type': 'tel' }, 'required': 'required' },
+		{ 'el': '[id$="lbfSHR_ADI"]', 'class': 'zorunluFont' },
 		{ 'el': '.telefon', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
 		{ 'el': '[id$="lbfUYE_KONTROLKODU"]', 'class': 'zorunluFont' },
 		{ 'el': '.ems-page-member-login [id$="lbfUYE_CEPTELEFON"]', 'class': 'zorunluFont' },
