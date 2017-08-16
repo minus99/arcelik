@@ -15482,15 +15482,19 @@ a.contact724 {
       max-height: 700px;
       opacity: 1; }
     .campaign-wrapper .campaign-products-wrapper .campaign-product-slider {
-      position: static !important;
+      /*position: static !important;*/
       margin-top: 20px;
       margin-bottom: 60px; }
       .campaign-wrapper .campaign-products-wrapper .campaign-product-slider .bx-controls-direction {
-        z-index: 2 !important; }
-        .campaign-wrapper .campaign-products-wrapper .campaign-product-slider .bx-controls-direction a.bx-prev {
-          left: 0; }
-        .campaign-wrapper .campaign-products-wrapper .campaign-product-slider .bx-controls-direction a.bx-next {
-          right: 0; }
+        z-index: 2 !important;
+        /*
+                            a.bx-prev{
+                                left: 0;
+                            }
+                            a.bx-next{
+                                right: 0;
+                            }
+                            */ }
     .campaign-wrapper .campaign-products-wrapper .page-top-title, .campaign-wrapper .campaign-products-wrapper .guestCheckout .pageHeaderGuestCheckout, .guestCheckout .campaign-wrapper .campaign-products-wrapper .pageHeaderGuestCheckout {
       margin: 0 0 20px 0;
       font-size: 44px;

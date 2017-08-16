@@ -260,18 +260,20 @@
                     opacity: 1;
                 }
                 .campaign-product-slider {
-                    position: static !important;
+                    /*position: static !important;*/
                     margin-top: 20px;
                     margin-bottom: 60px;
                     @extend .ems-container;
                         .bx-controls-direction{
                             z-index: 2 !important;
+                            /*
                             a.bx-prev{
                                 left: 0;
                             }
                             a.bx-next{
                                 right: 0;
                             }
+                            */
                         }
                 }
                 .page-top-title{
