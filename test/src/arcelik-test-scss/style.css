@@ -14068,6 +14068,15 @@ a.contact724 {
 .faq-item-detail .answer {
   display: block; }
 
+.rate-content .thx-for-feedback {
+  display: none; }
+
+.rate-content.ems-submitted .rate-btns {
+  display: none; }
+
+.rate-content.ems-submitted .thx-for-feedback {
+  display: block; }
+
 .catalog {
   border: 1px solid #ebebeb;
   margin: 5px;

@@ -29,7 +29,16 @@
                 <div class="expert-name">$prmTitle2$</div>
             </div>
             </EMOSIF>
-            <div class="inner-row-2">$prmAnswer$<p><EMOSIF condition="TPR_PARAMETRE='prmAnswerFull' AND (TPD_DEGER<>'')"><a class="more" href="$prmIcerikLink$"><b><i>...devamını oku</i></b></a></EMOSIF></p></div>
+            <div class="inner-row-2">$prmAnswer$<EMOSIF condition="TPR_PARAMETRE='prmAnswerFull' AND (TPD_DEGER<>'')"><p><a class="more" href="$prmIcerikLink$"><b><i>...devamını oku</i></b></a></p></EMOSIF>
+                <div class="rate-content mb20">
+                    <div class="mb10"><b>Bu içerik yararlı oldu mu?</b></div>
+                    <div class="rate-btns ems-inline">
+                        <div class="r1 mr20"><a class="btn btn-text rate-btn-yes" href="javascript:void(0);" onclick="rateTheContent(this, $prmIcrKod$, 'OLUMLU');">EVET</a></div>
+                        <div class="r0"><a class="btn btn-text rate-btn-no" href="javascript:void(0);" onclick="rateTheContent(this, $prmIcrKod$, 'OLUMSUZ');">HAYIR</a></div>
+                    </div>
+                    <div class="thx-for-feedback ems-message ems-message-success">Geri bildiriminiz için teşekkürler.</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -52,7 +61,16 @@
                 <div class="expert-name">$prmTitle2$</div>
             </div>
             </EMOSIF>
-            <div class="inner-row-2">$prmAnswerFull$<p></div>
+            <div class="inner-row-2">$prmAnswerFull$
+                <div class="rate-content mb20">
+                    <div class="mb10"><b>Bu içerik yararlı oldu mu?</b></div>
+                    <div class="rate-btns ems-inline">
+                        <div class="r1 mr20"><a class="btn btn-text rate-btn-yes" href="javascript:void(0);" onclick="rateTheContent(this, $prmIcrKod$, 'OLUMLU');">EVET</a></div>
+                        <div class="r0"><a class="btn btn-text rate-btn-no" href="javascript:void(0);" onclick="rateTheContent(this, $prmIcrKod$, 'OLUMSUZ');">HAYIR</a></div>
+                    </div>
+                    <div class="thx-for-feedback ems-message ems-message-success">Geri bildiriminiz için teşekkürler.</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

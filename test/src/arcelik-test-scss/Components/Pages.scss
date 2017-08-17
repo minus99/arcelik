@@ -958,6 +958,20 @@ a.contact724 {
     }
 }
 
+.rate-content {
+    .thx-for-feedback {
+        display: none;
+    }
+    &.ems-submitted {
+        .rate-btns {
+            display: none;
+        }
+        .thx-for-feedback {
+            display: block;
+        }
+    }
+}
+
 //-/kataloglar/
 .ems-page-catalogues {}
 .catalog {

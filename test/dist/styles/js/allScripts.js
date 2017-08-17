@@ -2986,6 +2986,8 @@ var bdy = $('body'),
 				{ 'main': '[id$="txtUYE_CEPTELEFON"]', 'target': '[id$="txtUYE_CEPTELEFON"]', 'template': '<span class="ems-field cep-tel"></span>', 'add': 'wrap' },
 				{ 'main': '.urunKiyaslamaOzellik_tumunuTemizle', 'target': '.pnlUrunKiyasSecim', 'add': 'append' },
 				{ 'main': '.lbfFilterApply .filter-apply-btn', 'target': '.filter-popup', 'add': 'append', 'clone': true }
+
+				
 			],
 			set: function( o ){
 				var main = $( o['main'] || '' ), target = $( o['target'] || '' ), clone = o['clone'] || '', type = o['add'] || '', cls = o['cls'] || '';
@@ -5572,6 +5574,16 @@ function onAramaSonucDoldur(){
 	}, 100);
 }
 
+/*EMS0004293231650 iceriklerde rate*/
+stage.addEventListener("CustomEventClass", [{type:"CUSTOM_RATE_CONTENT", handler:"onCustomRateContent"}]);
+function onCustomRateContent( o ){
+    var ID = o['ID'], typ = o['type'], prt = ID.parents('.rate-content').eq( 0 );
+	prt.addClass('ems-submitted');
+	if( ID.hasClass('rate-btn-yes') )
+		prt.addClass('ems-submit-yes');
+	else
+		prt.addClass('ems-submit-no');
+}
 
 /* ÜYE BİLGİ ADRES SİLME */
 function removeAddr( code ){
