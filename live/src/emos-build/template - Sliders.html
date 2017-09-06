@@ -97,7 +97,7 @@ div.xx-slider swiper-container swiper-container-horizontal swiper-alpha theme-li
             <a href="$prmUrunLink$"><img src="/images/frontend/placeholder/200x300.gif" data-original="$prmPrdImg$" class="lazy-load" alt="title" /></a>
         </div></EMOSIF>
         <EMOSIF condition="TPR_PARAMETRE='prmUrunFiyatFormatli' AND (TPD_DEGER<>'')"><div class="price-holder ems-inline">
-            <div class="price"><EMOSIF condition="TPR_PARAMETRE='prmUrunIlkFiyatFormatli' AND (TPD_DEGER<>'')"><small>$prmUrunIlkFiyatFormatli$</small></EMOSIF><b>$prmUrunFiyatFormatli$</b></div>
+            <div class="price"><EMOSIF condition="TPR_PARAMETRE='prmUrunIndirimOran' AND (TPD_DEGER<>'')"><EMOSIF condition="TPR_PARAMETRE='prmUrunIlkFiyatFormatli' AND (TPD_DEGER<>'')"><small>$prmUrunIlkFiyatFormatli$</small></EMOSIF></EMOSIF><b>$prmUrunFiyatFormatli$</b></div>
         </div></EMOSIF>
         <EMOSIF condition="TPR_PARAMETRE='prmBtnText' AND (TPD_DEGER<>'')"><a href="$prmUrunLink$" class="btn">$prmBtnText$</a></EMOSIF>
     </EMOSIF>
@@ -119,7 +119,7 @@ div.xx-slider swiper-container swiper-container-horizontal swiper-alpha theme-li
             <EMOSIF condition="TPR_PARAMETRE='prmDesc' AND (TPD_DEGER<>'')"><p class="desc">$prmDesc$</p></EMOSIF>
             <EMOSIF condition="TPR_PARAMETRE='prmUrunFiyatFormatli' AND (TPD_DEGER<>'')"><div class="price-holder ems-inline">
                 <EMOSIF condition="TPR_PARAMETRE='prmUrunIndirimOran' AND (TPD_DEGER<>'')"><div class="discount-rate"><b>%$prmUrunIndirimOran$</b><small>İNDİRİM</small></div></EMOSIF>
-                <div class="price"><EMOSIF condition="TPR_PARAMETRE='prmUrunIlkFiyatFormatli' AND (TPD_DEGER<>'')"><small>$prmUrunIlkFiyatFormatli$</small></EMOSIF><b>$prmUrunFiyatFormatli$</b></div>
+                <div class="price"><EMOSIF condition="TPR_PARAMETRE='prmUrunIndirimOran' AND (TPD_DEGER<>'')"><EMOSIF condition="TPR_PARAMETRE='prmUrunIlkFiyatFormatli' AND (TPD_DEGER<>'')"><small>$prmUrunIlkFiyatFormatli$</small></EMOSIF></EMOSIF><b>$prmUrunFiyatFormatli$</b></div>
             </div></EMOSIF>
             <EMOSIF condition="TPR_PARAMETRE='prmBtnText' AND (TPD_DEGER<>'')"><a href="$prmBtnLink$" class="btn">$prmBtnText$</a></EMOSIF>
         </div>
@@ -135,7 +135,7 @@ div.xx-slider swiper-container swiper-container-horizontal swiper-alpha theme-li
             <EMOSIF condition="TPR_PARAMETRE='prmTitle' AND (TPD_DEGER<>'')"><h5 class="title">$prmTitle$</h5></EMOSIF>
             <EMOSIF condition="TPR_PARAMETRE='prmDesc' AND (TPD_DEGER<>'')"><p class="desc">$prmDesc$</p></EMOSIF>
             <EMOSIF condition="TPR_PARAMETRE='prmUrunFiyatFormatli' AND (TPD_DEGER<>'')"><div class="price-holder ems-inline">
-                <div class="price"><EMOSIF condition="TPR_PARAMETRE='prmUrunIlkFiyatFormatli' AND (TPD_DEGER<>'')"><small>$prmUrunIlkFiyatFormatli$</small></EMOSIF><b>$prmUrunFiyatFormatli$</b></div>
+                <div class="price"><EMOSIF condition="TPR_PARAMETRE='prmUrunIndirimOran' AND (TPD_DEGER<>'')"><EMOSIF condition="TPR_PARAMETRE='prmUrunIlkFiyatFormatli' AND (TPD_DEGER<>'')"><small>$prmUrunIlkFiyatFormatli$</small></EMOSIF></EMOSIF><b>$prmUrunFiyatFormatli$</b></div>
             </div></EMOSIF>
             <EMOSIF condition="TPR_PARAMETRE='prmBtnText' AND (TPD_DEGER<>'')"><a<EMOSIF condition="TPR_PARAMETRE='prmUrunLink' AND (TPD_DEGER<>'')"> href="$prmUrunLink$"</EMOSIF><EMOSIF condition="TPR_PARAMETRE='prmCompactID' AND (TPD_DEGER<>'')"> onclick="$prmCompactID$"</EMOSIF> class="btn">$prmBtnText$</a></EMOSIF>
         </div>
