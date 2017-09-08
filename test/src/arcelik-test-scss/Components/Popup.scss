@@ -22,7 +22,7 @@
 }
 %popup-animate {
     opacity: 1;
-    @include setTransform(scale(1));  
+    @include setTransform(scale(1));
 }
 .popupTitleDefault,
 .ems-popup-title {
@@ -102,7 +102,7 @@
         line-height: 1.2;
         font-family: $fontSite;
         font-weight: 300;
-    } 
+    }
     [class$="aciklama"]{
         margin-top: 25px;
         font-size: 15px;
@@ -120,7 +120,7 @@
             padding: 2px 5px;
         }
     }
-    //Üye Girişi Popup 
+    //Üye Girişi Popup
     @at-root{
         .popup_favori,
         .popup_stokHaberci{
@@ -382,7 +382,59 @@
     }
 }
 
-@media screen and (max-width: $mobile-l) { 
+//Stoğa gelince haber ver
+.popupUyeliksizDevam{
+    .popupTitleStokHaberci{
+        border-bottom: 0;
+        font-size: 23px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .popupStokHaberciRedirectLogin{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .popupStokHaberciEmail_title{
+        .or{
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            position: relative;
+            font-size: 16px;
+            color: #949494;
+            font-weight: 500;
+            &:before{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #ebebeb;
+                position: absolute;
+                top: calc(50% - .5px );
+                z-index: -1;
+            }
+            span{
+                display: inline-block;
+                background: #fff;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            & + span{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .popupStokHaberciEmail_text{
+        margin-bottom: 15px;
+        width: 95%;
+    }
+    a.btnDefault{ padding: 12px 25px !important; }
+}
+
+@media screen and (max-width: $mobile-l) {
     //mesaj
     .popup-new-message {
         width:100% !important;
