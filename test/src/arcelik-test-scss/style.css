@@ -42,7 +42,6 @@ a:active, a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; }
 
 b, strong {
@@ -145,120 +144,120 @@ textarea {
 
 @font-face {
   font-family: "icomoon";
-  src: url(/styles/fonts/icomoon/icomoon.eot);
-  src: url(/styles/fonts/icomoon/icomoon.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/icomoon/icomoon.woff) format("woff"), url(/styles/fonts/icomoon/icomoon.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/icomoon/icomoon.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/icomoon/icomoon.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/icomoon/icomoon.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/icomoon/icomoon.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-Bold.eot);
-  src: url(/styles/fonts/gotham/Gotham-Bold.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-Bold.woff) format("woff"), url(/styles/fonts/gotham/Gotham-Bold.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Bold.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Bold.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Bold.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-BoldItalic.eot);
-  src: url(/styles/fonts/gotham/Gotham-BoldItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-BoldItalic.woff) format("woff"), url(/styles/fonts/gotham/Gotham-BoldItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BoldItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BoldItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BoldItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BoldItalic.ttf) format("truetype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-Medium.eot);
-  src: url(/styles/fonts/gotham/Gotham-Medium.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-Medium.woff) format("woff"), url(/styles/fonts/gotham/Gotham-Medium.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Medium.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Medium.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Medium.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Medium.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-MediumItalic.eot);
-  src: url(/styles/fonts/gotham/Gotham-MediumItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-MediumItalic.woff) format("woff"), url(/styles/fonts/gotham/Gotham-MediumItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-MediumItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-MediumItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-MediumItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-MediumItalic.ttf) format("truetype");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-Book.eot);
-  src: url(/styles/fonts/gotham/Gotham-Book.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-Book.woff) format("woff"), url(/styles/fonts/gotham/Gotham-Book.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Book.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Book.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Book.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Book.ttf) format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-BookItalic.eot);
-  src: url(/styles/fonts/gotham/Gotham-BookItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-BookItalic.woff) format("woff"), url(/styles/fonts/gotham/Gotham-BookItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BookItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BookItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BookItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-BookItalic.ttf) format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-Light.eot);
-  src: url(/styles/fonts/gotham/Gotham-Light.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-Light.woff) format("woff"), url(/styles/fonts/gotham/Gotham-Light.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Light.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Light.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Light.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-Light.ttf) format("truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham";
-  src: url(/styles/fonts/gotham/Gotham-LightItalic.eot);
-  src: url(/styles/fonts/gotham/Gotham-LightItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham/Gotham-LightItalic.woff) format("woff"), url(/styles/fonts/gotham/Gotham-LightItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-LightItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-LightItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-LightItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham/Gotham-LightItalic.ttf) format("truetype");
   font-weight: 200;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Bold.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Bold.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-Bold.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-Bold.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Bold.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Bold.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Bold.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BoldItalic.ttf) format("truetype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Medium.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Medium.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-Medium.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-Medium.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Medium.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Medium.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Medium.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Medium.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-MediumItalic.ttf) format("truetype");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Book.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Book.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-Book.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-Book.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Book.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Book.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Book.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Book.ttf) format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-BookItalic.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-BookItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-BookItalic.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-BookItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BookItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BookItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BookItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-BookItalic.ttf) format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Light.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-Light.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-Light.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-Light.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Light.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Light.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Light.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-Light.ttf) format("truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-LightItalic.eot);
-  src: url(/styles/fonts/gotham-rounded/GothamRounded-LightItalic.eot?#iefix) format("embedded-opentype"), url(/styles/fonts/gotham-rounded/GothamRounded-LightItalic.woff) format("woff"), url(/styles/fonts/gotham-rounded/GothamRounded-LightItalic.ttf) format("truetype");
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-LightItalic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-LightItalic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-LightItalic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/gotham-rounded/GothamRounded-LightItalic.ttf) format("truetype");
   font-weight: 200;
   font-style: italic; }
 
@@ -2978,7 +2977,7 @@ b {
 
 .full-loading:after, .site-footer-inner .footer-map.ajx-service:after, .gallery-load-image:after, .gallery-load-image .minus-gallery-body-inner:after, .ajx-service .service-list-holder .service-map:after, .ems-page-download.ajx-loading:after {
   content: '';
-  background: url(/images/frontend/loading.gif) no-repeat center center;
+  background: url(//epm.test.arcelik.com/images/frontend/loading.gif) no-repeat center center;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -3064,7 +3063,7 @@ b {
     z-index: 2; }
   .ems-message2:after {
     content: "";
-    background: url(/images/frontend/bg-cross-line.png);
+    background: url(//epm.test.arcelik.com/images/frontend/bg-cross-line.png);
     width: 118px;
     height: 100%;
     position: absolute;
@@ -3075,16 +3074,16 @@ b {
     display: none; }
 
 .ems-message-success2:before {
-  background-image: url(/images/frontend/icon-tamamlandi.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/icon-tamamlandi.png); }
 
 .ems-message-error2:before {
-  background-image: url(/images/frontend/icon-hata.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/icon-hata.png); }
 
 .ems-message-warning2:before {
-  background-image: url(/images/frontend/icon-uyari.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/icon-uyari.png); }
 
 .ems-message-paro:before {
-  background-image: url(/images/Banka_Logo/paro-icon1.png); }
+  background-image: url(//epm.test.arcelik.com/images/Banka_Logo/paro-icon1.png); }
 
 .zorunluFont:before {
   content: "*";
@@ -4448,7 +4447,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url(/images/frontend/arrow-02-b.svg);
+  background-image: url(//epm.test.arcelik.com/images/frontend/arrow-02-b.svg);
   background-position: 93% center;
   background-repeat: no-repeat;
   background-size: 15px; }
@@ -4853,7 +4852,7 @@ body .ui-datepicker table {
           .site-header-inner .header-mobile-menu .header-menu-inner > ul.lvl1 > li ul li.cat-link > a {
             font-weight: 700; }
       .site-header-inner .header-mobile-menu .header-menu-inner > ul.lvl1 > li ul.lvl2 {
-        background: url(/images/frontend/bg-header-menu.jpg) no-repeat;
+        background: url(//epm.test.arcelik.com/images/frontend/bg-header-menu.jpg) no-repeat;
         background-size: cover;
         width: 250px;
         padding: 20px; }
@@ -5617,7 +5616,7 @@ body .ui-datepicker table {
       color: #999; }
   .site-footer-inner .footer-map {
     display: block;
-    background: url(/images/frontend/footer-map.jpg) no-repeat;
+    background: url(//epm.test.arcelik.com/images/frontend/footer-map.jpg) no-repeat;
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -6524,7 +6523,7 @@ body .ui-datepicker table {
   margin-bottom: 20px; }
 
 .expert-helper {
-  background: url(/upload/banner/teaser/expert.jpg) no-repeat center center;
+  background: url(//epm.test.arcelik.com/upload/banner/teaser/expert.jpg) no-repeat center center;
   background-size: cover;
   height: 590px;
   margin-bottom: 10px; }
@@ -7777,16 +7776,16 @@ body .ui-datepicker table {
       top: calc(50% - 16px); }
 
 .prd-info-tab > .ems-tab-inner > ul.lvl1 > li[rel="tab1"] a span:after {
-  background-image: url(/images/frontend/assets/tab/specs.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/assets/tab/specs.png); }
 
 .prd-info-tab > .ems-tab-inner > ul.lvl1 > li[rel="tab2"] a span:after {
-  background-image: url(/images/frontend/assets/tab/info.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/assets/tab/info.png); }
 
 .prd-info-tab > .ems-tab-inner > ul.lvl1 > li[rel="tab3"] a span:after {
-  background-image: url(/images/frontend/assets/tab/prices.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/assets/tab/prices.png); }
 
 .prd-info-tab > .ems-tab-inner > ul.lvl1 > li[rel="tab4"] a span:after {
-  background-image: url(/images/frontend/assets/tab/comments.png); }
+  background-image: url(//epm.test.arcelik.com/images/frontend/assets/tab/comments.png); }
 
 .member-tab ul.lvl1 > li > a.title {
   background: #fff; }
@@ -9561,7 +9560,7 @@ a.btn-all-technology {
   display: block;
   padding: 42.5px !important;
   text-decoration: underline;
-  background-image: url(/images/frontend/bg-all-techology.png);
+  background-image: url(//epm.test.arcelik.com/images/frontend/bg-all-techology.png);
   background-size: cover;
   font-size: 15px; }
 
@@ -9799,9 +9798,9 @@ a.btn-all-technology {
         margin-right: 7px;
         vertical-align: middle; }
       .mod-docs ul li .ems-inline > div.download a:before {
-        background-image: url(/images/frontend/icon-download.png); }
+        background-image: url(//epm.test.arcelik.com/images/frontend/icon-download.png); }
       .mod-docs ul li .ems-inline > div.send-mail a:before {
-        background-image: url(/images/frontend/icon-mail.png); }
+        background-image: url(//epm.test.arcelik.com/images/frontend/icon-mail.png); }
 
 .send-mail .share-buttons {
   display: none;
@@ -9991,7 +9990,7 @@ a.btn-all-technology {
 .yorumRating .puanSelected,
 .current-rating,
 .star-rating {
-  background: url(/images/frontend/icon-star.svg) no-repeat;
+  background: url(//epm.test.arcelik.com/images/frontend/icon-star.svg) no-repeat;
   background-size: 67px 34.5px; }
 
 .yorumRating, .star-rating {
@@ -11196,7 +11195,7 @@ a.btn-all-technology {
     margin-right: 20px; } }
 
 .ems-page-login .ems-page-member-login {
-  background: url(/images/frontend/bg-login.jpg) no-repeat center center fixed;
+  background: url(//epm.test.arcelik.com/images/frontend/bg-login.jpg) no-repeat center center fixed;
   padding: 50px 0; }
   .ems-page-login .ems-page-member-login .ems-tab-inner {
     background: #fff;
@@ -11432,7 +11431,7 @@ a.btn-all-technology {
 
 .member-menu-holder {
   position: relative;
-  background: url(/images/frontend/bg-profile.jpg) center bottom;
+  background: url(//epm.test.arcelik.com/images/frontend/bg-profile.jpg) center bottom;
   background-size: cover;
   color: #fff;
   padding-top: 45px; }
@@ -11463,7 +11462,7 @@ a.btn-all-technology {
     .member-menu-holder .member-menu .lvl2 {
       display: none; }
   .member-menu-holder.bg2 {
-    background-image: url(/images/frontend/bg-campaigns.jpg); }
+    background-image: url(//epm.test.arcelik.com/images/frontend/bg-campaigns.jpg); }
 
 .ems-page-member .bottom-step {
   margin-top: 30px; }
@@ -11487,7 +11486,7 @@ a.btn-all-technology {
       text-decoration: underline; }
 
 .ems-page-member.ems-page-member-forgot-password {
-  background: url(/images/frontend/bg-cart.jpg) no-repeat;
+  background: url(//epm.test.arcelik.com/images/frontend/bg-cart.jpg) no-repeat;
   background-size: cover;
   display: inline-block;
   width: 100%; }
@@ -12304,7 +12303,7 @@ form[name="frmBorusanLojistik"] > br {
   display: none; }
 
 .ems-cart-empty {
-  background: url(/images/frontend/bg-cart.jpg) no-repeat;
+  background: url(//epm.test.arcelik.com/images/frontend/bg-cart.jpg) no-repeat;
   background-size: cover;
   padding: 85px 0; }
   .ems-cart-empty .empty-message {
@@ -12729,7 +12728,7 @@ form[name="frmBorusanLojistik"] > br {
       padding: 28px 20px 20px 170px; }
       .ems-page-cart .ems-page-order-payment .paro-validation .panel.cellPhoneStep:before {
         content: "";
-        background-image: url(/images/Banka_Logo/paro-icon1.png);
+        background-image: url(//epm.test.arcelik.com/images/Banka_Logo/paro-icon1.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -12741,7 +12740,7 @@ form[name="frmBorusanLojistik"] > br {
         z-index: 2; }
       .ems-page-cart .ems-page-order-payment .paro-validation .panel.cellPhoneStep:after {
         content: "";
-        background: url(/images/frontend/bg-cross-line.png);
+        background: url(//epm.test.arcelik.com/images/frontend/bg-cross-line.png);
         width: 118px;
         height: 100%;
         position: absolute;
@@ -12789,7 +12788,7 @@ form[name="frmBorusanLojistik"] > br {
       font-family: "arial";
       font-weight: 700; }
       .ems-page-cart .ems-page-order-payment .ems-cart-pay-type #creditCardExample > div {
-        background: url(/images/frontend/credit-card.png) no-repeat 0 0;
+        background: url(//epm.test.arcelik.com/images/frontend/credit-card.png) no-repeat 0 0;
         width: 310px;
         height: 200px;
         position: absolute;
@@ -15809,7 +15808,7 @@ a.contact724 {
 
 /* Gallery 360 Ends Here*/
 .ems-page-notfound {
-  background: url(/images/frontend/bg-cart.jpg);
+  background: url(//epm.test.arcelik.com/images/frontend/bg-cart.jpg);
   background-size: cover;
   padding: 20px;
   height: 100vh; }
