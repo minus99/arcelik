@@ -5229,6 +5229,9 @@ var bdy = $('body'),
 					k = '.member-tab .navigation-js [rel="tab1"]';
 				if( hash == '#signup' || uty.detectEl( $('.pageLogin_yeniUyelikHata') ) )
 					k = '.member-tab .navigation-js [rel="tab2"]';
+				
+				if( uty.trimText( $('[id$="lblJavaScript"]').html() || '' ) != '' )
+					k = '.member-tab .navigation-js [rel="tab2"]';
 					
 				k = $( k );	
 				if( uty.detectEl( k ) )
