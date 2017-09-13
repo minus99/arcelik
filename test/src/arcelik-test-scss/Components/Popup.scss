@@ -225,8 +225,14 @@
 .popupDefault .ems-message-error { padding-left: 100px !important; }
 
 .ems-logoff {
-    .popup_favori, .popup_stokHaberci {
+    .popup_favori {
         max-width: 430px !important;
+        .minPpBdy {
+            height: 410px !important;
+        }
+    }
+    .popup_stokHaberci {
+        max-width: 460px !important;
         .minPpBdy {
             height: 410px !important;
         }

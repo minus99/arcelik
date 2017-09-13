@@ -42,6 +42,7 @@ a:active, a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; }
 
 b, strong {
@@ -4118,9 +4119,14 @@ button.toast-close-button {
 .popupDefault .ems-message-error {
   padding-left: 100px !important; }
 
-.ems-logoff .popup_favori, .ems-logoff .popup_stokHaberci {
+.ems-logoff .popup_favori {
   max-width: 430px !important; }
-  .ems-logoff .popup_favori .minPpBdy, .ems-logoff .popup_stokHaberci .minPpBdy {
+  .ems-logoff .popup_favori .minPpBdy {
+    height: 410px !important; }
+
+.ems-logoff .popup_stokHaberci {
+  max-width: 460px !important; }
+  .ems-logoff .popup_stokHaberci .minPpBdy {
     height: 410px !important; }
 
 .popup-doc-send .minPpBdy {
