@@ -141,13 +141,9 @@
                                     <div class="ems-prd-image">
                                         <img data-original="$$L4.strURN_RESIM$$" class="lazyload" alt="$$L4.strURN_AD$$" /></div>
                                     <div class="ems-prd-name">$$L4.strURN_AD$$</div>
-                                    <div class="ems-prd-description">
-                                        $$L4.strURN_KISAACIKLAMA$$
-                                    </div>
+                                    <div class="ems-prd-description">$$L4.strURN_KISAACIKLAMA$$</div>
                                     <div class="ems-prd-price clearfix">
-                                    <EMOSIF source="$$session.EMS_SITEURL$$/webservices/exportservice.asmx/getProduct#L4" condition="normalPrice<>salesPrice">
-                                    <div class="ems-prd-price-first">##formatPrice($$L4.normalPrice$$|$$session.PB_SPR_ID$$)##</div>
-                                    </EMOSIF>
+                                    <EMOSIF source="$$session.EMS_SITEURL$$/webservices/exportservice.asmx/getProduct#L4" condition="normalPrice<>salesPrice"><div class="ems-prd-price-first">##formatPrice($$L4.normalPrice$$|$$session.PB_SPR_ID$$)##</div></EMOSIF>
                                     <div class="ems-prd-price-selling">##formatPrice($$L4.salesPrice$$|$$session.PB_SPR_ID$$)##</div>
                                     </div>
                                     <div class="ems-prd-btn-detail"><a href="$$L4.strURN_YENISAYFAISMI$$"><span>DETAYLI BİLGİ</span></a></div>
