@@ -221,8 +221,11 @@
                             .btn-group{
                                 width: 100%;
                                 margin-top: 20px;
-                                    & > a.btn:first-child{
-                                        margin-right: 25px;
+                                    & > a.btn {
+                                        margin-left: 25px;
+                                        &:first-child {
+                                            margin-left: 0 !important;
+                                        }
                                     }
                             }
                         }
@@ -372,6 +375,20 @@
         opacity: 1;
     }
 }
+
+//emos kampanya popup
+.popupPromosyon {
+    .popupPromosyon_btnProIlgilenmiyorum,
+    .popupPromosyon_btnDevamEt {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    > div, > span {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 /* Campaign Ends Here */
 
 /* Bayilik başvurusu Formu Begins Here */
@@ -955,9 +972,17 @@
     }
     .campaign-wrapper .campaign-list-item > div.colm-text .btn-group {
         margin-top: 30px;
+        text-align: center;
         > a.btn {
+            width: 100%;
+            max-width: 280px;
+            margin-left: 0;
+            margin-top: 15px;
             &:first-child {
-                margin-right: 5px;
+                margin-top: 0;
+            }
+            &.btn-text {
+                padding: 18px 20px;
             }
         }
     }

@@ -246,6 +246,13 @@
     }
 }
 
+//emos kampanya popup
+.popup_prom {
+    .minPpBdy {
+        overflow: hidden;
+    }
+}
+
 //default
 .ems-popup {
     @extend %popup;

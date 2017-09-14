@@ -4132,6 +4132,9 @@ button.toast-close-button {
 .popup-doc-send .minPpBdy {
   overflow: hidden; }
 
+.popup_prom .minPpBdy {
+  overflow: hidden; }
+
 .filter-popup {
   overflow: auto; }
 
@@ -15514,8 +15517,10 @@ a.contact724 {
       .campaign-wrapper .campaign-list-item > div.colm-text .btn-group {
         width: 100%;
         margin-top: 20px; }
-        .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault:first-child {
-          margin-right: 25px; }
+        .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault {
+          margin-left: 25px; }
+          .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault:first-child {
+            margin-left: 0 !important; }
       .campaign-wrapper .campaign-list-item > div.colm-img img {
         display: block; }
       @media screen and (max-width: 1025px) {
@@ -15629,6 +15634,15 @@ a.contact724 {
 
 .campaign-popup-animate .campaign-popup {
   opacity: 1; }
+
+.popupPromosyon .popupPromosyon_btnProIlgilenmiyorum,
+.popupPromosyon .popupPromosyon_btnDevamEt {
+  display: inline-block;
+  margin-bottom: 20px; }
+
+.popupPromosyon > div, .popupPromosyon > span {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 /* Campaign Ends Here */
 /* Bayilik başvurusu Formu Begins Here */
@@ -16097,9 +16111,17 @@ a.contact724 {
   .campaign-wrapper .campaign-list-item > div.colm-text .description {
     line-height: 1.2; }
   .campaign-wrapper .campaign-list-item > div.colm-text .btn-group {
-    margin-top: 30px; }
-    .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault:first-child {
-      margin-right: 5px; } }
+    margin-top: 30px;
+    text-align: center; }
+    .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault {
+      width: 100%;
+      max-width: 280px;
+      margin-left: 0;
+      margin-top: 15px; }
+      .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault:first-child, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault:first-child {
+        margin-top: 0; }
+      .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btn-text, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn-text.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnFavoriEkle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.lnkTaksitSecenek, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnClear, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnKiyaslamaRemove, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnAdresListeGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnAdresListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnTesAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnFatAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnUyelikIptalEt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnIptalTalep, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnFavoriListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnTakipListeStokSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnSepeteAtFavori, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnArama, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnKiyaslamaListemeDon, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnSepetGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnSepetBosalt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.changePhone, .campaign-wrapper .campaign-list-item > div.colm-text .ems-page-member .select-cfg > div .btn-group > a.btnDefault, .ems-page-member .select-cfg > div .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn-text.lnkDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnFavoriEkle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.lnkTaksitSecenek, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnClear, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnKiyaslamaRemove, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnAdresListeGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnAdresListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnTesAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnFatAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnUyelikIptalEt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnIptalTalep, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnFavoriListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnTakipListeStokSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnSepeteAtFavori, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnArama, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnKiyaslamaListemeDon, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnSepetGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnSepetBosalt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.changePhone, .campaign-wrapper .campaign-list-item > div.colm-text .ems-page-member .select-cfg > div .btn-group > a.lnkDefault, .ems-page-member .select-cfg > div .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnFavoriEkle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.lnkTaksitSecenek, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnClear, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnKiyaslamaRemove, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnAdresListeGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnAdresListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnTesAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnFatAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnUyelikIptalEt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnIptalTalep, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnFavoriListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnTakipListeStokSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnSepeteAtFavori, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnArama, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnKiyaslamaListemeDon, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnSepetGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnSepetBosalt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.changePhone, .campaign-wrapper .campaign-list-item > div.colm-text .prd-detail-top-slider .swiper-inner li.type-video .btn-group > a.btn, .prd-detail-top-slider .swiper-inner li.type-video .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn, .campaign-wrapper .campaign-list-item > div.colm-text .prd-detail-top-slider .swiper-inner li.type-video .btn-group > a.btnDefault, .prd-detail-top-slider .swiper-inner li.type-video .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .prd-detail-top-slider .swiper-inner li.type-video .btn-group > a.lnkDefault, .prd-detail-top-slider .swiper-inner li.type-video .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault, .campaign-wrapper .campaign-list-item > div.colm-text .ems-page-member .select-cfg > div .btn-group > a.btn, .ems-page-member .select-cfg > div .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn {
+        padding: 18px 20px; } }
 
 html.ms-ready .popular-prd-slider,
 html.ms-ready .ems-page-home .main-slider .swiper-inner {
