@@ -4953,8 +4953,6 @@ body .ui-datepicker table {
               margin-right: 0; }
               .site-header-inner .header-mobile-menu .header-menu-inner > ul.lvl1 > li .cat-obj-holder .cat-brands .lvl1 li:last-child a:after {
                 content: ""; }
-    .site-header-inner .header-mobile-menu .type-1, .site-header-inner .header-mobile-menu .type-2 {
-      display: none; }
     .site-header-inner .header-mobile-menu .type-2 .lvl1 > li.selected .op-menu {
       display: -webkit-box !important;
       display: -webkit-flex !important;
