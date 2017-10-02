@@ -60,7 +60,7 @@ div.xx-slider swiper-container swiper-container-horizontal swiper-alpha theme-li
 <EMOSIF condition="TPR_PARAMETRE='prmScript' AND (TPD_DEGER<>'')"><div class="slider-script">$prmScript$</div></EMOSIF>
 
 ---detay Slider (Loop)
-<li data-banner-id="id-$prmTpdSira$" class="<EMOSIF condition="TPR_PARAMETRE='prmClass' AND (TPD_DEGER<>'')"> $prmClass$</EMOSIF> $prmType_Value$ swiper-slide<EMOSIF condition="TPR_PARAMETRE='prmGroupClass' AND (TPD_DEGER<>'')"><EMOSLOOP source="prmGroupClass"> $prmGroupClass_Value$</EMOSLOOP></EMOSIF>" style="<EMOSIF condition="TPR_PARAMETRE='prmGroupClass' AND (TPD_DEGER LIKE '%cfg-li-has-bg-img%')"> background-image: url($prmImg$);</EMOSIF>" <EMOSIF condition="TPR_PARAMETRE='prmDropdownTitle' AND (TPD_DEGER<>'')"> data-title="$prmDropdownTitle$"</EMOSIF>>
+<li data-banner-id="id-$prmTpdSira$"<EMOSIF condition="TPR_PARAMETRE='prmCat' AND (TPD_DEGER<>'')"> data-banner-category="$prmCat$"</EMOSIF> class="<EMOSIF condition="TPR_PARAMETRE='prmClass' AND (TPD_DEGER<>'')"> $prmClass$</EMOSIF> $prmType_Value$ swiper-slide<EMOSIF condition="TPR_PARAMETRE='prmGroupClass' AND (TPD_DEGER<>'')"><EMOSLOOP source="prmGroupClass"> $prmGroupClass_Value$</EMOSLOOP></EMOSIF>" style="<EMOSIF condition="TPR_PARAMETRE='prmGroupClass' AND (TPD_DEGER LIKE '%cfg-li-has-bg-img%')"> background-image: url($prmImg$);</EMOSIF>" <EMOSIF condition="TPR_PARAMETRE='prmDropdownTitle' AND (TPD_DEGER<>'')"> data-title="$prmDropdownTitle$"</EMOSIF>>
     <EMOSIF condition="TPR_PARAMETRE='prmType' AND (TPD_DEGER LIKE 'type-freeHtml%')">   
         $prmFreeHtml$
     </EMOSIF>
