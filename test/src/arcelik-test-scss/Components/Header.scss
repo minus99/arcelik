@@ -373,24 +373,30 @@
                         ul{ padding-bottom: 0 !important; }
                         .op-menu{
                             justify-content: space-around;
-                            padding-bottom: 115px;
+                            padding-bottom: 54px;
                             > ul{
-                                width: 80%;
-                                margin-top: 20px;
+                                width: calc(100% - 20px);
                                 display: flex;
                                 flex-direction: column;
                                 align-content: flex-start;
                                 justify-content: flex-start;
                                 flex-wrap: wrap;
                                 position: relative;
-                                padding-bottom: 0 !important;
+                                padding-top: 12.5px;
+                                padding-bottom: 12.5px !important;
                                 > li{
-                                    width: 33.3%;
+                                    width: 25%;
                                     margin-bottom: 5px;
                                     margin-top: 5px;
                                     padding-left: 15px;
                                     > a{
                                         font-weight: 700;
+                                        + ul > li{
+                                            ul{ display: none; }
+                                            &:nth-child(2){
+                                                margin-top: 15px;
+                                            }
+                                        }
                                     }
                                     a{
                                         border-bottom: 1px solid transparent;
@@ -399,16 +405,22 @@
                                     }
                                     ul{
                                         padding-bottom: 0 !important;
+                                        padding-left: 10px;
+                                        li{
+                                          a{
+                                            font-size: 13px;
+                                          }
+                                        }
                                     }
                                     &.cat-link{
-                                        bottom:-80px !important;
+                                        bottom:-59px !important;
                                         width: 100%;
                                         display: inline-block;
-                                        a{
-                                        display:block;
                                         padding: 15px 0;
-                                        text-align: center;
-                                        border: 1px solid #ebebeb;
+                                        border-top: 1px solid #ebebeb;
+                                        a{
+                                            display:inline-block;
+                                            &:hover{ border-bottom: 1px solid #fff;}
                                         }
                                     }
                                 }
@@ -420,19 +432,21 @@
                                     position: absolute;
                                     z-index: 1;
                                     top: 0;
-                                    left: 33.3%;
+                                    left: 25%;
                                     background: #ebebeb;
                                 }
                                 &:after{
                                     content: " ";
                                     display: inline-block;
-                                    width: 1px;
+                                    width: 25%;
                                     height: 100%;
                                     position: absolute;
-                                    z-index: 1;
+                                    z-index: -1;
                                     top: 0;
-                                    left: 66.6%;
-                                    background: #ebebeb;
+                                    left: 50%;
+                                    border-width: 0 1px;
+                                    border-style: solid;
+                                    border-color: #ebebeb;
                                 }
                                 .cat-link{
                                     display: none;
@@ -450,27 +464,27 @@
                         }
                         &.cat-1{
                             .op-menu{
-                                height: 360px !important;
+                                height: 270px !important;
                             }
                         }
                         &.cat-2{
                             .op-menu{
-                                height: 290px !important;
+                                height: 200px !important;
                             }
                         }
                         &.cat-3{
                             .op-menu{
-                                height: 460px !important;
+                                height: 325px !important;
                             }
                         }
                         &.cat-4{
                             .op-menu{
-                                height: 350px !important;
+                                height: 240px !important;
                             }
                         }
                         &.cat-5{
                             .op-menu{
-                                height: 540px !important;
+                                height: 370px !important;
                             }
                         }
                     }
