@@ -262,6 +262,48 @@ textarea {
   font-weight: 200;
   font-style: italic; }
 
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light/Heron-Sans-Light.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light/Heron-Sans-Light.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light/Heron-Sans-Light.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light/Heron-Sans-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light-Italic/Heron-Sans-Light-Italic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light-Italic/Heron-Sans-Light-Italic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light-Italic/Heron-Sans-Light-Italic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Light-Italic/Heron-Sans-Light-Italic.ttf) format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
 [class^="icon-"], [class*=" icon-"], .dropdown > span:before, .info-menu ul li a:before, .dropdown-value:before, .ems-tab ul.lvl1 > li.more > a.title > span:before, .go-all-features > span:before, .ems-tab-vertical > .ems-tab-inner > ul.lvl1 > li > a.title > span:before, .urunKiyaslamaOzellik_ozellikAd:before, a.urunKiyaslamaOzellik:before, .prd-technology-info .col-text > p:before, .feature-info:before, .compareHolder .ems-prd-compare span:before, .comSpecs .specItem .specTitle i:before, .comSpecfilter > ul > li > a:before, .marker-customize .divServisListe_Telefon a span:before, .kutuKategori .kutuHeaderKategori:before, .faq-item .question:before, .pin:before, [id$="plhAdresTipi1"] a:before, a.btnMinPpCl:before, .prd-video > a:before, .accordion-sub > ul > li.sub-items > b:before, .ems-field-calendar .ems-form-obj:before, .mod-seller-options .ul1 li a.title:before, .navigasyon > span a:before, .ems-message-error:before, .pageLogin_yeniUyelikHata:before, .pageErrorUyeSifre:before, .pageErrorSifremiUnuttum:before, .ems-page-new-address .pageErrorDefault:before, .pageErrorStokKontrol:before, .no-address:before, .pageGuestCheckoutError:before, .emailError:before, body .ui-datepicker .ui-datepicker-next:before,
 body .ui-datepicker .ui-datepicker-prev:before {
   font-family: 'icomoon' !important;
@@ -2941,17 +2983,17 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   font-weight: 700; }
 
 h2 {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   font-weight: 400; }
 
 h3 {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 12px;
   font-weight: 700; }
 
@@ -3009,7 +3051,7 @@ b {
   display: block;
   padding: 15px;
   border: 1px solid #ccc;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 14px;
   color: #fff;
   line-height: 1.2;
@@ -3045,7 +3087,7 @@ b {
   border: 1px solid #ebebeb;
   color: #333;
   min-height: 154px;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   color: #333;
   line-height: 1.2;
@@ -3093,7 +3135,7 @@ b {
 
 .page-top-title, .guestCheckout .pageHeaderGuestCheckout {
   position: relative;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   font-weight: 700;
   margin-top: 30px; }
@@ -3102,7 +3144,7 @@ b {
 
 .page-top-desc {
   position: relative;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   font-weight: 300;
   line-height: 1.3;
@@ -4016,7 +4058,7 @@ button.toast-close-button {
   margin-bottom: 5px;
   font-size: 23px;
   line-height: 1.2;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-weight: 300; }
 
 .popupDefault [class$="aciklama"] {
@@ -4046,7 +4088,7 @@ button.toast-close-button {
 .popupStokHaberci, .popupFavori, .popupUyeGiris {
   text-align: left; }
   .popupStokHaberci .popupTitleDefault, .popupFavori .popupTitleDefault, .popupUyeGiris .popupTitleDefault {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     padding: 0;
     border: none;
     text-align: left;
@@ -4157,7 +4199,7 @@ button.toast-close-button {
   border-radius: 0;
   max-width: 100%; }
   .emos-confirm * {
-    font-family: "Gotham Rounded"; }
+    font-family: "Heron"; }
   .emos-confirm .ui-dialog-titlebar {
     margin: 0; }
     .emos-confirm .ui-dialog-titlebar .ui-dialog-title {
@@ -4250,7 +4292,7 @@ button.toast-close-button {
     padding: 20px;
     line-height: 1.5;
     font-size: 14px;
-    font-family: "Gotham Rounded"; }
+    font-family: "Heron"; }
     .popup_uye_facebookonay .popupFacebookOnay .btnSozlesmeOnay * {
       display: block; }
     .popup_uye_facebookonay .popupFacebookOnay .btnSozlesmeOnay a {
@@ -4271,7 +4313,7 @@ button.toast-close-button {
   border: 3px solid #ED1C24;
   background: #ED1C24;
   padding: 11px 20px;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 12px;
   color: #fff;
   font-weight: 700;
@@ -4412,7 +4454,7 @@ input:not([type='checkbox, radio']), select, textarea, .dropdown > span {
   border: 1px solid #e3e3e3;
   background: #ebebeb;
   padding: 0 9px;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   color: #333;
   font-weight: 300;
@@ -4517,7 +4559,7 @@ textarea {
     display: none; }
   [id$="divCaptcha"] [id$="lbfUYE_KONTROLKODU"] {
     display: block;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 13px;
     color: #666;
     line-height: 1.4;
@@ -4604,7 +4646,7 @@ textarea {
         .ems-form .ems-form-inner .ems-field.password.show-pass .showPassBtn {
           opacity: 1; }
       .ems-form .ems-form-inner .ems-field .ems-form-label {
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 13px;
         color: #666;
         line-height: 1.4;
@@ -4661,7 +4703,7 @@ textarea {
   cursor: pointer; }
 
 body .ui-datepicker {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   width: 224px;
   background: #666;
   border: none;
@@ -4829,7 +4871,7 @@ body .ui-datepicker table {
         display: block;
         padding: 17px 12.5px 15px;
         border-bottom: 2px solid transparent;
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase; }
@@ -5708,7 +5750,7 @@ body .ui-datepicker table {
       padding: 5px;
       color: #999; }
     .site-footer-inner .footer-menu ul > li.title {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       color: #fff;
       font-weight: 700;
@@ -5737,7 +5779,7 @@ body .ui-datepicker table {
   .site-footer-inner .contact {
     display: table;
     margin-top: 60px;
-    font-family: gotham;
+    font-family: "Heron";
     color: #fff; }
     .site-footer-inner .contact span {
       display: block;
@@ -5802,7 +5844,7 @@ body .ui-datepicker table {
       z-index: 2;
       width: 100%;
       max-width: 420px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-weight: 700; }
       .site-footer-inner .footer-map .service-nav .service-view {
         display: none; }
@@ -5917,7 +5959,7 @@ body .ui-datepicker table {
       .site-footer-inner .row-1 .contact b {
         font-size: 25px;
         font-weight: 500;
-        font-family: "Gotham Rounded"; }
+        font-family: "Heron"; }
     .site-footer-inner .row-1 .footer-social {
       margin: 0 0 0 0;
       padding: 0; }
@@ -5972,7 +6014,7 @@ body .ui-datepicker table {
 .swiper-container {
   position: relative;
   width: 100%;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   color: #fff; }
   .swiper-container .bx-default-pager {
     display: none;
@@ -6317,7 +6359,7 @@ body .ui-datepicker table {
     -webkit-box-shadow: 1px 2px 3px -2px #000;
     box-shadow: 1px 2px 3px -2px #000;
     padding: 20px 10px 15px 175px;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     color: #333;
     font-weight: 300; }
@@ -6487,7 +6529,7 @@ body .ui-datepicker table {
   left: 50%;
   top: 0;
   z-index: 10;
-  font-family: "Gotham Rounded"; }
+  font-family: "Heron"; }
   .ems-custom-dropdown .ems-custom-dropdown-header {
     background: #ED1C24;
     padding: 55px 20px 0; }
@@ -6743,7 +6785,7 @@ body .ui-datepicker table {
       transform: translateY(-50%);
       position: absolute;
       left: 0;
-      font-family: "Gotham Rounded"; }
+      font-family: "Heron"; }
     .easy-selection .swiper-inner ul li .ems-prd-list .ems-inline .ems-prd {
       width: 50%;
       max-width: none; }
@@ -7605,12 +7647,12 @@ body .ui-datepicker table {
   .band-items .inner {
     padding: 50px 0; }
   .band-items .header {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 30px;
     margin: 20px 0 35px; }
     .band-items .header-mini {
       position: relative;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       color: #ED1C24;
       margin: 20px 0; }
       .band-items .header-mini > b {
@@ -7628,7 +7670,7 @@ body .ui-datepicker table {
   .band-items ul li {
     position: relative;
     text-align: center;
-    font-family: "Gotham Rounded"; }
+    font-family: "Heron"; }
     .band-items ul li .title {
       font-size: 23px;
       font-weight: 200;
@@ -7711,7 +7753,7 @@ body .ui-datepicker table {
         right: 10px;
         top: calc(50% - 6px); }
     .info-menu ul li .qty {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 22px;
       font-weight: 300; }
     .info-menu ul li .title {
@@ -7803,7 +7845,7 @@ body .ui-datepicker table {
             color: #000; } }
 
 .ems-tab {
-  font-family: "Gotham Rounded"; }
+  font-family: "Heron"; }
   .ems-tab ul.lvl1 {
     display: table;
     width: 100%;
@@ -8110,14 +8152,14 @@ body .ui-datepicker table {
   .navigasyon .all {
     float: right;
     margin-top: -10px;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     text-decoration: underline; }
   .ems-page-product-detail .navigasyon {
     background: #f6f6f6;
     border-bottom: none; }
 
 .section-cat-desc {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   font-weight: 300;
   line-height: 1.1; }
@@ -8175,7 +8217,7 @@ body .ui-datepicker table {
       width: 100%; }
     .section-cat-sub-list ul > li h3 {
       padding: 40px 30px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 44px;
       color: #fff;
       font-weight: 500;
@@ -8186,7 +8228,7 @@ body .ui-datepicker table {
       text-align: left;
       z-index: 2; }
       .section-cat-sub-list ul > li .btn-full-link span {
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 15px;
         color: #fff;
         letter-spacing: 2px;
@@ -8226,7 +8268,7 @@ body .ui-datepicker table {
   .pnlUrunKiyasSecim .urunKiyaslamaOzellik_secimbaslik {
     display: none; }
   .pnlUrunKiyasSecim .urunKiyaslamaOzellik_UrunSayi {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 14px;
     color: #666666;
     text-align: center;
@@ -8256,7 +8298,7 @@ body .ui-datepicker table {
       right: 0;
       font-weight: 700; }
   .kutuKategori .menuKategori {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 18px;
     font-weight: 300;
     border-bottom: 1px solid #ebebeb;
@@ -8391,7 +8433,7 @@ body .ui-datepicker table {
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner {
       position: relative;
       border: 1px solid #ebebeb;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       margin: 5px;
       padding-bottom: 9px;
       -webkit-box-shadow: 7px 7px 10px -10px transparent;
@@ -8610,7 +8652,7 @@ body .ui-datepicker table {
       padding: 10px 6px;
       margin: 0 6px;
       border: 1px solid transparent;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       color: #cecece;
       font-weight: 700;
@@ -8657,7 +8699,7 @@ body .ui-datepicker table {
     background: #333;
     height: 50px; }
     .compareHolder .compareMenuHolder .compareMenu {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       color: #fff;
       width: 100%;
       max-width: 1006px;
@@ -8784,7 +8826,7 @@ body .ui-datepicker table {
     margin-top: 35px;
     margin-bottom: 35px; }
     .compareWrapper .comTitle .spnComTitle {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 23px;
       font-weight: 700; }
     .compareWrapper .comTitle .urunKiyaslama_btnListeDon, .compareWrapper .comTitle .spnComTotal {
@@ -8847,7 +8889,7 @@ body .ui-datepicker table {
           .compareWrapper .compareSlider .mask ul li .urunKiyaslamaUrun {
             position: relative;
             border: 1px solid #ebebeb;
-            font-family: "Gotham Rounded";
+            font-family: "Heron";
             padding-bottom: 20px;
             margin: 5px; }
             .compareWrapper .compareSlider .mask ul li .urunKiyaslamaUrun > div {
@@ -8939,7 +8981,7 @@ body .ui-datepicker table {
       .compareWrapper .comSpecs .specItem:first-child {
         border-top: 1px solid #ebebeb; }
       .compareWrapper .comSpecs .specItem .specTitle {
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 15px;
         font-weight: 700;
         line-height: 50px;
@@ -9201,7 +9243,7 @@ body .ui-datepicker table {
       border-bottom-color: #c6c6c6; }
   .ems-prd-list-count {
     display: block;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 18px;
     font-weight: 300;
     margin: 15px; }
@@ -9427,7 +9469,7 @@ body .ui-datepicker table {
 .ems-prd-detail {
   background: #f6f6f6; }
   .ems-prd-detail .ems-prd-detail-inner {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     padding: 20px 0 40px; }
     .ems-prd-detail .ems-prd-detail-inner .inner-row-2 {
       width: 260px; }
@@ -9569,7 +9611,7 @@ body .ui-datepicker table {
     display: block; }
 
 .prd-mini-desc .title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   margin-bottom: 2px; }
 
@@ -9593,7 +9635,7 @@ body .ui-datepicker table {
 .prd-awards {
   margin-top: 25px; }
   .prd-awards .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     margin-bottom: 5px; }
   .prd-awards li {
@@ -9734,7 +9776,7 @@ a.btn-all-technology {
   font-size: 15px; }
 
 .prd-technical-info {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   color: #333; }
   .prd-technical-info a {
     text-decoration: none; }
@@ -9913,7 +9955,7 @@ a.btn-all-technology {
                   .prd-technical-info .all-features .all-features-list .features-block ul li > div .feature-info .desc-wrapper .desc img ~ .title, .prd-technical-info .all-features .all-features-list .features-block ul li > div .feature-info .desc-wrapper .desc img ~ p {
                     padding-left: 85px; }
                 .prd-technical-info .all-features .all-features-list .features-block ul li > div .feature-info .desc-wrapper .desc .title {
-                  font-family: "Gotham Rounded";
+                  font-family: "Heron";
                   font-size: 15px;
                   font-weight: 700;
                   margin: 0 0 10px 0; }
@@ -10113,7 +10155,7 @@ a.btn-all-technology {
     table-layout: fixed;
     max-width: 1440px;
     margin: 0 auto;
-    font-family: "Gotham Rounded"; }
+    font-family: "Heron"; }
     .prd-compact .prd-compact-inner > div {
       display: table-cell;
       vertical-align: middle;
@@ -10249,7 +10291,7 @@ a.btn-all-technology {
     display: block; }
   .yorumListe_main .tableTitleDefault {
     display: block;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 23px;
     font-weight: 700; }
   .yorumListe_main .yorumOzet .tableTitleGenelDegerlendirme {
@@ -10283,7 +10325,7 @@ a.btn-all-technology {
         color: #666; }
     .yorumListe_main .yorumOzet .yorumOrtalamaPuan [id$="lblYORUMLAR_ORTALAMAPUAN"] {
       display: block;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 44px;
       font-weight: 500;
       text-align: center; }
@@ -10331,7 +10373,7 @@ a.btn-all-technology {
             border-width: 1px 0 1px 1px;
             border-style: solid;
             border-color: #ebebeb;
-            font-family: "Gotham Rounded";
+            font-family: "Heron";
             font-size: 12px;
             color: #999;
             -webkit-transition: all 0.32s ease;
@@ -10768,9 +10810,9 @@ a.btn-all-technology {
   display: none !important; }
 
 .service-list-holder {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   width: 100%;
-  height: 900px;
+  height: 960px;
   position: relative; }
   .service-list-holder .service-sidebar {
     width: 100%;
@@ -10811,7 +10853,7 @@ a.btn-all-technology {
         font-weight: 500;
         line-height: 1.2; }
         .service-list-holder .service-sidebar .service-list .servis_bilgi-dynamic .title {
-          font-family: "Gotham Rounded";
+          font-family: "Heron";
           font-size: 16px;
           margin: 0; }
         .service-list-holder .service-sidebar .service-list .servis_bilgi-dynamic .desc {
@@ -10847,7 +10889,7 @@ a.btn-all-technology {
         .service-list-holder .service-sidebar .service-list .pServisListe .divServisListe_FirmaAdi, .service-list-holder .service-sidebar .service-list .pServisListe .divServisListe_Email, .service-list-holder .service-sidebar .service-list .pServisListe .divServisListe_Adres, .service-list-holder .service-sidebar .service-list .pServisListe .divServisListe_Telefon, .service-list-holder .service-sidebar .service-list .pServisListe .divServisListe_Koordinat {
           display: block; }
         .service-list-holder .service-sidebar .service-list .pServisListe .divServisListe_FirmaAdi {
-          font-family: "Gotham Rounded";
+          font-family: "Heron";
           font-size: 15px;
           font-weight: 700;
           line-height: 1.3; }
@@ -11060,7 +11102,7 @@ a.btn-all-technology {
       display: table-cell;
       vertical-align: middle;
       padding: 15px 10px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       font-weight: 700;
       word-break: break-word; }
@@ -11090,7 +11132,7 @@ a.btn-all-technology {
     .ems-grid-default .ems-grid-row [id$="lblProm"] ul {
       display: table;
       margin-top: 10px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 12px;
       font-weight: 500;
       line-height: 1.2; }
@@ -11165,7 +11207,7 @@ a.btn-all-technology {
 .tableSifremiUnuttum {
   width: 100%;
   table-layout: fixed;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   margin-top: 30px; }
   .tableSifremiUnuttum th, .tableSifremiUnuttum td {
     display: block;
@@ -11441,7 +11483,7 @@ a.btn-all-technology {
       text-decoration: underline;
       font-weight: 700; }
   .ems-page-login .ems-page-member-login .for-guest .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 20px; }
@@ -11451,7 +11493,7 @@ a.btn-all-technology {
     font-size: 14px;
     line-height: 1.2; }
   .ems-page-login .ems-page-member-login .for-members .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 20px; }
@@ -11483,7 +11525,7 @@ a.btn-all-technology {
   .ems-page-login #guestCheckout .ems-signup-inner .ems-signup-body #ValidateGuestEmail > span {
     margin-bottom: 5px;
     display: block;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 13px;
     color: #666;
     line-height: 1.4;
@@ -11517,7 +11559,7 @@ a.btn-all-technology {
       .guestCheckout ul.ulGuestCheckout_member li > span {
         display: inline-block;
         vertical-align: top;
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 13px;
         color: #666;
         line-height: 1.4;
@@ -11573,7 +11615,7 @@ a.btn-all-technology {
         .guestCheckout div[id$="FaturaAdresKurumsal"] > div > ul li > span {
           display: inline-block;
           vertical-align: top;
-          font-family: "Gotham Rounded";
+          font-family: "Heron";
           font-size: 13px;
           color: #666;
           line-height: 1.4;
@@ -11608,7 +11650,7 @@ a.btn-all-technology {
     font-family: "arial";
     font-size: 15px; }
   .member-menu-holder .member-menu-header .desc {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 44px;
     font-weight: 300;
     margin-top: 16px; }
@@ -11621,7 +11663,7 @@ a.btn-all-technology {
     .member-menu-holder .member-menu ul li a {
       display: block;
       padding: 10px 20px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       border: none; }
     .member-menu-holder .member-menu ul li.selected {
@@ -11637,7 +11679,7 @@ a.btn-all-technology {
   margin-top: 30px; }
 
 .ems-page-member .inner-title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 16px;
   margin-bottom: 20px; }
 
@@ -11671,18 +11713,18 @@ a.btn-all-technology {
     content: "";
     background: red; }
   .ems-page-member .pageSifremiUnuttum .pageHeaderDefault {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 26px;
     font-weight: 700; }
   .ems-page-member .pageSifremiUnuttum .pageDescDefault {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-weight: 300;
     margin-top: 35px;
     line-height: 1.2; }
   .ems-page-member .pageSifremiUnuttum .pageErrorSifremiUnuttum {
     margin-top: 30px; }
   .ems-page-member .pageSifremiUnuttum .pass-forgot p {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-weight: 300;
     font-size: 13px; }
   .ems-page-member .pageSifremiUnuttum .pass-forgot .success-icon {
@@ -11718,7 +11760,7 @@ a.btn-all-technology {
     margin-right: 60px; }
 
 .ems-page-member .member-info-address .row-header {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 9px; }
@@ -11735,7 +11777,7 @@ a.btn-all-technology {
     .ems-page-member .member-info-address .grid .row:first-child {
       border-top-width: 1px; }
     .ems-page-member .member-info-address .grid .row .r1 {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       font-weight: 700;
       font-style: italic;
@@ -11744,7 +11786,7 @@ a.btn-all-technology {
       font-family: "arial";
       color: #666; }
     .ems-page-member .member-info-address .grid .row .r3 {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       font-style: italic;
       font-weight: 300;
@@ -11786,7 +11828,7 @@ a.btn-all-technology {
   padding: 40px 0;
   border-top: 1px solid #ebebeb; }
   .ems-page-member .ems-page-member-order-detail .order-detail-info-payment .value {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     font-weight: 700;
     margin-top: 5px; }
@@ -11795,7 +11837,7 @@ a.btn-all-technology {
   padding: 40px 0;
   border-top: 1px solid #ebebeb; }
   .ems-page-member .ems-page-member-order-detail .order-address-holder .text {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 15px; }
@@ -12461,7 +12503,7 @@ form[name="frmBorusanLojistik"] > br {
     display: block; }
 
 .ems-page-cart .page-top-title, .ems-page-cart .guestCheckout .pageHeaderGuestCheckout, .guestCheckout .ems-page-cart .pageHeaderGuestCheckout {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   margin-bottom: 35px; }
 
@@ -12480,7 +12522,7 @@ form[name="frmBorusanLojistik"] > br {
     .ems-cart-empty .empty-message > span {
       display: block;
       text-align: center;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-weight: 300;
       line-height: 1.1; }
     .ems-cart-empty .empty-message .empty-head {
@@ -12505,7 +12547,7 @@ form[name="frmBorusanLojistik"] > br {
     border-left: 1px solid #ebebeb; }
     .ems-page-cart .tabloTabBtnAdimSiparis td > span {
       display: table-cell;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       font-weight: 700; }
       .ems-page-cart .tabloTabBtnAdimSiparis td > span > a {
@@ -12567,13 +12609,13 @@ form[name="frmBorusanLojistik"] > br {
   background: #e7e7e7; }
 
 .ems-page-cart .summary-header {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 20px; }
 
 .ems-page-cart .cart-total-qty {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   font-weight: 500;
   margin-top: 20px; }
@@ -12598,7 +12640,7 @@ form[name="frmBorusanLojistik"] > br {
     font-weight: 400;
     padding-bottom: 3px; }
   .ems-page-cart .pnlDipToplamTable td {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 23px;
     font-weight: 500;
     padding-bottom: 15px;
@@ -12801,7 +12843,7 @@ form[name="frmBorusanLojistik"] > br {
     border: 1px solid #ebebeb;
     width: 100%; }
   .ems-grid-address-dropdown .ems-grid-address {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     max-height: 300px;
     overflow: auto; }
     .ems-grid-address-dropdown .ems-grid-address .ems-grid-header {
@@ -12860,7 +12902,7 @@ form[name="frmBorusanLojistik"] > br {
     .ems-page-cart .ems-page-order-payment .paro-validation .form-label {
       display: block;
       text-align: left;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 13px;
       color: #333;
       font-weight: normal;
@@ -12917,7 +12959,7 @@ form[name="frmBorusanLojistik"] > br {
         top: 0;
         z-index: 1; }
       .ems-page-cart .ems-page-order-payment .paro-validation .panel.cellPhoneStep .fs15 {
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 15px;
         font-weight: 300;
         line-height: 1.3; }
@@ -12936,7 +12978,7 @@ form[name="frmBorusanLojistik"] > br {
           padding: 15px;
           border: 1px solid #ebebeb;
           text-align: center;
-          font-family: "Gotham Rounded";
+          font-family: "Heron";
           font-size: 15px;
           line-height: 1; }
           .ems-page-cart .ems-page-order-payment .ems-cart-pay-tab ul li a.emos_selected {
@@ -13021,7 +13063,7 @@ form[name="frmBorusanLojistik"] > br {
       .ems-page-cart .ems-page-order-payment .ems-cart-pay-type .tableOdemeBilgiKrediKarti th {
         display: block;
         text-align: left;
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 13px;
         color: #333;
         font-weight: normal;
@@ -13094,7 +13136,7 @@ form[name="frmBorusanLojistik"] > br {
         table-layout: fixed;
         border-collapse: collapse; }
         .ems-page-cart .ems-page-order-payment .ems-cart-pay-type .pageOdemeBilgi_odemeTaksit .tableOdemeTaksit td {
-          font-family: "Gotham Rounded";
+          font-family: "Heron";
           font-size: 15px;
           color: #333;
           padding: 10px;
@@ -13143,7 +13185,7 @@ form[name="frmBorusanLojistik"] > br {
     border: 1px solid #ebebeb;
     margin-top: 10px; }
     .ems-page-cart .ems-page-order-payment .onBilgilendirmeForm .tableTitleDefault, .ems-page-cart .ems-page-order-payment .siparisOnaySozlesme .tableTitleDefault, .ems-page-cart .ems-page-order-payment .cayma-hakki .tableTitleDefault {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 16px;
       font-weight: 700;
       padding: 15px 0; }
@@ -13179,7 +13221,7 @@ form[name="frmBorusanLojistik"] > br {
     padding: 40px 20px;
     margin-top: 10px; }
     .ems-page-cart .ems-page-order-payment .ems-cart-pay-address > .title {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 16px;
       font-weight: 700; }
     .ems-page-cart .ems-page-order-payment .ems-cart-pay-address .selected-addresses {
@@ -13190,7 +13232,7 @@ form[name="frmBorusanLojistik"] > br {
       .ems-page-cart .ems-page-order-payment .ems-cart-pay-address .selected-addresses .bill-address {
         padding-left: 10px; }
       .ems-page-cart .ems-page-order-payment .ems-cart-pay-address .selected-addresses .title {
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 14px;
         font-weight: 500; }
       .ems-page-cart .ems-page-order-payment .ems-cart-pay-address .selected-addresses .desc {
@@ -13201,13 +13243,13 @@ form[name="frmBorusanLojistik"] > br {
     padding: 40px 20px;
     margin-top: 10px; }
     .ems-page-cart .ems-page-order-payment .ems-cart-pay-cargo > .title {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 16px;
       font-weight: 700; }
     .ems-page-cart .ems-page-order-payment .ems-cart-pay-cargo .selected-cargo {
       margin-top: 15px; }
       .ems-page-cart .ems-page-order-payment .ems-cart-pay-cargo .selected-cargo .title {
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 14px;
         font-weight: 500; }
 
@@ -13236,7 +13278,7 @@ form[name="frmBorusanLojistik"] > br {
   color: #ED1C24; }
 
 .ems-page-cart .ems-page-order-result .order-result .order-result-top .title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 24px;
   font-weight: 700;
   margin-top: 35px; }
@@ -13247,7 +13289,7 @@ form[name="frmBorusanLojistik"] > br {
 .ems-page-cart .ems-page-order-result .order-result .order-result-cart-info {
   margin-top: 20px; }
   .ems-page-cart .ems-page-order-result .order-result .order-result-cart-info > div > div {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-weight: 300;
     text-align: center;
     padding: 15px; }
@@ -13261,7 +13303,7 @@ form[name="frmBorusanLojistik"] > br {
   margin-top: 15px; }
 
 .ems-page-cart .ems-page-order-result .order-result .order-result-info {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   font-weight: 300;
   line-height: 1.3; }
@@ -13272,7 +13314,7 @@ form[name="frmBorusanLojistik"] > br {
 
 .ems-page-cart .ems-page-order-result .kutuDefault.kutuUyelikOneri {
   display: none;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   padding: 30px;
   border: 1px solid #ebebeb;
   margin-top: 30px; }
@@ -13644,7 +13686,7 @@ form[name="frmBorusanLojistik"] > br {
       display: block; }
 
 .content-type1 {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 14px;
   font-weight: 300; }
   .content-type1 [class*="container-"] {
@@ -13679,7 +13721,7 @@ a.type1 {
 a.contact724 {
   display: table;
   margin-top: 60px;
-  font-family: gotham;
+  font-family: "Heron";
   text-decoration: none; }
   a.contact724 span {
     display: block;
@@ -13702,7 +13744,7 @@ a.contact724 {
   color: #fff;
   padding-bottom: 30px; }
   .colorbox .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     font-weight: 700;
     margin: 20px 15px; }
@@ -13736,7 +13778,7 @@ a.contact724 {
     .colorbox .qty > i {
       display: block;
       text-align: center;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 80px;
       font-weight: 200;
       font-style: normal; }
@@ -13751,7 +13793,7 @@ a.contact724 {
     right: 0;
     top: 0;
     max-width: 90px;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-weight: 300;
     line-height: 1.2; }
   .colorbox .btn-full-link {
@@ -13772,7 +13814,7 @@ a.contact724 {
   width: 320px; }
   .page-dropdown .title {
     display: block;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 10px; }
@@ -13799,7 +13841,7 @@ a.contact724 {
     .kutuSolMenuTree .kutuBodySolMenuTree > ul li a {
       display: inline-block;
       margin: 5px 0;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 18px;
       font-weight: 300;
       letter-spacing: -1px; }
@@ -13847,7 +13889,7 @@ a.contact724 {
   padding-left: 20px; }
 
 .blogTitleKategoriAd {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   margin-bottom: 30px; }
   .blogTitleKategoriAd > span {
@@ -13860,7 +13902,7 @@ a.contact724 {
     font-weight: 700;
     padding: 20px 0; }
   .icerikKategoriListe .icerikKategoriListe_kategori li {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 18px;
     font-weight: 300;
     line-height: 1.3; }
@@ -13932,7 +13974,7 @@ a.contact724 {
         color: #fff; }
 
 .content-count {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-weight: 300;
   font-size: 14px;
   text-align: center;
@@ -13982,7 +14024,7 @@ a.contact724 {
         display: inline-block;
         padding: 10px 6px;
         margin: 0 6px;
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-size: 15px;
         color: #cecece;
         font-weight: 700;
@@ -14018,7 +14060,7 @@ a.contact724 {
 .contact-types {
   margin-top: 30px; }
   .contact-types .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-weight: 700;
     margin-bottom: 15px; }
   .contact-types .desc {
@@ -14027,7 +14069,7 @@ a.contact724 {
     line-height: 1.5; }
 
 .contact-form-text {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 14px;
   font-weight: 300;
   line-height: 1.3;
@@ -14165,7 +14207,7 @@ a.contact724 {
       display: block;
       width: 100%; }
   .ad-music .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 18px;
     font-weight: 300;
     text-align: center;
@@ -14186,7 +14228,7 @@ a.contact724 {
   position: relative;
   margin: 5px;
   background: #333;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   color: #fff;
   height: 188px;
   overflow: hidden; }
@@ -14242,7 +14284,7 @@ a.contact724 {
   color: #666; }
   .faq-item .question {
     position: relative;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     font-weight: 300;
     border-bottom: 1px solid #ebebeb;
@@ -14301,7 +14343,7 @@ a.contact724 {
       display: block;
       width: 100%; }
   .catalog .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     font-weight: 700;
     text-align: center;
@@ -14344,12 +14386,12 @@ a.contact724 {
       display: block;
       margin: 0 auto; }
     .info-video .ems-prd .ems-prd-name {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px;
       font-weight: 700;
       margin-top: 10px; }
     .info-video .ems-prd .ems-prd-cat {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-weight: 700;
       margin-top: 10px; }
       .info-video .ems-prd .ems-prd-cat > a {
@@ -14366,7 +14408,7 @@ a.contact724 {
       margin-top: 10px; }
     .info-video .ems-prd .ems-prd-price {
       margin-top: 15px;
-      font-family: "Gotham Rounded"; }
+      font-family: "Heron"; }
       .info-video .ems-prd .ems-prd-price > div {
         display: inline-block;
         vertical-align: middle; }
@@ -14388,7 +14430,7 @@ a.contact724 {
 
 .warranty-year {
   width: 250px;
-  font-family: "Gotham Rounded"; }
+  font-family: "Heron"; }
   .warranty-year .title {
     display: inline-block;
     padding: 50px 40px;
@@ -14401,7 +14443,7 @@ a.contact724 {
     color: #000; }
 
 .warranty-prds .title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 23px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -14424,7 +14466,7 @@ a.contact724 {
   margin-top: 10px; }
 
 .warranty-small-note .title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px; }
@@ -14461,7 +14503,7 @@ a.contact724 {
 
 .expert-faq-holder .expert-name {
   margin-top: 5px;
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 15px;
   font-weight: 700; }
 
@@ -14491,7 +14533,7 @@ a.contact724 {
       border: 1px solid #ebebeb;
       margin: 5px;
       padding: 20px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       color: #fff;
       text-align: center;
       background-repeat: no-repeat;
@@ -14525,7 +14567,7 @@ a.contact724 {
       border: 1px solid #ebebeb;
       margin: 10px 5px;
       padding: 0 10px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       text-align: center; }
       .support-menu ul li .inner > img {
         margin-top: 50px; }
@@ -14562,7 +14604,7 @@ a.contact724 {
   .single-tech-info .inner-row-2 {
     padding-right: 120px; }
     .single-tech-info .inner-row-2 .title {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-size: 15px; }
     .single-tech-info .inner-row-2 .desc {
       color: #999;
@@ -14576,7 +14618,7 @@ a.contact724 {
   .single-techology .inner-row-2 {
     padding: 25px; }
   .single-techology .content {
-    font-family: "Gotham Rounded"; }
+    font-family: "Heron"; }
   .single-techology .cat {
     color: #666;
     font-weight: 700; }
@@ -14615,7 +14657,7 @@ a.contact724 {
     display: block; }
 
 .single-inspiration .title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 16px;
   font-weight: 700;
   margin-top: 15px; }
@@ -14655,7 +14697,7 @@ a.contact724 {
     height: auto; }
 
 .single-corporate-solutions .title {
-  font-family: "Gotham Rounded";
+  font-family: "Heron";
   font-size: 16px;
   font-weight: 700;
   margin-top: 15px;
@@ -14692,7 +14734,7 @@ a.contact724 {
     font-size: 15px;
     color: #333;
     line-height: 20px;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-weight: 300;
     margin: 0 0 25px 0; }
 
@@ -14716,11 +14758,11 @@ a.contact724 {
 .ems-page-profile .member-coupon {
   padding-bottom: 5px; }
   .ems-page-profile .member-coupon .title {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 15px;
     font-weight: 700; }
   .ems-page-profile .member-coupon .price {
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 44px;
     font-weight: 700;
     margin-top: 15px; }
@@ -15259,7 +15301,7 @@ a.contact724 {
           padding: 5px 0;
           font-size: 15px;
           color: #999999;
-          font-family: "Gotham Rounded";
+          font-family: "Heron";
           font-weight: 300; }
           #search_suggest .searchSuggestDivHolder > div > .sHolder > div table,
           #search_suggest .searchSuggestDivHolder > div > .sHolder > div table tbody,
@@ -15408,7 +15450,7 @@ a.contact724 {
     height: 66px;
     padding-left: 70px;
     padding-right: 70px;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     font-size: 23px;
     font-weight: 500;
     background: #fff; }
@@ -15648,14 +15690,14 @@ a.contact724 {
       .campaign-wrapper .campaign-list-item > div.colm-text .title {
         font-size: 44px;
         color: #333333;
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-weight: 300;
         margin: 0 0 20px 0;
         letter-spacing: -2px; }
       .campaign-wrapper .campaign-list-item > div.colm-text .summary {
         font-size: 23px;
         color: #333333;
-        font-family: "Gotham Rounded";
+        font-family: "Heron";
         font-weight: 300;
         line-height: 1.1;
         margin: 0 0 10px 0;
@@ -15723,7 +15765,7 @@ a.contact724 {
     .campaign-wrapper .campaign-products-wrapper .page-top-title, .campaign-wrapper .campaign-products-wrapper .guestCheckout .pageHeaderGuestCheckout, .guestCheckout .campaign-wrapper .campaign-products-wrapper .pageHeaderGuestCheckout {
       margin: 0 0 20px 0;
       font-size: 44px;
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-weight: 300;
       text-align: left;
       letter-spacing: -2px; }
@@ -15747,7 +15789,7 @@ a.contact724 {
     font-size: 44px;
     margin: 0 0 40px;
     font-weight: 300;
-    font-family: "Gotham Rounded";
+    font-family: "Heron";
     border-bottom-color: transparent;
     text-align: left;
     padding: 0; }
@@ -15855,7 +15897,7 @@ a.contact724 {
           .ems-page-services-form .step-form-wrapper .left-colm .categories .list > li a {
             padding: 4px 0;
             display: block;
-            font-family: "Gotham Rounded";
+            font-family: "Heron";
             font-size: 18px;
             font-weight: 300; }
           .ems-page-services-form .step-form-wrapper .left-colm .categories .list > li.active a {
@@ -15934,7 +15976,7 @@ a.contact724 {
     margin: 0 auto;
     position: relative; }
     .threesixty .spinner span {
-      font-family: "Gotham Rounded";
+      font-family: "Heron";
       font-weight: 300;
       font-size: 48px;
       color: #000000;
@@ -16294,5 +16336,3 @@ html.ms-ready [id$="divCaptcha"] #imgCaptcha {
   left: 2px;
   top: 25px;
   height: 36px; }
-
-/*# sourceMappingURL=style.css.map */

@@ -18,3 +18,10 @@
 @include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-BookItalic', 300, italic);
 @include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-Light', 200, normal);
 @include fontFace('Gotham Rounded', '/styles/fonts/gotham-rounded/GothamRounded-LightItalic', 200, italic);
+//heron
+@include fontFace('Heron', '/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular', 400, normal);
+@include fontFace('Heron', '/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic', 400, italic);
+@include fontFace('Heron', '/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold', 700, normal);
+@include fontFace('Heron', '/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic', 700, italic);
+@include fontFace('Heron', '/styles/fonts/heron/Heron-Sans-Light/Heron-Sans-Light', 200, normal);
+@include fontFace('Heron', '/styles/fonts/heron/Heron-Sans-Light-Italic/Heron-Sans-Light-Italic', 200, italic);
