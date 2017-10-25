@@ -476,19 +476,30 @@ $row-5-outer: 20px;
                         }
                     }
                     .enerji-sinifi {
-                        position: absolute;
-                        right: 5px;
-                        top: 5px;
-                        background: #107600;
-                        font-size: 13px;
+                        $energyBG: #00A853;
+                        $energyHeight: 15px;
+                        position: relative;
+                        display: table;
+                        background: $energyBG;
+                        font-size: 11px;
                         color: #fff;
                         letter-spacing: 1px;
-                        padding: 3px 5px;
+                        line-height: $energyHeight;
+                        padding: 0 4px;
+                        margin-bottom: 5px;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: -$energyHeight;
+                            border-width: $energyHeight / 2;
+                            border-style: solid;
+                            border-color: transparent transparent transparent $energyBG;
+                        }
 
                     }
                 }
                 .urunListe_ParoAciklama {
-                    /*margin-top: 20px;*/
                     margin-top: 10px;
                     height: 22px;
                 }

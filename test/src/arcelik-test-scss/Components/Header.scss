@@ -338,9 +338,8 @@
             padding-left: 4px;
         }
         .mod-lang {
-            display: none;
             position: relative;
-            //display: inline-block;
+            display: inline-block;
             vertical-align: top;
             margin-right: 15px;
             .mod-lang-body {
@@ -1001,6 +1000,15 @@
             z-index: 997;
             .mod-lang{
                 display: none;
+                margin-right: 25px;
+                .mod-lang-body {
+                    .sub {
+                        a {
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
             }
             .row-holder-1 {
                 height: 52px;
