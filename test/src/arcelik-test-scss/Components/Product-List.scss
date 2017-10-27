@@ -422,7 +422,6 @@ $row-5-outer: 20px;
             max-width: 250px;
             * {transition: all 0.32s ease;}
             a {text-decoration: none;}
-            a > .features {line-height: 1.5;}
             .ems-prd-inner {
                 position: relative;
                 border: 1px solid #ebebeb;
@@ -469,6 +468,7 @@ $row-5-outer: 20px;
                     height: 74px;
                     overflow: hidden;
                     ul.features {
+                        line-height: 1.5;
                         li {
                             .text {
                                 color: #999;

@@ -1085,7 +1085,7 @@ a.btn-all-technology {
             }
         }
     }
-    .yorumFiltre {
+    div.yorumFiltre {
         margin: 40px 0;
         text-align: center;
         ul.ulYorumFiltre {
@@ -1093,6 +1093,9 @@ a.btn-all-technology {
             > li {
                 display: inline-block;
                 vertical-align: top;
+                &.emos_invisible {
+                    display: none !important;
+                }
                 > span {
                     display: block;
                     a {

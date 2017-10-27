@@ -8432,8 +8432,6 @@ body .ui-datepicker table {
       transition: all 0.32s ease; }
     .ems-prd-list > .ems-inline .ems-prd a {
       text-decoration: none; }
-    .ems-prd-list > .ems-inline .ems-prd a > .features {
-      line-height: 1.5; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner {
       position: relative;
       border: 1px solid #ebebeb;
@@ -8474,8 +8472,10 @@ body .ui-datepicker table {
         line-height: 1.3;
         height: 74px;
         overflow: hidden; }
-        .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description ul.features li .text {
-          color: #999; }
+        .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description ul.features {
+          line-height: 1.5; }
+          .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description ul.features li .text {
+            color: #999; }
         .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description .enerji-sinifi {
           position: relative;
           display: table;
@@ -10367,17 +10367,19 @@ a.btn-all-technology {
             background: #ffb400;
             height: 8px;
             position: static; }
-  .yorumListe_main .yorumFiltre {
+  .yorumListe_main div.yorumFiltre {
     margin: 40px 0;
     text-align: center; }
-    .yorumListe_main .yorumFiltre ul.ulYorumFiltre {
+    .yorumListe_main div.yorumFiltre ul.ulYorumFiltre {
       display: inline-block; }
-      .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li {
+      .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li {
         display: inline-block;
         vertical-align: top; }
-        .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li > span {
+        .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li.emos_invisible {
+          display: none !important; }
+        .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li > span {
           display: block; }
-          .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li > span a {
+          .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li > span a {
             position: relative;
             display: block;
             padding: 14px;
@@ -10391,19 +10393,19 @@ a.btn-all-technology {
             -webkit-transition: all 0.32s ease;
             -o-transition: all 0.32s ease;
             transition: all 0.32s ease; }
-        .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li:nth-child(3) {
+        .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li:nth-child(3) {
           border: 1px solid #ebebeb;
           padding: 12px 15px 13px; }
-          .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li:nth-child(3) [id$="lbfYORUMFILTRE_PUANAGORE"], .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li:nth-child(3) .ratingFiltre {
+          .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li:nth-child(3) [id$="lbfYORUMFILTRE_PUANAGORE"], .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li:nth-child(3) .ratingFiltre {
             display: inline-block;
             vertical-align: middle; }
-          .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li:nth-child(3) [id$="lbfYORUMFILTRE_PUANAGORE"] {
+          .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li:nth-child(3) [id$="lbfYORUMFILTRE_PUANAGORE"] {
             margin-right: 10px;
             color: #999; }
-        .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li.filtreSelected span a {
+        .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li.filtreSelected span a {
           background: #ED1C24;
           color: #fff; }
-          .yorumListe_main .yorumFiltre ul.ulYorumFiltre > li.filtreSelected span a:before {
+          .yorumListe_main div.yorumFiltre ul.ulYorumFiltre > li.filtreSelected span a:before {
             content: "";
             position: absolute;
             bottom: -10px;
