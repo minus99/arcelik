@@ -4443,7 +4443,7 @@ a.btnGoogleLogin {
         padding: inherit;
         border: inherit; } }
 
-input:not([type='checkbox, radio']), select, textarea, .dropdown > span {
+input:not([type='checkbox']):not([type='radio']), select, textarea, .dropdown > span {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
@@ -11143,18 +11143,20 @@ a.btn-all-technology {
       margin: 0 auto; }
     .ems-grid-default .ems-grid-row .ems-grid-img [id$="imageHref"] {
       display: none !important; }
-    .ems-grid-default .ems-grid-row [id$="lblProm"] ul {
+    .ems-grid-default .ems-grid-row [id$="lblProm"] {
+      display: none; }
+    .ems-grid-default .ems-grid-row [id$="lblPromToplamTutar"] ul {
       display: table;
       margin-top: 10px;
       font-family: "Heron";
       font-size: 12px;
       font-weight: 500;
       line-height: 1.2; }
-      .ems-grid-default .ems-grid-row [id$="lblProm"] ul:empty {
+      .ems-grid-default .ems-grid-row [id$="lblPromToplamTutar"] ul:empty {
         display: none; }
-      .ems-grid-default .ems-grid-row [id$="lblProm"] ul li > span {
+      .ems-grid-default .ems-grid-row [id$="lblPromToplamTutar"] ul li > span {
         display: inline-block; }
-      .ems-grid-default .ems-grid-row [id$="lblProm"] ul .prom_ad {
+      .ems-grid-default .ems-grid-row [id$="lblPromToplamTutar"] ul .prom_ad {
         margin-right: 5px; }
     .ems-grid-default .ems-grid-row .brFiyat, .ems-grid-default .ems-grid-row .satBrFiyat, .ems-grid-default .ems-grid-row .netFiyat, .ems-grid-default .ems-grid-row .topFiyat {
       display: none !important; }
@@ -12659,6 +12661,8 @@ form[name="frmBorusanLojistik"] > br {
     font-weight: 500;
     padding-bottom: 15px;
     letter-spacing: -1px; }
+  .paro-active .plhUrunParoAciklama-clone {
+    display: none; }
   .paro-active .pnlDipToplamTable .pnlDipToplam_sipToplam .kdv-dahil-fiyat {
     display: none; }
   .paro-active .pnlDipToplamTable .pnlDipToplam_sipToplam .paro-dahil-fiyat {

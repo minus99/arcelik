@@ -215,17 +215,24 @@
 
         @at-root {
             .paro-active {
+                .plhUrunParoAciklama-clone {
+                    display: none;
+                }
                 .pnlDipToplamTable {
                     .pnlDipToplam_sipToplam {
-                        .kdv-dahil-fiyat {display: none;}
-                        .paro-dahil-fiyat {display: inline-block;}
+                        .kdv-dahil-fiyat {
+                            display: none;
+                        }
+                        .paro-dahil-fiyat {
+                            display: inline-block;
+                        }
                     }
                 }
             }
         }
     }
     .ems-cart-coupon {
-        display: none;//test-ort
+        display: none;
         position: relative;
         padding: 25px;
         background: #f6f6f6;

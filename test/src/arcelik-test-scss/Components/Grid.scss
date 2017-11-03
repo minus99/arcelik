@@ -52,7 +52,10 @@
                 display: none !important;
             }
         }
-        [id$="lblProm"] ul {
+        [id$="lblProm"] {
+            display: none;
+        }
+        [id$="lblPromToplamTutar"] ul {
             display: table;
             margin-top: 10px;
             font-family: $fontSite; 

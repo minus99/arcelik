@@ -3978,7 +3978,7 @@ var bdy = $('body'),
 				ajxResult: function( o ){
 					var _t = this, wrp = $( o['target'] ), e = $('<div>' + o['val'] + '</div>' ), target = e.find( o['target'] ), uri = o['uri'], ttl = e.find('title').text() || document.title;
 					$('title').text( ttl );
-					
+	
 					if( uty.detectEl( target ) && uty.detectEl( wrp ) ){
 						
 						var k = e.find('[id$="hdnUrnReferrerUrl"]').val() || '';
@@ -3994,6 +3994,7 @@ var bdy = $('body'),
 						});	
 	
 						wrp.html( uty.clearScriptTag( target.html() ) );
+						
 						
 						if( o['historyPush'] )
 							history.pushState({ Url: uri , Page: ttl }, ttl, uri);
@@ -4133,7 +4134,17 @@ var bdy = $('body'),
 				},
 				ajxResult: function( o ){
 					var _t = this, k = o || '';
-					if( k != '' ) k = $( k ).find( _t.target ).wrapAll('<div>').parent().html(); 
+					if( k != '' ){
+						k = $( k ).find( _t.target ).wrapAll('<div>').parent().html(); 
+						
+						if( $('#hdnOZS_KOD').val() != $( k ).find('#hdnOZS_KOD').val() )
+							strOzsKodState = true;
+						else
+							strOzsKodState = false;	
+					}
+					
+					
+					
 					$( _t.content ).html( k );
 					_t.set();
 					_t.setChk();

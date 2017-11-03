@@ -1,4 +1,4 @@
-input:not([type='checkbox, radio']), select, textarea, .dropdown > span {
+input:not([type='checkbox']):not([type='radio']), select, textarea, .dropdown > span {
     box-shadow: none;
     border: none;
     outline: none;
