@@ -5216,7 +5216,8 @@ body .ui-datepicker table {
       -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      padding-bottom: 54px; }
+      padding-bottom: 54px;
+      border-right: 1px solid #ebebeb; }
       .site-header .header-mobile-menu .type-3 .lvl1 > li .op-menu > ul {
         width: calc(100% - 20px);
         display: -webkit-box;
