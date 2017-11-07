@@ -1,15 +1,22 @@
 // General Definations
-//test 
-$baseHref: '//epm.test.arcelik.com';
-//canlı $baseHref: '';
-//canlı cdn $baseHref: '//img-arcelik.mncdn.com';
+//test | live
+$release: test;
 
+$baseHref: 'error "$release"';
+    @if $release == test {
+        $baseHref: '//epm.test.arcelik.com';
+    } @else if $release == live {
+        $baseHref: '';
+    }
 
 // Typography
 $fontDefault: "arial";
-//test 
-$fontSite: "Heron";
-//canlı $fontSite: "Gotham Rounded";
+$fontSite: 'error "$release"';
+    @if $release == test {
+        $fontSite: "Heron";
+    } @else if $release == live {
+        $fontSite: "Gotham Rounded";
+    }
 $fontSite2: "Gotham";
 $fontSite3: "Gotham Rounded";
 $fontSizeDefault: 12px;

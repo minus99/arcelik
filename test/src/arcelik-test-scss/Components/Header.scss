@@ -339,9 +339,11 @@
         }
         .mod-lang {
             position: relative;
-            //test 
-            display: inline-block;
-            //canlı display: none !important;
+                @if $release == test {
+                    display: inline-block;
+                } @else if $release == live {
+                    display: none !important;
+                }
             vertical-align: top;
             margin-right: 15px;
             .mod-lang-body {
