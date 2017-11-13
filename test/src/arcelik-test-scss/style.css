@@ -4570,7 +4570,7 @@ textarea {
     top: 24px;
     height: 37px;
     border-right: 1px solid #e3e3e3; }
-  [id$="divCaptcha"] input {
+  [id$="divCaptcha"] input[id$="txtUYE_KONTROLKODU"] {
     padding-left: 160px; }
 
 #divUlkeBilgi, .ilceListeGizli {
@@ -10525,6 +10525,15 @@ a.btn-all-technology {
   border-top: none; }
   .no-comment .yorumListe_main .yorumEkle .tableTitleYorumYap {
     padding-top: 0; }
+
+.ems-prd.gosterim-urun .ems-prd-price {
+  visibility: hidden !important; }
+
+.gosterim-urun-body .prd-compact-right {
+  display: none !important; }
+
+.ems-prd-detail.gosterim-urun .ems-prd-price, .ems-prd-detail.gosterim-urun .ems-prd-add-to-cart {
+  display: none !important; }
 
 @media screen and (max-width: 1025px) {
   .ems-prd-detail .ems-prd-detail-inner {

@@ -2946,7 +2946,7 @@ var bdy = $('body'),
 	management = {
 		clss: {
 			arr: [
-				//{ main: '.contact-switch__content-container div:first-child', target: '.contact-switch__content-container div:first-child', type: 'add', cls: 'active' },
+				{ main: '.ems-prd-detail.gosterim-urun', target: 'body', type: 'add', cls: 'gosterim-urun-body' }
 			],
 			set: function( o ){
 				var main = $( o['main'] || '' ), target = $( o['target'] || '' ), type = o['type'] || 'add', cls = o['cls'] || '';

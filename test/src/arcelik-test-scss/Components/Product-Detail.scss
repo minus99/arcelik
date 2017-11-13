@@ -1312,6 +1312,24 @@ a.btn-all-technology {
     }
 }
 
+//urun class
+//liste-detayda fiyat ve satin al butonu gozukmesin
+.ems-prd.gosterim-urun {
+    .ems-prd-price {
+        visibility: hidden !important;
+    }
+}
+.gosterim-urun-body {
+    .prd-compact-right {
+        display: none !important;
+    }
+}
+.ems-prd-detail.gosterim-urun {
+    .ems-prd-price, .ems-prd-add-to-cart {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: $tablet-p) {
     .ems-prd-detail {
         .ems-prd-detail-inner {
