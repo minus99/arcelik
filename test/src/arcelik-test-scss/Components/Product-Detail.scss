@@ -1313,19 +1313,23 @@ a.btn-all-technology {
 }
 
 //urun class
-//liste-detayda fiyat ve satin al butonu gozukmesin
+//fiyat ve satin al butonu gozukmesin EMS0004305139221_2
+//liste
 .ems-prd.gosterim-urun {
     .ems-prd-price {
         visibility: hidden !important;
     }
 }
+//detay
 .gosterim-urun-body {
     .prd-compact-right {
         display: none !important;
     }
 }
 .ems-prd-detail.gosterim-urun {
-    .ems-prd-price, .ems-prd-add-to-cart {
+    .ems-prd-price,
+    .ems-prd-add-to-cart,
+    .prd-info-tab li[rel="tab3"] {
         display: none !important;
     }
 }

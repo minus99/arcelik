@@ -2918,6 +2918,9 @@ a {
 .ems-hidden, .ems-sub {
   display: none; }
 
+.ems-v-hidden {
+  visibility: hidden; }
+
 .ems-container, .swiper-inner .swiper-header, .swiper-inner li .swiper-content, .easy-selection .swiper-inner, .insider-widget, .ems-tab-vertical > .ems-tab-inner > ul.lvl1 > li > a.title > span, .ems-tab.widget-tab ul.lvl1.navigation-js, .compareHolder .compareContent .compareContentList, .compareWrapper .comTitle, .compareWrapper .compareSlider .mask, .compareWrapper .comSpecfilter, .compareWrapper .comSpecs, .popupTaksit .gridTaksitBanka, .ems-page-login .ems-message-wrapper, .ems-page-member .ems-page-default, .ems-page-cart .tabloTabBtnAdimSiparis, .campaign-wrapper .campaign-products-wrapper .campaign-product-slider {
   width: 100%;
   max-width: 1006px;
@@ -10532,7 +10535,9 @@ a.btn-all-technology {
 .gosterim-urun-body .prd-compact-right {
   display: none !important; }
 
-.ems-prd-detail.gosterim-urun .ems-prd-price, .ems-prd-detail.gosterim-urun .ems-prd-add-to-cart {
+.ems-prd-detail.gosterim-urun .ems-prd-price,
+.ems-prd-detail.gosterim-urun .ems-prd-add-to-cart,
+.ems-prd-detail.gosterim-urun .prd-info-tab li[rel="tab3"] {
   display: none !important; }
 
 @media screen and (max-width: 1025px) {

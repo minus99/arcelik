@@ -55,6 +55,9 @@ a {
 	&-hidden, &-sub {
 		display: none;
 	}
+	&-v-hidden {
+		visibility: hidden;
+	}
 	&-container {
 		width: 100%;
 		max-width: $siteContainerWidth;
