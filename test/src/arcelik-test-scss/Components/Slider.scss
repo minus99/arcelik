@@ -493,8 +493,10 @@
         }
     }
     .headline {
-        > p {
+        > * {
             background: $colorRed;
+        }
+        > p {
             margin: 0;
             padding: 20px;
             font-size: 23px;
@@ -507,8 +509,15 @@
             text-align: left;
             min-width: 60%;
             border: none;
-            &:hover {
-                background: $colorRed;
+        }
+        &.bg-gray {
+            > * {
+                background: $colorGray;
+            }
+        }
+        &.bg-black {
+            > * {
+                background: $colorDefault;
             }
         }
     }

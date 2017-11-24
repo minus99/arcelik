@@ -443,16 +443,12 @@ $row-5-outer: 20px;
                         margin: 0 auto;
                     }
                 }
-                .prd-fields-1 {
-                    max-height: 108px;
-                    min-height: 87px;
-                }
                 .ems-prd-name {
                     margin-top: 15px;
                     font-size: 13px;
                     font-weight: 700;
                     line-height: 1.2;
-                    max-height: 31px;
+                    height: 30px;
                     overflow: hidden;
                 }
                 .ems-prd-rating {
@@ -1669,12 +1665,10 @@ $row-5-outer: 20px;
             .ems-prd {
                 max-width: (100%);
                 .ems-prd-inner {
-                    .prd-fields-1 {
-                        height: auto;
-                    }
                     .ems-prd-name {
                         font-size: 20px;
-                        max-height: 47px;
+                        height: auto;
+                        max-height: 48px;
                     }
                     .ems-prd-rating {
                         &:empty {

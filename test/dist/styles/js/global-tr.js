@@ -18,7 +18,6 @@ var utlty = {
 		{ 'el': '.telefon', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
 		{ 'el': '[id$="lbfUYE_KONTROLKODU"]', 'class': 'zorunluFont' },
 		{ 'el': '.ems-page-member-login [id$="lbfUYE_CEPTELEFON"]', 'class': 'zorunluFont' },
-		{ 'el': '.ems-page-new-address [id$="lbfUYA_TCKIMLIKNO"]', 'class': 'zorunluFont' },
 		{ 'el': '[id$="txtUYA_TELEFON"]', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
 		{ 'el': '.ems-page-member-login [id$="drpUYE_CINSIYET"]', 'val': 1 },
 		{ 'el': '[id$="txtUYE_EMAIL"]', 'prop': { 'refalertid': 'refLbfUYE_EMAIL' } },
@@ -27,7 +26,8 @@ var utlty = {
 		{ 'el': '[id$="txtprm_istel"]', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
 		{ 'el': '[id$="txtprm_ceptel"]', 'mask': '09999999999', 'prop': { 'type': 'tel' } },
 		{ 'el': '[id$="txtPRM_EMAIL"]', 'prop': { 'attribute': 'mail' } },
-		{ 'el': '[id$="txtUYA_TCKIMLIKNO"]', 'mask': '99999999999', 'required': 'required', 'prop': { 'type': 'tel' }  },
+		/*{ 'el': '.ems-page-new-address [id$="lbfUYA_TCKIMLIKNO"]', 'class': 'zorunluFont' }, EMS0004300335711_5*/
+		{ 'el': '[id$="txtUYA_TCKIMLIKNO"]', 'mask': '99999999999', /*'required': 'required', EMS0004300335711_5*/ 'prop': { 'type': 'tel' }  },
 		{ 'el': '[id$="txtUYE_CEPTELEFONALAN"]', 'mask': '999', 'prop': { 'type': 'tel' } },
 		{ 'el': '[id$="txtUYE_CEPTELEFON"]', 'mask': '9999999', 'prop': { 'type': 'tel' } },
 		{ 'el': '[id$="txtParoCellPhone"]', 'mask': '9999999999', 'prop': { 'type': 'tel' } },

@@ -2946,7 +2946,7 @@ var bdy = $('body'),
 	management = {
 		clss: {
 			arr: [
-				//{ main: '.contact-switch__content-container div:first-child', target: '.contact-switch__content-container div:first-child', type: 'add', cls: 'active' },
+				{ main: '.ems-prd-detail.gosterim-urun', target: 'body', type: 'add', cls: 'gosterim-urun-body' }
 			],
 			set: function( o ){
 				var main = $( o['main'] || '' ), target = $( o['target'] || '' ), type = o['type'] || 'add', cls = o['cls'] || '';
@@ -4956,7 +4956,7 @@ var bdy = $('body'),
 	pages = {
 		technologies: {
 			cls: { filterReady: 'technologies-filter-ready', filterAnimate: 'technologies-filter-animate', labelReady: 'technologies-label-ready', labelAnimate: 'technologies-label-animate' },
-			el: { wrp: '.ems-page-technologies', btnFilter: '.filterPopup', closeFilter: '.btn-filter-close', btnLabel: '.labelPopup', closeLabel: '.btn-label-close' },
+			el: { wrp: '.ems-page-technologies, .ems-mod-tagcloud-horizontal', btnFilter: '.filterPopup', closeFilter: '.btn-filter-close', btnLabel: '.labelPopup', closeLabel: '.btn-label-close' },
 			animate: function( o ){
 				var _t = this, typ = o['typ'] || '';
 				if( typ == 'opened' )
@@ -5003,8 +5003,11 @@ var bdy = $('body'),
 				if( uty.detectEl( e ) )
 					e
 					.each(function(){
-                        var ths = $( this ), sib = ths.prev('.icerikTemplateListeItem');
-						sib.find('.tags .tag-title').after( ths );
+						var ths = $( this ), sib = ths.prev('.icerikTemplateListeItem');
+						if( uty.cleanText( ths.html() || '' ) != '' )
+							sib.find('.tags .tag-title').after( ths );
+						else
+							sib.find('.tags').addClass('ems-v-hidden');	
                     });
 			},
 			init: function(){

@@ -264,20 +264,6 @@ textarea {
 
 @font-face {
   font-family: "Heron";
-  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.eot);
-  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Heron";
-  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.eot);
-  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.ttf) format("truetype");
-  font-weight: 400;
-  font-style: italic; }
-
-@font-face {
-  font-family: "Heron";
   src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.eot);
   src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold/Heron-Sans-Bold.ttf) format("truetype");
   font-weight: 700;
@@ -288,6 +274,20 @@ textarea {
   src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.eot);
   src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Bold-Italic/Heron-Sans-Bold-Italic.ttf) format("truetype");
   font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Regular/Heron-Sans-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heron";
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.eot);
+  src: url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.eot?#iefix) format("embedded-opentype"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.woff) format("woff"), url(//epm.test.arcelik.com/styles/fonts/heron/Heron-Sans-Italic/Heron-Sans-Italic.ttf) format("truetype");
+  font-weight: 400;
   font-style: italic; }
 
 @font-face {
@@ -2980,7 +2980,8 @@ a {
   text-shadow: 0 1px 3px #4a536c; }
 
 html, body {
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 200; }
 
 body {
   overflow-x: hidden; }
@@ -6404,8 +6405,9 @@ body .ui-datepicker table {
     display: none; }
     .headline-holder > ul li.active {
       display: block; }
+  .headline-holder .headline > * {
+    background: #ED1C24; }
   .headline-holder .headline > p {
-    background: #ED1C24;
     margin: 0;
     padding: 20px;
     font-size: 23px;
@@ -6417,8 +6419,10 @@ body .ui-datepicker table {
     text-align: left;
     min-width: 60%;
     border: none; }
-    .headline-holder .headline > .btn:hover, .headline-holder .headline > a.btnDefault:hover, .headline-holder .headline > .lnkDefault:hover {
-      background: #ED1C24; }
+  .headline-holder .headline.bg-gray > * {
+    background: #868686; }
+  .headline-holder .headline.bg-black > * {
+    background: #333; }
 
 .price-holder {
   margin-top: 30px; }
@@ -8455,15 +8459,12 @@ body .ui-datepicker table {
           display: block;
           max-height: 180px;
           margin: 0 auto; }
-      .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .prd-fields-1 {
-        max-height: 108px;
-        min-height: 87px; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-name {
         margin-top: 15px;
         font-size: 13px;
         font-weight: 700;
         line-height: 1.2;
-        max-height: 31px;
+        height: 30px;
         overflow: hidden; }
       .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-rating {
         margin-top: 7px;
@@ -9357,11 +9358,10 @@ body .ui-datepicker table {
     top: 141px; }
   .ems-prd-list > .ems-inline .ems-prd {
     max-width: 100%; }
-    .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .prd-fields-1 {
-      height: auto; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-name {
       font-size: 20px;
-      max-height: 47px; }
+      height: auto;
+      max-height: 48px; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-rating:empty {
       display: none; }
     .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description {

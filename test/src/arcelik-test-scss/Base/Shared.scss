@@ -3,6 +3,9 @@
 
 html, body {
 	line-height: 1;
+	@if $release == test {
+		font-weight: 200;
+	}
 }
 body {
 	overflow-x: hidden;
