@@ -3002,7 +3002,7 @@ h3 {
   font-weight: 700; }
 
 b {
-  font-weight: 700; }
+  font-weight: 400; }
 
 .vAlign, .ems-message-error:before, .pageLogin_yeniUyelikHata:before, .pageErrorUyeSifre:before, .pageErrorSifremiUnuttum:before, .ems-page-new-address .pageErrorDefault:before, .pageErrorStokKontrol:before, .no-address:before, .pageGuestCheckoutError:before, .emailError:before {
   position: relative;
@@ -4877,7 +4877,7 @@ body .ui-datepicker table {
         border-bottom: 2px solid transparent;
         font-family: "Heron";
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 400;
         text-transform: uppercase; }
       .site-header-inner .header-mobile-menu .header-menu-inner > ul.lvl1 > li.selected > a {
         color: #ED1C24;
@@ -6620,7 +6620,7 @@ body .ui-datepicker table {
     padding: 20px;
     font-size: 12px;
     color: #acabab;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 3px; }
     .popular-prd-slider .swiper-inner .swiper-header:after {
       content: "";
@@ -7966,7 +7966,7 @@ body .ui-datepicker table {
       text-align: left;
       font-size: 27px;
       color: #333;
-      font-weight: 700;
+      font-weight: 400;
       -webkit-box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.7);
       box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.7); }
       .ems-tab-vertical > .ems-tab-inner > ul.lvl1 > li > a.title > span {

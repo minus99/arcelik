@@ -171,7 +171,12 @@
                         text-align: left;
                         font-size: 27px;
                         color: #333;
-                        font-weight: 700;
+                        //EMS0004302537565_1 font-degisimi
+                        @if $release == live {
+                            font-weight: 700;
+                        } @else if $release == test {
+                            font-weight: 400;
+                        }
                         box-shadow: 0px 2px 5px -3px rgba(0,0,0,.7);
                         > span {
                             display: block;

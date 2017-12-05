@@ -3,6 +3,7 @@
 
 html, body {
 	line-height: 1;
+	//EMS0004302537565_1 font-degisimi
 	@if $release == test {
 		font-weight: 200;
 	}
@@ -27,7 +28,15 @@ h3 {
 	font-weight: 700;
 }
 
-b {font-weight: 700;}
+b {
+	//EMS0004302537565_1 font-degisimi
+	@if $release == live {
+		font-weight: 700;
+	} @else if $release == test {
+		font-weight: 400;
+	}
+}
+
 
 .vAlign {
 	@include vAlign;
