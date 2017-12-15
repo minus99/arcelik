@@ -187,7 +187,9 @@
         border-spacing: 0;
         tr {
             display: none !important;
-            &.pnlDipToplam_sipToplam, &.trParoIndirimsizToplam {
+            &.pnlDipToplam_sipToplam,
+            &.trParoIndirimsizToplam,
+            &.trOzelPromIndToplam {
                 display: table-row !important;
             }
         }

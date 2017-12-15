@@ -3080,11 +3080,9 @@ b {
 .ems-message2 {
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 20px 20px 20px 172px;
@@ -5209,7 +5207,6 @@ body .ui-datepicker table {
       display: none; }
     .site-header .header-mobile-menu .type-3 .lvl1 > li.selected .op-menu {
       display: -webkit-box !important;
-      display: -webkit-flex !important;
       display: -ms-flexbox !important;
       display: flex !important; }
     .site-header .header-mobile-menu .type-3 .lvl1 > li.selected .ems-sub {
@@ -5217,7 +5214,6 @@ body .ui-datepicker table {
     .site-header .header-mobile-menu .type-3 .lvl1 > li ul {
       padding-bottom: 0 !important; }
     .site-header .header-mobile-menu .type-3 .lvl1 > li .op-menu {
-      -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       padding-bottom: 54px;
@@ -5225,22 +5221,17 @@ body .ui-datepicker table {
       .site-header .header-mobile-menu .type-3 .lvl1 > li .op-menu > ul {
         width: calc(100% - 20px);
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-align-content: flex-start;
         -ms-flex-line-pack: start;
         align-content: flex-start;
         -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         position: relative;
@@ -6608,8 +6599,8 @@ body .ui-datepicker table {
     content: "";
     background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
     background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
-    background: -webkit-radial-gradient(center ellipse, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
-    background: -o-radial-gradient(center ellipse, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+    background: -o-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#00ffffff',GradientType=1 );
     position: absolute;
@@ -8477,6 +8468,8 @@ body .ui-datepicker table {
         line-height: 1.3;
         height: 74px;
         overflow: hidden; }
+        .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description > .emos_invisible {
+          display: block; }
         .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description ul.features {
           line-height: 1.5; }
           .ems-prd-list > .ems-inline .ems-prd .ems-prd-inner .ems-prd-description ul.features li .text {
@@ -10968,11 +10961,9 @@ a.btn-all-technology {
           display: block; }
           .service-list-holder .service-sidebar .service-location > li.location-share a.location-share-btn > span {
             display: -webkit-inline-box;
-            display: -webkit-inline-flex;
             display: -ms-inline-flexbox;
             display: inline-flex;
             -webkit-box-align: center;
-            -webkit-align-items: center;
             -ms-flex-align: center;
             align-items: center; }
             .service-list-holder .service-sidebar .service-location > li.location-share a.location-share-btn > span i {
@@ -12242,10 +12233,8 @@ form[name="frmBorusanLojistik"] > br {
     margin-right: 20px; }
   .ems-page-member .ems-grid-order {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .ems-page-member .ems-grid-header {
@@ -12421,10 +12410,8 @@ form[name="frmBorusanLojistik"] > br {
     width: 100% !important; }
   .ems-page-member .ems-page-member-info .bottom-step {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .ems-page-member .ems-page-member-info .bottom-step > div {
@@ -12432,12 +12419,10 @@ form[name="frmBorusanLojistik"] > br {
       width: 100%; }
       .ems-page-member .ems-page-member-info .bottom-step > div.next {
         -webkit-box-ordinal-group: 2;
-        -webkit-order: 1;
         -ms-flex-order: 1;
         order: 1; }
       .ems-page-member .ems-page-member-info .bottom-step > div.remove {
         -webkit-box-ordinal-group: 3;
-        -webkit-order: 2;
         -ms-flex-order: 2;
         order: 2; }
   .ems-page-member .ems-page-new-address {
@@ -12657,7 +12642,7 @@ form[name="frmBorusanLojistik"] > br {
   border-spacing: 0; }
   .ems-page-cart .pnlDipToplamTable tr {
     display: none !important; }
-    .ems-page-cart .pnlDipToplamTable tr.pnlDipToplam_sipToplam, .ems-page-cart .pnlDipToplamTable tr.trParoIndirimsizToplam {
+    .ems-page-cart .pnlDipToplamTable tr.pnlDipToplam_sipToplam, .ems-page-cart .pnlDipToplamTable tr.trParoIndirimsizToplam, .ems-page-cart .pnlDipToplamTable tr.trOzelPromIndToplam {
       display: table-row !important; }
   .ems-page-cart .pnlDipToplamTable th, .ems-page-cart .pnlDipToplamTable td {
     display: block;
@@ -13499,12 +13484,10 @@ form[name="frmBorusanLojistik"] > br {
       width: 100%; }
   .ems-page-cart .cart-section-right-append .cart-section-right {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
     .ems-page-cart .cart-section-right-append .cart-section-right > div {
