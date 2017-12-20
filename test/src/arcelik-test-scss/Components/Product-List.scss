@@ -495,7 +495,55 @@ $row-5-outer: 20px;
                             border-style: solid;
                             border-color: transparent transparent transparent $energyBG;
                         }
-
+                        &.a-sinifi {
+                            $energyBG: #f2e300;
+                            background: $energyBG;
+                            &:after {
+                                border-left-color: $energyBG;
+                            }
+                            &1 {
+                                $energyBG: #bed927;
+                                background: $energyBG;
+                                &:after {
+                                    border-left-color: $energyBG;
+                                }
+                            }
+                            &2 {
+                                $energyBG: #4cb945;
+                                background: $energyBG;
+                                &:after {
+                                    border-left-color: $energyBG;
+                                }
+                            }
+                            &3 {
+                                $energyBG: #00a751;
+                                background: $energyBG;
+                                &:after {
+                                    border-left-color: $energyBG;
+                                }
+                            }
+                        }
+                        &.b-sinifi {
+                            $energyBG: #fcb90d;
+                            background: $energyBG;
+                            &:after {
+                                border-left-color: $energyBG;
+                            }
+                        }
+                        &.c-sinifi {
+                            $energyBG: #f3701f;
+                            background: $energyBG;
+                            &:after {
+                                border-left-color: $energyBG;
+                            }
+                        }
+                        &.d-sinifi {
+                            $energyBG: #ee131b;
+                            background: $energyBG;
+                            &:after {
+                                border-left-color: $energyBG;
+                            }
+                        }
                     }
                 }
                 .urunListe_ParoAciklama {

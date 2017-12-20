@@ -234,7 +234,6 @@
         }
     }
     .ems-cart-coupon {
-        display: none;
         position: relative;
         padding: 25px;
         background: #f6f6f6;
@@ -259,6 +258,10 @@
                 padding: 17px;
                 font-size: 13px;
             }
+        }
+        a.btnHediyeCekiIptal {
+            margin-top: 5px;
+            display: block;
         }
         [id$="lblHCK_HATA"] {
             display: block;
