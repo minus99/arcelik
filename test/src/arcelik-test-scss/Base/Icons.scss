@@ -339,3 +339,10 @@ a.btnMinPpCl:before {
   @extend [class*=" icon-"];
   @extend .icon-arrow-01-r;
 }
+.taksit-kurumsal td:nth-child(3):after {
+  @extend [class*=" icon-"];
+  @extend .icon-user:before;
+  font-size:15px;
+  right:2px !important  ;
+  bottom:5px !important;
+}

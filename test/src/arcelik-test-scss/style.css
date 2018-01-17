@@ -304,7 +304,7 @@ textarea {
   font-weight: 200;
   font-style: italic; }
 
-[class^="icon-"], [class*=" icon-"], .dropdown > span:before, .info-menu ul li a:before, .dropdown-value:before, .ems-tab ul.lvl1 > li.more > a.title > span:before, .go-all-features > span:before, .ems-tab-vertical > .ems-tab-inner > ul.lvl1 > li > a.title > span:before, .urunKiyaslamaOzellik_ozellikAd:before, a.urunKiyaslamaOzellik:before, .prd-technology-info .col-text > p:before, .feature-info:before, .compareHolder .ems-prd-compare span:before, .comSpecs .specItem .specTitle i:before, .comSpecfilter > ul > li > a:before, .marker-customize .divServisListe_Telefon a span:before, .kutuKategori .kutuHeaderKategori:before, .faq-item .question:before, .pin:before, [id$="plhAdresTipi1"] a:before, a.btnMinPpCl:before, .prd-video > a:before, .accordion-sub > ul > li.sub-items > b:before, .ems-field-calendar .ems-form-obj:before, .mod-seller-options .ul1 li a.title:before, .navigasyon > span a:before, .ems-message-error:before, .pageLogin_yeniUyelikHata:before, .pageErrorUyeSifre:before, .pageErrorSifremiUnuttum:before, .ems-page-new-address .pageErrorDefault:before, .pageErrorStokKontrol:before, .no-address:before, .pageGuestCheckoutError:before, .emailError:before, body .ui-datepicker .ui-datepicker-next:before,
+[class^="icon-"], [class*=" icon-"], .dropdown > span:before, .info-menu ul li a:before, .dropdown-value:before, .ems-tab ul.lvl1 > li.more > a.title > span:before, .go-all-features > span:before, .ems-tab-vertical > .ems-tab-inner > ul.lvl1 > li > a.title > span:before, .urunKiyaslamaOzellik_ozellikAd:before, a.urunKiyaslamaOzellik:before, .prd-technology-info .col-text > p:before, .feature-info:before, .compareHolder .ems-prd-compare span:before, .comSpecs .specItem .specTitle i:before, .comSpecfilter > ul > li > a:before, .marker-customize .divServisListe_Telefon a span:before, .kutuKategori .kutuHeaderKategori:before, .faq-item .question:before, .pin:before, [id$="plhAdresTipi1"] a:before, a.btnMinPpCl:before, .prd-video > a:before, .accordion-sub > ul > li.sub-items > b:before, .ems-field-calendar .ems-form-obj:before, .mod-seller-options .ul1 li a.title:before, .navigasyon > span a:before, .taksit-kurumsal td:nth-child(3):after, .ems-message-error:before, .pageLogin_yeniUyelikHata:before, .pageErrorUyeSifre:before, .pageErrorSifremiUnuttum:before, .ems-page-new-address .pageErrorDefault:before, .pageErrorStokKontrol:before, .no-address:before, .pageGuestCheckoutError:before, .emailError:before, body .ui-datepicker .ui-datepicker-next:before,
 body .ui-datepicker .ui-datepicker-prev:before {
   font-family: 'icomoon' !important;
   speak: none;
@@ -457,7 +457,7 @@ body .ui-datepicker .ui-datepicker-prev:before {
 .icon-search:before {
   content: "\e915"; }
 
-.icon-user:before {
+.icon-user:before, .taksit-kurumsal td:nth-child(3):after {
   content: "\e916"; }
 
 .icon-user2:before {
@@ -477,6 +477,11 @@ body .ui-datepicker .ui-datepicker-prev:before {
 
 .icon-arrow-01-r:before, .navigasyon > span a:before {
   content: "\e91b"; }
+
+.taksit-kurumsal td:nth-child(3):after {
+  font-size: 15px;
+  right: 2px !important;
+  bottom: 5px !important; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -4334,10 +4339,10 @@ button.toast-close-button {
     color: #333; }
     .btn-transparent:hover {
       color: #fff; }
-  .btn-gray, .ems-page-cart .ems-cart-coupon table a.btnDefault {
+  .btn-gray, .ems-page-cart .ems-cart-coupon table a.btnDefault, .ems-page-cart .ems-cart-coupon a.btnHediyeCekiIptal {
     background: #5c5c5c;
     border-color: #5c5c5c; }
-    .btn-gray:hover, .ems-page-cart .ems-cart-coupon table a.btnDefault:hover {
+    .btn-gray:hover, .ems-page-cart .ems-cart-coupon table a.btnDefault:hover, .ems-page-cart .ems-cart-coupon a.btnHediyeCekiIptal:hover {
       background: #ED1C24;
       border-color: #ED1C24; }
   .btn-color2, .yorumListe_main .yorumListe .yorum_main .tableYorumListe_yorumEvetHayir a.btnDefault {
@@ -10092,6 +10097,16 @@ a.btn-all-technology {
 .popupPaypas .ems-form {
   padding: 20px 60px 0px; }
 
+.mod-option-notes .taksit-note i {
+  display: inline-block;
+  width: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 10px; }
+
+.mod-option-notes .taksit-note .tkst-bg {
+  background: #f9f9a9; }
+
 .mod-payment-options {
   margin: 20px 0 70px; }
 
@@ -10117,7 +10132,10 @@ a.btn-all-technology {
     font-size: 0; }
     .popupTaksit .gridTaksitBanka .taksit_banka img {
       width: 100%; }
+  .popupTaksit .gridTaksitBanka .gridTaksitSecenek .taksit-vade {
+    background: #f9f9a9; }
   .popupTaksit .gridTaksitBanka .gridTaksitSecenek th, .popupTaksit .gridTaksitBanka .gridTaksitSecenek td {
+    position: relative;
     padding: 15px 10px;
     border: 1px solid #ebebeb;
     font-family: "arial";
@@ -10138,6 +10156,10 @@ a.btn-all-technology {
     width: 40% !important; }
   .popupTaksit .gridTaksitBanka .gridTaksitSecenek td:nth-child(3) {
     width: 40% !important; }
+    .popupTaksit .gridTaksitBanka .gridTaksitSecenek td:nth-child(3):after {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 .mod-seller-options {
   margin: -30px auto 70px;
@@ -12717,14 +12739,17 @@ form[name="frmBorusanLojistik"] > br {
     .ems-page-cart .ems-cart-coupon table a.btnDefault {
       padding: 17px;
       font-size: 13px; }
-  .ems-page-cart .ems-cart-coupon a.btnHediyeCekiIptal {
-    margin-top: 5px;
-    display: block; }
   .ems-page-cart .ems-cart-coupon [id$="lblHCK_HATA"] {
     display: block;
     margin-top: 5px; }
     .ems-page-cart .ems-cart-coupon [id$="lblHCK_HATA"]:empty {
       display: none; }
+
+.ems-page-cart .hck-durum > div {
+  vertical-align: middle; }
+
+.ems-page-cart .hck-durum .cp1 {
+  font-weight: bold; }
 
 .ems-page-member-address-body .ems-page-cart .row-3 {
   display: none; }
@@ -16370,6 +16395,113 @@ a.contact724 {
         margin-top: 0; }
       .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btn-text, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn-text.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnFavoriEkle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.lnkTaksitSecenek, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnClear, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnKiyaslamaRemove, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnAdresListeGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnAdresListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnTesAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnFatAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnUyelikIptalEt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnIptalTalep, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnFavoriListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnTakipListeStokSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnSepeteAtFavori, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnArama, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnKiyaslamaListemeDon, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnSepetGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.btnSepetBosalt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault.changePhone, .campaign-wrapper .campaign-list-item > div.colm-text .ems-page-member .select-cfg > div .btn-group > a.btnDefault, .ems-page-member .select-cfg > div .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn-text.lnkDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnFavoriEkle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.lnkTaksitSecenek, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnClear, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnKiyaslamaRemove, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnAdresListeGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnAdresListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnTesAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnFatAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnUyelikIptalEt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnIptalTalep, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnFavoriListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnTakipListeStokSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnSepeteAtFavori, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnArama, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnKiyaslamaListemeDon, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnSepetGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.btnSepetBosalt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault.changePhone, .campaign-wrapper .campaign-list-item > div.colm-text .ems-page-member .select-cfg > div .btn-group > a.lnkDefault, .ems-page-member .select-cfg > div .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnFavoriEkle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.lnkTaksitSecenek, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnClear, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnKiyaslamaRemove, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnAdresListeGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnAdresListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnTesAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnFatAdrSec, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnUyelikIptalEt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnIptalTalep, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnFavoriListeSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnTakipListeStokSil, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnSepeteAtFavori, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnArama, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnKiyaslamaListemeDon, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnSepetGuncelle, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.btnSepetBosalt, .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn.changePhone, .campaign-wrapper .campaign-list-item > div.colm-text .prd-detail-top-slider .swiper-inner li.type-video .btn-group > a.btn, .prd-detail-top-slider .swiper-inner li.type-video .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn, .campaign-wrapper .campaign-list-item > div.colm-text .prd-detail-top-slider .swiper-inner li.type-video .btn-group > a.btnDefault, .prd-detail-top-slider .swiper-inner li.type-video .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btnDefault, .campaign-wrapper .campaign-list-item > div.colm-text .prd-detail-top-slider .swiper-inner li.type-video .btn-group > a.lnkDefault, .prd-detail-top-slider .swiper-inner li.type-video .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.lnkDefault, .campaign-wrapper .campaign-list-item > div.colm-text .ems-page-member .select-cfg > div .btn-group > a.btn, .ems-page-member .select-cfg > div .campaign-wrapper .campaign-list-item > div.colm-text .btn-group > a.btn {
         padding: 18px 20px; } }
+
+.html5-video-container .video-stream.html5-main-video {
+  height: 600px !important; }
+
+.page-buying-guide .band-items {
+  background: #fff; }
+
+.page-buying-guide .buying-accordion li span:after {
+  background-image: none !important; }
+
+.page-buying-guide .buying-accordion li span .acc-icon {
+  left: 0px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-size: cover; }
+
+.page-buying-guide .buying-accordion .acc-content {
+  padding: 40px 0px; }
+
+.page-buying-guide .buying-accordion b {
+  display: block;
+  font-size: 20px; }
+
+.page-buying-guide .buying-accordion p {
+  font-size: 14px; }
+
+.page-buying-guide .buying-icons strong {
+  display: block;
+  color: #000;
+  font-weight: 500 !important; }
+
+.page-buying-guide .buying-icons p {
+  color: #000; }
+
+.page-buying-guide .buying-video {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-bottom: 50px; }
+  .page-buying-guide .buying-video .swiper-video .videoWrapper iframe {
+    height: 600px !important; }
+  .page-buying-guide .buying-video .swiper-content {
+    top: 75% !important;
+    -webkit-transform: translateY(-75%);
+    -ms-transform: translateY(-75%);
+    transform: translateY(-75%); }
+    .page-buying-guide .buying-video .swiper-content .title {
+      width: 100%; }
+
+.page-buying-guide .buying-content {
+  padding: 40px 20px;
+  line-height: 1.4;
+  background: #ddd; }
+
+.page-buying-guide .buying-video {
+  margin-top: 40px; }
+  .page-buying-guide .buying-video .swiper-content {
+    z-index: 1;
+    position: absolute;
+    text-align: center; }
+
+.page-buying-guide .buying-img {
+  background: #d7d7d7; }
+
+.page-buying-guide .prd-technology-info .row:nth-child(even) {
+  background: #ebebeb;
+  direction: ltr; }
+  .page-buying-guide .prd-technology-info .row:nth-child(even) .col-img {
+    background: #d7d7d7;
+    padding: 20px 0px; }
+  .page-buying-guide .prd-technology-info .row:nth-child(even) .col-text {
+    padding-right: 13%;
+    padding-left: 1%; }
+
+.page-buying-guide .prd-technology-info .row:nth-child(odd) {
+  background: #ebebeb;
+  direction: rtl; }
+  .page-buying-guide .prd-technology-info .row:nth-child(odd) .col-img {
+    background: #d7d7d7;
+    padding: 0px 0px; }
+  .page-buying-guide .prd-technology-info .row:nth-child(odd) .col-text {
+    padding-right: 1%;
+    padding-left: 13%; }
+
+.page-buying-guide .acc-list {
+  background: #e7e7e7;
+  padding: 20px 0px; }
+  .page-buying-guide .acc-list li {
+    padding: 10px; }
+    .page-buying-guide .acc-list li b {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 30px; }
+    .page-buying-guide .acc-list li img {
+      width: 100%; }
+
+@media screen and (max-width: 426px) {
+  .page-buying-guide .buying-accordion .acc-content {
+    padding: 20px; }
+  .page-buying-guide .buying-video {
+    height: auto; } }
 
 html.ms-ready .popular-prd-slider,
 html.ms-ready .ems-page-home .main-slider .swiper-inner {

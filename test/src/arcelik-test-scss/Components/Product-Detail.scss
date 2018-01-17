@@ -750,6 +750,20 @@ a.btn-all-technology {
 }
 
 //taksit seçenekleri
+.mod-option-notes{
+  .taksit-note{
+    i{
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    }
+    .tkst-bg{
+      background: #f9f9a9;
+    }
+  }
+}
 .mod-payment-options {
     margin: 20px 0 70px;
 }
@@ -783,7 +797,11 @@ a.btn-all-technology {
             }
         }
         .gridTaksitSecenek {
+            .taksit-vade{
+              background: #f9f9a9;
+            }
             th, td {
+                position: relative;
                 padding: 15px 10px;
                 border: 1px solid #ebebeb;
                 font-family: $fontDefault;
@@ -809,11 +827,17 @@ a.btn-all-technology {
                 }
                 &:nth-child(3) {
                     width: 40% !important;
+                    &:after {
+                      position: absolute;
+                      right: 0;
+                      bottom: 0;
+                    }
                 }
             }
         }
     }
 }
+
 //bayi fiyat
 .mod-seller-options {
     margin: -30px auto 70px;

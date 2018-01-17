@@ -1,0 +1,142 @@
+.html5-video-container{
+  .video-stream.html5-main-video{
+      height:600px !important;
+    }
+}
+.page-buying-guide{
+  .band-items{
+    background: #fff;
+  }
+  .buying-accordion{
+    li{
+      span{
+        &:after{
+          background-image: none !important;
+        }
+        .acc-icon{
+          left: 0px;
+          position: absolute;
+          width: 32px;
+          height: 32px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-size: cover;
+        }
+      }
+    }
+    .acc-content{
+      padding: 40px 0px;
+    }
+    b{
+      display: block;
+      font-size:20px;
+    }
+    p{
+      font-size:14px;
+    }
+  }
+  .buying-icons{
+    strong{
+      display: block;
+      color:#000;
+      font-weight: 500 !important;
+    }
+    p{
+      color:#000;
+    }
+  }
+  .buying-video{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:600px;
+    margin-bottom:50px;
+    .swiper-video{
+      .videoWrapper{
+        iframe{
+          height:600px !important;
+        }
+      }
+    }
+    .swiper-content{
+      top:75% !important;
+      transform: translateY(-75%);
+      .title{
+        width:100%;
+      }
+    }
+  }
+  .buying-content{
+    padding: 40px 20px;
+    line-height:1.4;
+    background: #ddd;
+  }
+  .buying-video{
+    margin-top:40px;
+    .swiper-content{
+      z-index: 1;
+      position: absolute;
+      text-align: center;
+    }
+  }
+  .buying-img{
+    background: #d7d7d7;
+  }
+  .prd-technology-info{
+   .row:nth-child(even) {
+     background: #ebebeb;
+    direction: ltr;
+    .col-img{
+      background: #d7d7d7;
+        padding:20px 0px;
+    }
+      .col-text{
+        padding-right:13%;
+        padding-left:1%;
+      }
+    }
+   .row:nth-child(odd){
+     background: #ebebeb;
+     direction: rtl;
+     .col-img{
+       background: #d7d7d7;
+       padding:0px 0px;
+     }
+     .col-text{
+       padding-right:1%;
+       padding-left:13%;
+     }
+    }
+  }
+  .acc-list{
+    background: #e7e7e7;
+    padding: 20px 0px;
+    li{
+      padding: 10px;
+    b{
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    img{
+      width:100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile-l) {
+
+
+.page-buying-guide{
+  .buying-accordion{
+    .acc-content{
+      padding: 20px;
+    }
+  }
+  .buying-video{
+    height:auto;
+  }
+}
+
+
+}

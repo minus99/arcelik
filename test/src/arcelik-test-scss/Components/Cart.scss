@@ -260,8 +260,7 @@
             }
         }
         a.btnHediyeCekiIptal {
-            margin-top: 5px;
-            display: block;
+            @extend .btn-gray;
         }
         [id$="lblHCK_HATA"] {
             display: block;
@@ -271,6 +270,16 @@
             }
         }
     }
+    // BtnHediyecekiİptal 
+    .hck-durum{
+        > div{
+            vertical-align: middle;
+        }
+        .cp1{
+            font-weight: bold;
+        }
+    }
+
 
     //adres ekleme
     @at-root {
