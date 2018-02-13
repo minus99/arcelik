@@ -800,6 +800,15 @@ a.btn-all-technology {
             .taksit-vade{
               background: #f9f9a9;
             }
+            .taksit-vade {
+              &.taksit-kurumsal {
+                    td{
+                    &:after{
+                      display: none !important;
+                    }
+                  }
+                }
+              }
             th, td {
                 position: relative;
                 padding: 15px 10px;

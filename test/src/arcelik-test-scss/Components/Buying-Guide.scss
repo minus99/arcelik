@@ -11,9 +11,13 @@
   }
   .band-items{
     background: #fff;
+    .sld-pager{
+      display: none;
+    }
   }
   .buying-accordion{
     li{
+      cursor: pointer;
       span{
         &:after{
           background-image: none !important;
@@ -134,6 +138,15 @@
 
 
 .page-buying-guide{
+  .buying-guide-icons{
+    height:350px;
+  }
+  .band-items{
+    .sld-pager{
+      display: block;
+      color:#ED1C24;
+    }
+  }
   .buying-accordion{
     .acc-content{
       padding: 20px;

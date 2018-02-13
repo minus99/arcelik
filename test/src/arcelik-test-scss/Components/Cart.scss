@@ -24,6 +24,11 @@
         font-size: 23px;
         margin-bottom: 35px;
     }
+    .cart-section-left{
+      .prom_indtutar{
+        display: none !important;
+      }
+    }
 
     @at-root {
         //sepet boş
@@ -124,7 +129,7 @@
                     }
                 }
             }
-        } 
+        }
     }
 
     //sepet bosalt&guncelle
@@ -270,7 +275,7 @@
             }
         }
     }
-    // BtnHediyecekiİptal 
+    // BtnHediyecekiİptal
     .hck-durum{
         > div{
             vertical-align: middle;
@@ -385,7 +390,7 @@
                 }
             }
         }
-        
+
         //adres ekleme gizle göster cfg
         #validateTeslimat {
             &.bireysel {
@@ -1211,7 +1216,7 @@
 }
 
 //css empty
-.ems-page-cart .ems-page-order-payment .ems-cart-pay-type > div, 
+.ems-page-cart .ems-page-order-payment .ems-cart-pay-type > div,
 .ems-message,
 .page-member .ems-page-member-order-detail .order-detail-info-payment > div > div {
     &:empty {
@@ -1280,7 +1285,7 @@
             text-align: center;
             margin-top: 30px;
         }
-        
+
         .row-4 {
             margin-left: 0;
             margin-right: 0;
@@ -1569,7 +1574,7 @@
                     }
                 }
             }
-            
+
             .ems-cart-pay-type {
                 #creditCardExample {
                     display: none;
@@ -1653,7 +1658,7 @@
         //boş sepet
         .ems-cart-empty {
             padding-left: 30px;
-            padding-right: 30px;    
+            padding-right: 30px;
         }
 
         &.step0 {
