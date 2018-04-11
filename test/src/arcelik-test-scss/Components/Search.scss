@@ -1,6 +1,19 @@
 /* Search Revize Başlangıç */
 
     /* İçerik Sonuçları Page */
+
+    .search-contentPage{
+      .ems-tab-inner{
+        display: none;
+      }
+      .kutuOzellikFiltre {
+        display: none;
+      }
+      .kutuKategori{
+        display: none;
+      }
+    }
+
     .tableTitleAramaIcerik , .pageDescAramaIcerik , .pageHeaderAramaIcerik{
       display: none ;
     }
@@ -29,7 +42,20 @@
 
 
     /* İçerik Sonuçları Page Bitiş. */
-
+    .search-results__category__header:nth-child(1){
+      span{
+      :nth-child(2){
+        content:'İçerik Sonucu Bulundu' !important;
+      }
+    }
+  }
+    .search-results__category__header:nth-child(2){
+      span{
+      :nth-child(2){
+        content:'İçerik Sonucu Bulundu';
+      }
+    }
+}
 
 .button__text{
     color:#666;
@@ -54,7 +80,7 @@ svg.button__spinner{
       width: 100%;
       height: 100%;
       background: rgba(255,255,255,0.8);
-      background-image: url("https://www.arcelik.com.tr/images/ajaxtabs/loading.gif");
+      background-image: url("/images/ajaxtabs/loading.gif");
       top: 0;
       bottom: 0;
       right: 0;

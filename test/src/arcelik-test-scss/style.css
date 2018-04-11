@@ -5334,7 +5334,7 @@ body .ui-datepicker table {
     .site-header .header-mobile-menu .type-3 .lvl1 > li.cat-4 .op-menu {
       height: 240px !important; }
     .site-header .header-mobile-menu .type-3 .lvl1 > li.cat-5 .op-menu {
-      height: 400px !important; } }
+      height: 451px !important; } }
   @media screen and (min-width: 1025px) and (max-width: 1271px) {
     .site-header .header-mobile-menu .type-3 > ul.lvl1 > li.selected .ems-sub {
       width: 100%; } }
@@ -10133,8 +10133,6 @@ a.btn-all-technology {
       width: 100%; }
   .popupTaksit .gridTaksitBanka .gridTaksitSecenek .taksit-vade {
     background: #f9f9a9; }
-  .popupTaksit .gridTaksitBanka .gridTaksitSecenek .taksit-vade.taksit-kurumsal td:after {
-    display: none !important; }
   .popupTaksit .gridTaksitBanka .gridTaksitSecenek th, .popupTaksit .gridTaksitBanka .gridTaksitSecenek td {
     position: relative;
     padding: 15px 10px;
@@ -15298,6 +15296,15 @@ a.contact724 {
 
 /* Search Revize Başlangıç */
 /* İçerik Sonuçları Page */
+.search-contentPage .ems-tab-inner {
+  display: none; }
+
+.search-contentPage .kutuOzellikFiltre {
+  display: none; }
+
+.search-contentPage .kutuKategori {
+  display: none; }
+
 .tableTitleAramaIcerik, .pageDescAramaIcerik, .pageHeaderAramaIcerik {
   display: none; }
 
@@ -15319,6 +15326,12 @@ a.contact724 {
       display: none; }
 
 /* İçerik Sonuçları Page Bitiş. */
+.search-results__category__header:nth-child(1) span :nth-child(2) {
+  content: 'İçerik Sonucu Bulundu' !important; }
+
+.search-results__category__header:nth-child(2) span :nth-child(2) {
+  content: 'İçerik Sonucu Bulundu'; }
+
 .button__text {
   color: #666;
   padding-left: 10px;
@@ -15340,7 +15353,7 @@ svg.button__spinner {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
-  background-image: url("https://www.arcelik.com.tr/images/ajaxtabs/loading.gif");
+  background-image: url("/images/ajaxtabs/loading.gif");
   top: 0;
   bottom: 0;
   right: 0;
